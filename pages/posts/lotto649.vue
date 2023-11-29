@@ -53,5 +53,5 @@
 </template>
 
 <script setup>
-const { data } = useFetch('http://167.114.115.103:21000/draw/last')
+const { pending, data } = useLazyFetch('http://167.114.115.103:21000/draw/last')
 </script>
