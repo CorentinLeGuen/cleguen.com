@@ -21,6 +21,9 @@
             <li>
                 <NuxtLink to="/posts/arcade">Homemade arcade</NuxtLink>
             </li>
+            <li>
+                <NuxtLink to="/posts/bino">Bino project</NuxtLink>
+            </li>
         </ul>
     </div>
 </template>

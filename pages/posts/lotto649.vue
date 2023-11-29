@@ -5,7 +5,7 @@ const { pending, error, data } = await useFetch('/draw/last');
 <template>
     <div>
         <header>
-            <title>cleguen | IRMA</title>
+            <title>cleguen | 🔮 IRMA</title>
         </header>
         <h1>Lotto 6.49 - IRMA project</h1>
         <hr />
