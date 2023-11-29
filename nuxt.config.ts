@@ -12,4 +12,11 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
+  routeRules: {
+    '/draw/last': {
+      proxy: {
+        to: "http://167.114.115.103:21000/draw/last",
+      },
+    }
+  },
 })
