@@ -6,12 +6,6 @@ export default defineNuxtConfig({
   css: [
     "~/assets/css/main.scss"
   ],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
   routeRules: {
     '/draw/last': {
       proxy: {
