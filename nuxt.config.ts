@@ -3,9 +3,11 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/"),
   },
+
   css: [
     "~/assets/css/main.scss"
   ],
+
   routeRules: {
     '/draw/last': {
       proxy: {
@@ -13,4 +15,7 @@ export default defineNuxtConfig({
       },
     }
   },
+
+  modules: [
+  ]
 })
