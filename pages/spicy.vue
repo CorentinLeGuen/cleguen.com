@@ -4,30 +4,32 @@
             <title>cleguen | 🌶️ spicy sauces</title>
         </header>
         <h1>Custom spicy sauces</h1>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">🌶️</th>
-                    <th scope="col">Composition</th>
-                    <th scope="col">Picture</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="sauce in sauces">
-                    <td>{{ sauce.name }}</td>
-                    <td>{{ sauce.spicy }}</td>
-                    <td>{{ sauce.composition }}</td>
-                    <td>
-                        <img class="rounded mx-auto"  :src="sauce.img" alt="sauce picture" height="215" />
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="d-flex flex-wrap justify-content-around">
+            <span v-for="sauce in sauces">
+                <div class="card bg-dark text-white m-1" style="max-width: 200px;">
+                    <img class="rounded card-img" :src="sauce.img" alt="sauce picture" height="215" />
+                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
+                        <p class="card-title">
+                            {{ sauce.name }}
+                        </p>
+                        <ul class="list-group list-group-flush" v-for="comp in sauce.composition">
+                            <li class="list-group-item bg-transparent text-white">{{ comp }}</li>
+                        </ul>
+                        <div class="hstack gap-0">
+                            <span v-for="i in sauce.spicy">
+                                <p class="p-0">🌶️</p>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </span>
+        </div>
     </div>
 </template>
 
 <script setup>
+import { capitalize } from 'vue';
+
 const sauces = [
     {
         id: 1,
