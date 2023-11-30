@@ -19,7 +19,7 @@
                     <td>{{ sauce.spicy }}</td>
                     <td>{{ sauce.composition }}</td>
                     <td>
-                        <img :src="sauce.img" alt="sauce picture" height="125" />
+                        <img class="rounded mx-auto"  :src="sauce.img" alt="sauce picture" height="215" />
                     </td>
                 </tr>
             </tbody>
@@ -55,7 +55,35 @@ const sauces = [
         name: 'Ésharlot',
         spicy: 3,
         composition: ['shalot'],
-        img: ''
+        img: 'img/spicy/esharlot.png'
+    },
+    {
+        id: 5,
+        name: 'Adrienne',
+        spicy: 5,
+        composition: ['beer', 'grilled corn'],
+        img: 'img/spicy/adrien.png'
+    },
+    {
+        id: 5,
+        name: 'Blblbl',
+        spicy: 4,
+        composition: ['garlic', 'brussels sprouts'],
+        img: 'img/spicy/blblbl.png'
+    },
+    {
+        id: 6,
+        name: 'Alexandrie',
+        spicy: 3,
+        composition: ['smoked meat'],
+        img: 'img/spicy/alexandrite.png'
+    },
+    {
+        id: 7,
+        name: 'Fenix',
+        spicy: 3,
+        composition: ['apple', 'cinnamon'],
+        img: 'img/spicy/fenix.png'
     }
 ]
 </script>
