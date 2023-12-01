@@ -5,44 +5,89 @@
         </header>
         <h1>Posts</h1>
         <hr />
-        <ul>
-            <li>
-                <NuxtLink to="/posts/lotto649">
-                    Lotto 6.49 predict
-                    <img src="/img/pexels-waldemar-5550130.jpg" width="325">
+        <div class="alert alert-danger" role="alert">
+            Pages are under construction. Please, come back later !
+        </div>
+        <div class="d-flex flex-wrap justify-content-around">
+            <span v-for="post in posts">
+                <NuxtLink :to="post.path">
+                    <div class="card mb-4 shadow" style="width: 18rem;">
+                        <img :src="post.picture" class="card-img-top" :alt="post.name">
+                        <div class="card-body">
+                            <strong class="card-title">{{ post.name }}</strong>
+                            <hr />
+                            <p class="card-text text-justify">{{ post.desc }}</p>
+                            <small v-if="post.date">
+                                <em class="post-date">
+                                    {{ post.date }}
+                                </em>
+                            </small>
+                        </div>
+                    </div>
                 </NuxtLink>
-            </li>
-            <li>
-                <NuxtLink to="/posts/stock">
-                    Stock forecast
-                    <img src="/img/pexels-energepiccom-159888.jpg" width="325">
-                </NuxtLink>
-            </li>
-            <li>
-                <NuxtLink to="/posts/frontend">
-                    Blog & frontend
-                    <img src="/img/pexels-christina-morillo-1181271.jpg" width="325">
-                </NuxtLink>
-            </li>
-            <li>
-                <NuxtLink to="/posts/python">
-                    🐍 Python Knowledge
-                    <img src="/img/pexels-pixabay-python.jpg" width="325">
-                </NuxtLink>
-
-            </li>
-            <li>
-                <NuxtLink to="/posts/arcade">
-                    Homemade arcade
-                    <img src="/img/pexels-george-becker-374914.jpg" width="325">
-                </NuxtLink>
-            </li>
-            <li>
-                <NuxtLink to="/posts/bino">
-                    Bino project
-                    <img src="/img/pexels-musicfactory-lehmannsound-94651.jpg" width="325">
-                </NuxtLink>
-            </li>
-        </ul>
+            </span>
+        </div>
     </div>
 </template>
+
+<script setup>
+const posts = [
+    {
+        id: 1,
+        name: 'Lotto 6.49 - IRMA project',
+        path: '/posts/lotto649',
+        picture: '/img/posts/lotto.jpg',
+        desc: 'This is a scrap / AI project about lotto 6.49',
+        date: 'Year 2023'
+    },
+    {
+        id: 2,
+        name: '🐍 Python',
+        path: '/posts/python',
+        picture: '/img/posts/python.jpg',
+        desc: 'This a my personnal notes on Python',
+        date: ''
+    },
+    {
+        id: 3,
+        name: 'Stock Project',
+        path: '/posts/stock',
+        picture: '/img/posts/stock.jpg',
+        desc: 'Stock project',
+        date: ''
+    },
+    {
+        id: 4,
+        name: 'Nuxt3 - VueJS - Netlify',
+        path: '/posts/frontend',
+        picture: '/img/posts/frontend.jpg',
+        desc: 'Nuxt3, VueJS and Netlify notes',
+        date: ''
+    },
+    {
+        id: 5,
+        name: 'Building a homemade Arcade box',
+        path: '/posts/arcade',
+        picture: '/img/posts/arcade.jpg',
+        desc: 'I build an arcade box, here is how I did it',
+        date: ''
+    },
+    {
+        id: 6,
+        name: 'Bino project - Youtube without ads',
+        path: '/posts/bino',
+        picture: '/img/posts/bino.jpg',
+        desc: 'I build a Youtube without ads',
+        date: ''
+    }
+]
+</script>
+
+<style scoped>
+a {
+    text-decoration: none;
+}
+em.post-date {
+    color: gray;
+}
+</style>

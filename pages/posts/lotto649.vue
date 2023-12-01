@@ -7,6 +7,14 @@ const { pending, error, data } = await useFetch('/draw/last');
         <header>
             <title>cleguen | 🔮 IRMA</title>
         </header>
+        <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                    <NuxtLink to="/posts">Posts</NuxtLink>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">IRMA</li>
+            </ol>
+        </nav>
         <h1>Lotto 6.49 - IRMA project</h1>
         <hr />
         <div v-if="pending">
