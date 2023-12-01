@@ -3,7 +3,6 @@
         <header>
             <title>cleguen | 🌶️ spicy sauces</title>
         </header>
-        <h1>Custom spicy sauces</h1>
         <div class="d-flex flex-wrap justify-content-around">
             <span v-for="sauce in sauces">
                 <div class="card bg-dark text-white m-1" style="max-width: 200px;">
@@ -28,8 +27,6 @@
 </template>
 
 <script setup>
-import { capitalize } from 'vue';
-
 const sauces = [
     {
         id: 1,
