@@ -19,19 +19,21 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/"),
   },
-
   css: [
     "~/assets/css/main.scss"
   ],
-
   routeRules: {
     '/draw/last': {
       proxy: {
         to: "http://167.114.115.103:21000/draw/last",
       },
+    },
+    '/draw/stats': {
+      proxy: {
+        to: "http://167.114.115.103:21000/draw/stats",
+      },
     }
   },
 
-  modules: [
-  ]
+  modules: []
 })

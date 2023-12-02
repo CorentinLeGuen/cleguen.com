@@ -18,6 +18,9 @@
                 <NuxtLink class="nav-link" to="/spicy">Spicy sauces</NuxtLink>
               </li>
               <li class="nav-item">
+                <NuxtLink class="nav-link" to="/games">Games</NuxtLink>
+              </li>
+              <li class="nav-item">
                 <NuxtLink class="nav-link" to="/about">About</NuxtLink>
               </li>
             </ul>
@@ -34,6 +37,7 @@
 <style scoped>
 .router-link-exact-active {
   font-weight: bold;
+  color: #455EC3;
 }
 
 .navbar-toggler {
