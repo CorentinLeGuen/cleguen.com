@@ -10,7 +10,7 @@
           </button>
           <div class="collapse navbar-collapse text-center" id="navbarNav">
             <hr />
-            <ul class="navbar-nav">
+            <ul class="navbar-nav me-auto">
               <li class="nav-item">
                 <NuxtLink class="nav-link" to="/posts">Posts</NuxtLink>
               </li>
@@ -24,6 +24,12 @@
                 <NuxtLink class="nav-link" to="/about">About</NuxtLink>
               </li>
             </ul>
+            <div class="form-group">
+              <select class="form-select" v-model="locale">
+                <option value="en">EN</option>
+                <option value="fr">FR</option>
+              </select>
+            </div>
           </div>
         </div>
       </nav>
@@ -33,6 +39,10 @@
     </NuxtLayout>
   </div>
 </template>
+
+<script setup>
+const { locale } = useI18n()
+</script>
 
 <style scoped>
 .router-link-exact-active {
