@@ -2,9 +2,9 @@
 const { pending: pending_last, error: error_last, data: data_last } = await useFetch('/draw/last');
 const { pending: pending_stats, error: error_stats, data: data_stats } = await useFetch('/draw/stats');
 const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
-    k: parseInt(draws[0].split('_')[1]),
-    c: parseInt(draws[1].complementary),
-    t: parseInt(draws[1].total_occurrence)
+    key: parseInt(draws[0].split('_')[1]),
+    comp: parseInt(draws[1].complementary),
+    total: parseInt(draws[1].total_occurrence)
 }));
 </script>
 
@@ -57,6 +57,7 @@ const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
                 </div>
             </div>
         </div>
+        <br />
         <div v-if="pending_stats">
             <h2>Fetching data for stats</h2>
         </div>
@@ -69,6 +70,7 @@ const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
                 <div class="col col-lg-6">First draw <strong>{{ data_stats.date_start }}</strong> and last draw <strong>{{
                     data_stats.date_end }}</strong> for a total of <strong>{{ data_stats.total }}</strong> draws.</div>
             </div>
+            <br />
             <table class="table table-striped table-hover table-borderless table-sm">
                 <caption>This table is generated with <em>{{ data_stats.total }}</em> records.</caption>
                 <thead>
@@ -79,10 +81,10 @@ const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="draw, draw_key in data_stats.draws">
-                        <th scope="row">{{ draw_key.split('_')[1] }}</th>
-                        <td>{{ draw.total_occurrence }}</td>
-                        <td>{{ draw.complementary }}</td>
+                    <tr v-for="draw in data_array">
+                        <th scope="row">{{ draw.key }}</th>
+                        <td>{{ draw.total }}</td>
+                        <td>{{ draw.comp }}</td>
                     </tr>
                 </tbody>
             </table>
@@ -90,8 +92,4 @@ const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
     </div>
 </template>
 
-<style scoped>
-.text-gray-500 {
-    color: red;
-}
-</style>
+<style scoped></style>
