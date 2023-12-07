@@ -9,6 +9,11 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "overrides": {
+    "vite": {
+      "rollup": "npm:@rollup/wasm-node"
+    }
+  },
   "devDependencies": {
     "@intlify/vue-router-bridge": "^1.0.1",
     "@nuxt/devtools": "latest",
