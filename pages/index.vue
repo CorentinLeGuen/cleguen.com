@@ -3,11 +3,15 @@
         <header>
             <title>cleguen | homepage</title>
         </header>
-        <h1 class="text-center">Welcome !</h1>
+        <h1 class="text-center">{{ $t('welcome') }}</h1>
         <hr />
         <div class="alert alert-danger text-center" role="alert">
-            This website is under construction. You can still <a class="link-offset-2 link-underline link-underline-opacity-0" style="color: #D16C15;"
-                href="mailto:contact@cleguen.com">contact me</a>.
+            {{ $t('under_construction') }} {{ $t('contact_intro') }} <a class="link-offset-2 link-underline link-underline-opacity-0" style="color: #D16C15;"
+                href="mailto:contact@cleguen.com">{{ $t('contact') }}</a>.
+        </div>
+        <br />
+        <div class="alert alert-danger text-center" role="alert">
+            {{ $t('under_construction_translate') }}
         </div>
     </div>
 </template>
