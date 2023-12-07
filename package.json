@@ -10,12 +10,15 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@intlify/vue-router-bridge": "^1.0.1",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@^8.0.0-rc.6-28359903.bcd6198",
     "nuxt": "^3.8.2",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@intlify/vue-i18n-bridge": "^1.0.1",
     "bootstrap": "^5.3.2",
     "sass": "^1.69.5"
   }
