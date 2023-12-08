@@ -12,7 +12,7 @@
             <span v-for="post in posts">
                 <NuxtLink :to="post.path">
                     <div class="card mb-4 shadow" style="width: 18rem;">
-                        <img :src="post.picture" class="card-img-top" :alt="post.name">
+                        <img :src="post.picture" class="card-img-top" height="180" :alt="post.name">
                         <div class="card-body">
                             <strong class="card-title">{{ post.name }}</strong>
                             <hr />
@@ -38,7 +38,7 @@ const posts = [
         path: '/posts/lotto649',
         picture: '/img/posts/lotto.jpg',
         desc: 'This is a scrap / AI project about lotto 6.49',
-        date: 'Year 2023'
+        date: 'Year 2023 - still in progress'
     },
     {
         id: 2,
@@ -46,7 +46,7 @@ const posts = [
         path: '/posts/python',
         picture: '/img/posts/python.jpg',
         desc: 'This a my personnal notes on Python',
-        date: ''
+        date: '~ Continuous documentation ~'
     },
     {
         id: 3,
@@ -54,7 +54,7 @@ const posts = [
         path: '/posts/stock',
         picture: '/img/posts/stock.jpg',
         desc: 'Stock project',
-        date: ''
+        date: 'Not started'
     },
     {
         id: 4,
@@ -62,7 +62,7 @@ const posts = [
         path: '/posts/frontend',
         picture: '/img/posts/frontend.jpg',
         desc: 'Nuxt3, VueJS and Netlify notes',
-        date: ''
+        date: 'Started Dec. 2023'
     },
     {
         id: 5,
@@ -70,7 +70,7 @@ const posts = [
         path: '/posts/arcade',
         picture: '/img/posts/arcade.jpg',
         desc: 'I build an arcade box, here is how I did it',
-        date: ''
+        date: 'Started Nov. 2023'
     },
     {
         id: 6,
@@ -78,7 +78,15 @@ const posts = [
         path: '/posts/bino',
         picture: '/img/posts/bino.jpg',
         desc: 'I build a Youtube without ads',
-        date: ''
+        date: 'Not started'
+    },
+    {
+        id: 6,
+        name: 'Bolt - API testing tool',
+        path: '/posts/bolt',
+        picture: '/img/posts/bolt.png',
+        desc: 'An API tool like Postman',
+        date: 'Not started'
     }
 ]
 </script>

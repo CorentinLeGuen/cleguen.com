@@ -1,17 +1,16 @@
 <template>
     <div>
         <header>
-            <title>cleguen | 📈 stock</title>
+            <title>cleguen | 🗳️ bolt</title>
         </header>
         <nav style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">
                     <NuxtLink to="/posts">Posts</NuxtLink>
                 </li>
-                <li class="breadcrumb-item active" aria-current="page">Stock</li>
+                <li class="breadcrumb-item active" aria-current="page">Bolt</li>
             </ol>
         </nav>
-        <h1>Stock</h1>
-        <p>https://www.investopedia.com/articles/optioninvestor/07/swaps.asp</p>
+        <h1>Bolt app</h1> 
     </div>
 </template>
