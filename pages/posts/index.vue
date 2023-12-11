@@ -79,14 +79,6 @@ const posts = [
         picture: '/img/posts/bino.jpg',
         desc: 'I build a Youtube without ads',
         date: 'Not started'
-    },
-    {
-        id: 6,
-        name: 'Bolt - API testing tool',
-        path: '/posts/bolt',
-        picture: '/img/posts/bolt.png',
-        desc: 'An API tool like Postman',
-        date: 'Not started'
     }
 ]
 </script>

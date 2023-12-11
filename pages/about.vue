@@ -44,7 +44,11 @@ import { capitalize } from 'vue';
                 </div>
             </li>
         </ul>
-
+        <div class="container text-center m-5">
+            <a href="https://www.buymeacoffee.com/corentinleguen" target="_blank">
+                <img class="rounded" src="/img/buy-me-a-coffee.png" alt="buy me a coffee img" />
+            </a>
+        </div>
     </div>
 </template>
 
