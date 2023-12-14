@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     "@": resolve(__dirname, "/"),
   },
   css: [
-    "~/assets/css/main.scss"
+    "~/assets/css/tailwind.css"
   ],
   routeRules: {
     '/draw/last': {
@@ -37,8 +37,12 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/i18n',
+    '@nuxtjs/tailwindcss',
   ],
   i18n: {
     vueI18n: './i18n.config.ts'
+  },
+  tailwindcss: {
+    // Options
   }
 })
