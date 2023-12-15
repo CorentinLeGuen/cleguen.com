@@ -3,22 +3,20 @@
         <header>
             <title>cleguen | 🌶️ spicy sauces</title>
         </header>
-        <div class="d-flex flex-wrap justify-content-around">
+        <div>
             <span v-for="sauce in sauces">
-                <div class="card bg-dark text-white m-1" style="max-width: 200px;">
-                    <img class="rounded card-img" :src="sauce.img" alt="sauce picture" height="215" />
-                    <div class="card-img-overlay" style="background-color: rgba(0, 0, 0, 0.3)">
-                        <p class="card-title">
+                <div>
+                    <img :src="sauce.img" alt="sauce picture" height="215" />
+                    <div>
+                        <p>
                             {{ sauce.name }}
                         </p>
-                        <ul class="list-group list-group-flush" v-for="comp in sauce.composition">
-                            <li class="list-group-item bg-transparent text-white">{{ comp }}</li>
+                        <ul v-for="comp in sauce.composition">
+                            <li>{{ comp }}</li>
                         </ul>
-                        <div class="hstack gap-0">
-                            <span v-for="i in sauce.spicy">
-                                <p class="p-0">🌶️</p>
-                            </span>
-                        </div>
+                        <span v-for="i in sauce.spicy">
+                            <p>🌶️</p>
+                        </span>
                     </div>
                 </div>
             </span>
