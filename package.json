@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "@intlify/vue-i18n-bridge": "^1.0.1",
+    "flowbite": "^2.2.0",
     "sass": "^1.69.5"
   }
 }
