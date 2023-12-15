@@ -83,66 +83,31 @@ const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
         <div v-else-if="error_last">
             <h2>Something wrong happened...</h2>
         </div>
-        <div class="text-center m-5 max-w-auto" v-else>
+        <div v-else>
             <h4>{{ $t('posts.lotto649.last_draw') }}: {{ data_last.draw_date }}</h4>
-            <ol class="w-full space-y-0 flex space-x-4 mt-2 justify-between">
-                <li class="flex items-center text-blue-500 space-x-2.5 ">
-                    <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full ">
-                        1
-                    </span>
-                    <span>
-                        <h3 class="font-medium leading-tight">{{ data_last.number_1 }}</h3>
-                    </span>
-                </li>
-                <li class="flex items-center text-blue-500  space-x-2.5 ">
-                    <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full  ">
-                        2
-                    </span>
-                    <span>
-                        <h3 class="font-medium leading-tight">{{ data_last.number_2 }}</h3>
-                    </span>
-                </li>
-                <li class="flex items-center text-blue-500  space-x-2.5 ">
-                    <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full  ">
-                        3
-                    </span>
-                    <span>
-                        <h3 class="font-medium leading-tight">{{ data_last.number_3 }}</h3>
-                    </span>
-                </li>
-                <li class="flex items-center text-blue-500  space-x-2.5 ">
-                    <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full  ">
-                        4
-                    </span>
-                    <span>
-                        <h3 class="font-medium leading-tight">{{ data_last.number_4 }}</h3>
-                    </span>
-                </li>
-                <li class="flex items-center text-blue-500  space-x-2.5 ">
-                    <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full  ">
-                        5
-                    </span>
-                    <span>
-                        <h3 class="font-medium leading-tight">{{ data_last.number_5 }}</h3>
-                    </span>
-                </li>
-                <li class="flex items-center text-blue-500  space-x-2.5 ">
-                    <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full  ">
-                        6
-                    </span>
-                    <span>
-                        <h3 class="font-medium leading-tight">{{ data_last.number_6 }}</h3>
-                    </span>
-                </li>
-                <li class="flex items-center text-purple-500  space-x-2.5 ">
-                    <span class="flex items-center justify-center w-8 h-8 border border-purple-500 rounded-full  ">
-                        C
-                    </span>
-                    <span>
-                        <h3 class="font-medium leading-tight">{{ data_last.number_c }}</h3>
-                    </span>
-                </li>
-            </ol>
+            <div class="flex items-center mx-auto justify-center">
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                    <p class="font-medium leading-tight text-blue-500">{{ data_last.number_1 }}</p>
+                </span>
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                    <p class="font-medium leading-tight text-blue-500">{{ data_last.number_2 }}</p>
+                </span>
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                    <p class="font-medium leading-tight text-blue-500">{{ data_last.number_3 }}</p>
+                </span>
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                    <p class="font-medium leading-tight text-blue-500">{{ data_last.number_4 }}</p>
+                </span>
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                    <p class="font-medium leading-tight text-blue-500">{{ data_last.number_5 }}</p>
+                </span>
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                    <p class="font-medium leading-tight text-blue-500">{{ data_last.number_6 }}</p>
+                </span>
+                <span class="flex items-center justify-center w-8 h-8 border border-purple-500 rounded-full mx-5">
+                    <p class="font-medium leading-tight text-purple-500">{{ data_last.number_c }}</p>
+                </span>
+            </div>
         </div>
 
         <div v-if="pending_stats">
