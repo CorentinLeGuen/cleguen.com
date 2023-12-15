@@ -4,22 +4,25 @@
             <title>cleguen | 🌶️ spicy sauces</title>
         </header>
         <div>
-            <span v-for="sauce in sauces">
-                <div>
-                    <img :src="sauce.img" alt="sauce picture" height="215" />
-                    <div>
-                        <p>
+            <h1 class="text-center text-xl">{{ $t('spicy.description') }}</h1>
+
+            <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
+                <div class="bg-white border border-gray-200 rounded-lg shadow-xl mx-4" v-for="sauce in sauces">
+                    <img class="rounded-t-lg w-full" :src="sauce.img" alt="" />
+                    <div class="p-5">
+                        <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 ">
                             {{ sauce.name }}
-                        </p>
-                        <ul v-for="comp in sauce.composition">
-                            <li>{{ comp }}</li>
+                        </h5>
+                        <hr/>
+                        <p class="text-sm text-gray-500 underline">{{ $t('spicy.spicy_factor') }}:</p>
+                        <ul class="flex items-center mx-auto justify-center">
+                            <li class="mx-3" v-for="i in sauce.spicy">🌶️</li>
                         </ul>
-                        <span v-for="i in sauce.spicy">
-                            <p>🌶️</p>
-                        </span>
                     </div>
                 </div>
-            </span>
+            </div>
         </div>
     </div>
 </template>

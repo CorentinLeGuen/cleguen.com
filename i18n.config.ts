@@ -18,7 +18,9 @@ export default defineI18nConfig(() => ({
                 about_resume_3: 'Throughout my career, I\'ve also worked with other cutting-edge technologies, including Golang, R, Symfony, Sonar, Gatling, Cassandra, Docker, Kafka, and more. My approach to software development is marked by creatively solving complex problems and delivering effective solutions. Driven by a passion for continuous learning, I strive to stay at the forefront of the latest technological advancements to bring added value to any project I contribute to.',
             },
             spicy: {
-                title: 'Spicy sauces'
+                title: 'Spicy sauces',
+                description: 'This is some spicy sauces I made for friends',
+                spicy_factor: 'Spicy Factor'
             },
             posts: {
                 title: 'Posts',
@@ -51,7 +53,9 @@ export default defineI18nConfig(() => ({
                 about_resume_3: 'Au fil de ma carrière, j\'ai également travaillé avec d\'autres technologies de pointe, notamment Golang, R, Symfony, Sonar, Gatling, Cassandra, Docker, Kafka, et bien plus encore. Mon approche du développement logiciel est marquée par la résolution créative de problèmes complexes et la fourniture de solutions efficaces. Passionné par l\'apprentissage continu, je m\'efforce de rester à la pointe des dernières avancées technologiques pour apporter une valeur ajoutée à tout projet auquel je contribue.',
             },
             spicy: {
-                title: 'Sauces piquantes'
+                title: 'Sauces piquantes',
+                description: 'Voici quelques sauces piquantes que j\'ai fait pour des amis.',
+                spicy_factor: 'Facteur de piquance'
             },
             posts: {
                 title: 'Articles',
