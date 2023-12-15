@@ -1,63 +1,23 @@
-
-import { capitalize } from 'vue';
 <template>
     <div>
         <header>
             <title>cleguen | about</title>
         </header>
-        <h1 class="text-center">{{ $t('about') }}</h1>
-        <hr />
-        <div class="container-md mb-4">
-            <p>{{ $t('about_resume_1') }}</p>
-            <p>{{ $t('about_resume_2') }}</p>
-            <p>{{ $t('about_resume_3') }}</p>
+        <h1 class="title text-5xl text-center">{{ $t('about.title') }}</h1>
+        <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
+
+        <div class="text-justify">
+            <p>{{ $t('about.about_resume_1') }}</p>
+            <br/>
+            <p>{{ $t('about.about_resume_2') }}</p>
+            <br/>
+            <p>{{ $t('about.about_resume_3') }}</p>
         </div>
-        <br />
-        <p>{{ $t('presently_learning') }}</p>
-        <ul class="list-group list-group-flush">
-            <li class="list-group-item">
-                <h5>Python / numpy / pandas / scikit learn</h5>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-success progress-bar-animated" role="progressbar"
-                        style="width: 82%" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <h5>Nuxt3</h5>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
-                        style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <h5>Tailwind</h5>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
-                        style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </li>
-            <li class="list-group-item">
-                <h5>Android</h5>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-striped bg-info progress-bar-animated" role="progressbar"
-                        style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </li>
-        </ul>
-        <div class="container text-center m-5">
-            <a href="https://www.buymeacoffee.com/corentinleguen" target="_blank">
-                <img class="rounded" src="/img/buy-me-a-coffee.png" alt="buy me a coffee img" />
-            </a>
-        </div>
+
+        <h4 class="text-md text-center mt-10 mb-5">{{ $t('about.support') }}</h4>
+        <a href="https://www.buymeacoffee.com/corentinleguen" target="_blank">
+            <img class="h-auto max-w-lg mx-auto shadow-xl rounded-lg" src="/img/buy-me-a-coffee.png" alt="buy me a coffee img" />
+        </a>
+
     </div>
 </template>
-
-<style scoped>
-h1 {
-    text-transform: capitalize;
-}
-
-p {
-    text-justify: auto;
-}
-</style>

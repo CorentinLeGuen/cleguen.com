@@ -19,9 +19,6 @@ export default defineNuxtConfig({
   alias: {
     "@": resolve(__dirname, "/"),
   },
-  css: [
-    "~/assets/css/main.scss"
-  ],
   routeRules: {
     '/draw/last': {
       proxy: {
@@ -37,6 +34,7 @@ export default defineNuxtConfig({
 
   modules: [
     '@nuxtjs/i18n',
+    '@nuxtjs/tailwindcss',
   ],
   i18n: {
     vueI18n: './i18n.config.ts'
