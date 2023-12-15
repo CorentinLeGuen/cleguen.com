@@ -86,25 +86,25 @@ const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
         <div v-else>
             <h4>{{ $t('posts.lotto649.last_draw') }}: {{ data_last.draw_date }}</h4>
             <div class="flex items-center mx-auto justify-center">
-                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full sm:mx-1 md:mx-3 xl:mx-5">
                     <p class="font-medium leading-tight text-blue-500">{{ data_last.number_1 }}</p>
                 </span>
-                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full sm:mx-1 md:mx-3 xl:mx-5">
                     <p class="font-medium leading-tight text-blue-500">{{ data_last.number_2 }}</p>
                 </span>
-                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full sm:mx-1 md:mx-3 xl:mx-5">
                     <p class="font-medium leading-tight text-blue-500">{{ data_last.number_3 }}</p>
                 </span>
-                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full sm:mx-1 md:mx-3 xl:mx-5">
                     <p class="font-medium leading-tight text-blue-500">{{ data_last.number_4 }}</p>
                 </span>
-                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full sm:mx-1 md:mx-3 xl:mx-5">
                     <p class="font-medium leading-tight text-blue-500">{{ data_last.number_5 }}</p>
                 </span>
-                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full mx-5">
+                <span class="flex items-center justify-center w-8 h-8 border border-blue-500 rounded-full sm:mx-1 md:mx-3 xl:mx-5">
                     <p class="font-medium leading-tight text-blue-500">{{ data_last.number_6 }}</p>
                 </span>
-                <span class="flex items-center justify-center w-8 h-8 border border-purple-500 rounded-full mx-5">
+                <span class="flex items-center justify-center w-8 h-8 border border-purple-500 rounded-full sm:mx-1 md:mx-3 xl:mx-5">
                     <p class="font-medium leading-tight text-purple-500">{{ data_last.number_c }}</p>
                 </span>
             </div>
