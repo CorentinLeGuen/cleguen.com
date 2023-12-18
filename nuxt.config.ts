@@ -29,9 +29,6 @@ export default defineNuxtConfig({
       proxy: {
         to: "http://167.114.115.103:21000/draw/stats",
       },
-    },
-    '/posts/lotto649': {
-      prerender: true
     }
   },
 
