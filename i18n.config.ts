@@ -38,10 +38,6 @@ export default defineI18nConfig(() => ({
                     stats_over_2: 'draws',
                     alert_table_sort: 'I am presently working on a way to sort this table.',
                     api_tools: 'What tools are available via IRMA APIs?',
-                    api_our_services: 'Our Services',
-                    api_services_detail: 'Services are summarized below. To get full access to the APIs, you can use',
-                    api_access_form: 'the access form',
-                    api_ask_access: 'Ask a full access',
                     desc: {
                         path: 'Service Path',
                         draw_last: 'Last draw',
@@ -94,10 +90,6 @@ export default defineI18nConfig(() => ({
                     stats_over_2: 'tirages',
                     alert_table_sort: 'Je travaille actuellement sur un moyen de trier les éléments de cette table.',
                     api_tools: 'Quels outils sont disponible via les APIs de IRMA ?',
-                    api_our_services: 'Nos services',
-                    api_services_detail: 'Les services sont résumés ci-dessous. Pour obtenir un accès complet aux APIs, vous pouvez utiliser',
-                    api_access_form: 'le formulaire d\'accès',
-                    api_ask_access: 'Demander un accès complet',
                     desc: {
                         path: 'Chemin d\'accès',
                         draw_last: 'Dernier tirage',
