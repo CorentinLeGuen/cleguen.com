@@ -294,7 +294,7 @@ const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
         </div>
         <div>
             <h4 class="text-center text-xl capitalize" id="access-form">{{ $t('posts.lotto649.api_access_form') }}</h4>
-            <form class="max-w-lg mx-auto border p-5 rounded shadow-lg" netlify>
+            <form class="max-w-lg mx-auto border p-5 rounded shadow-lg" name="api-access" netlify>
                 <label for="email-address-icon" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
                     {{ $t('form.email') }}
                 </label>
