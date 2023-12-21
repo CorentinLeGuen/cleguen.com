@@ -10,10 +10,5 @@
 
         <p class="text-center">{{ $t('under_construction') }}</p>
         <p class="text-center">{{ $t('under_construction_translate') }}</p>
-
-        <br />
-
-        <img  class="h-auto max-w-lg rounded-lg shadow-xl mx-auto" src="/img/picture.gif" alt="picture of the month" />
-
     </div>
 </template>
