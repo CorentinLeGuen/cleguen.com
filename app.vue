@@ -30,7 +30,7 @@
                             </li>
                         </ul>
                     </div>
-                    <select class="border border-gray-300 rounded-lg bg-gray-50 text-sm p-2 focus:border-1 focus:border-forest-500 focus:ring-0" v-model="locale">
+                    <select class="border border-gray-300 rounded-lg bg-gray-50 text-sm p-2 focus:border-1 focus:border-gray-200 focus:ring-0" v-model="locale">
                         <option value="en">English</option>
                         <option value="fr">Français</option>
                     </select>

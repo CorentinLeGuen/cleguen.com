@@ -8,7 +8,7 @@
             <ol class="inline-flex items-center space-x-1 md:space-x-2 ">
                 <li class="inline-flex items-center">
                     <NuxtLink to="/"
-                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 dark:text-gray-400 dark:hover:text-white">
+                        class="inline-flex items-center text-sm font-medium text-gray-700 hover:text-forest-700">
                         <svg class="w-3 h-3 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                             fill="currentColor" viewBox="0 0 20 20">
                             <path
@@ -24,7 +24,7 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m1 9 4-4-4-4" />
                         </svg>
-                        <NuxtLink class="ms-1 text-sm font-medium text-gray-700 hover:text-blue-600 md:ms-2" to="/posts">{{
+                        <NuxtLink class="ms-1 text-sm font-medium text-gray-700 hover:text-forest-700 md:ms-2" to="/posts">{{
                             $t('posts.title') }}</NuxtLink>
                     </div>
                 </li>
@@ -35,14 +35,14 @@
                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="m1 9 4-4-4-4" />
                         </svg>
-                        <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2 dark:text-gray-400">Git Cheat
+                        <span class="ms-1 text-sm font-medium text-gray-500 md:ms-2">Git Cheat
                             Sheet</span>
                     </div>
                 </li>
             </ol>
         </nav>
 
-        <h1 class="title text-5xl text-center m-10">Git Cheat Sheet</h1>
+        <h1 class="title text-5xl text-center m-10 text-forest-500">Git Cheat Sheet</h1>
 
         <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 
@@ -56,7 +56,7 @@
                 <p>git commit --amend --no-edit</p>
                 <p>git push -f</p>
             </div>
-            <p class="text-sm text-gray-600">avec <em>--no-edit</em> cela permet de ne pas changer le message du commit</p>
+            <p class="text-sm text-gray-600 ml-0 md:ml-5">avec <em>--no-edit</em> cela permet de ne pas changer le message du commit</p>
         </div>
 
         <div class="mt-10">
@@ -64,7 +64,7 @@
             <div class="border border-l-8 bg-gray-50 pl-5 my-5 font-mono">
                 <p>git remote set-url origin &lt;url&gt;</p>
             </div>
-            <p class="text-sm text-gray-600">remplacez &lt;url&gt; par la nouvelle adresse de votre projet</p>
+            <p class="text-sm text-gray-600 ml-0 md:ml-5">remplacez &lt;url&gt; par la nouvelle adresse de votre projet</p>
         </div>
     </div>
 </template>
