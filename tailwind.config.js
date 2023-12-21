@@ -10,6 +10,17 @@ export default {
   ],
   theme: {
     extend: {},
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      forest: {
+        100: '#E4F4E9',
+        300: '#A0D5B1',
+        500: '#4B9C67',
+        700: '#316844',
+        900: '#24432F',
+      }
+    }
   },
   plugins: [
     require('flowbite/plugin')

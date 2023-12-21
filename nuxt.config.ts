@@ -1,6 +1,7 @@
 import { resolve } from "path";
 export default defineNuxtConfig({
   app: {},
+  css: ['~/assets/input.css'],
   alias: {
     "@": resolve(__dirname, "/"),
   },
