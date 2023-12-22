@@ -57,6 +57,21 @@
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
                 </svg>
+                Pour changer le nom de la branche <em>master</em>:
+            </h4>
+            <div class="border border-l-8 bg-gray-50 pl-5 my-5 font-mono">
+                <p>git branch -M main</p>
+            </div>
+            <p class="text-sm text-gray-600 ml-0 md:ml-5">pour renommer la branche de <em>master</em> à <em>main</em></p>
+        </div>
+
+        <div class="mt-10">
+            <h4 class="text-xl items-center flex gap-3">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 8 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
+                </svg>
                 Ajouter des modifications au précédent commit poussé:
             </h4>
             <div class="border border-l-8 bg-gray-50 pl-5 my-5 font-mono">

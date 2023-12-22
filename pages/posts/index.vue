@@ -11,7 +11,7 @@
                 <NuxtLink to="/posts/lotto649">
                     <img class="rounded-lg" src="/img/posts/lotto.jpg" alt="image description">
                 </NuxtLink>
-                <figcaption class="text-center absolute px-4 text-3xl font-semibold text-white bottom-6 left-6">
+                <figcaption class="text-center absolute px-4 text-xl md:text-3xl font-semibold text-white bottom-6 left-6">
                     <p>Lotto 6.49</p>
                 </figcaption>
             </figure>
@@ -19,7 +19,7 @@
                 <NuxtLink to="/posts/git-notes">
                     <img class="rounded-lg" src="/img/posts/git.jpg" alt="image description">
                 </NuxtLink>
-                <figcaption class="text-center absolute px-4 text-3xl font-semibold text-black bottom-6 left-6">
+                <figcaption class="text-center absolute px-4 text-xl md:text-3xl font-semibold text-black bottom-6 left-6">
                     <p>Git Cheat Sheet</p>
                 </figcaption>
             </figure>
