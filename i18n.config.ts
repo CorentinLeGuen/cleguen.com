@@ -51,6 +51,18 @@ export default defineI18nConfig(() => ({
                         predict_stats: 'Get prediction stats',
                         predict_hist: 'Get the list of predictions and their accuracy score'
                     }
+                },
+                git: {
+                    intro_1: 'Here is a list of git command that I think are useful and not necessarily known.',
+                    intro_2: 'I will skip',
+                    title_1: 'To change the name of the branch',
+                    title_1_sub_1: 'to rename branch from',
+                    title_1_sub_2: 'to',
+                    title_2: 'To add updates to the last commit',
+                    title_2_sub_1: 'with',
+                    title_2_sub_2: 'can skip the name update of the last commit. You can keep it to change it.',
+                    title_3: 'Change the URL of the git project',
+                    title_3_sub: 'replace <url> with the new project path'
                 }
             }
         },
@@ -103,6 +115,18 @@ export default defineI18nConfig(() => ({
                         predict_stats: 'Retourne la liste des prédicitions qui ont été faites',
                         predict_hist: 'Retourne l\'ensemble des prédictions ainsi que leur précision'
                     }
+                },
+                git: {
+                    intro_1: 'Voici une liste des commandes Git utiles et pas forcément connues.',
+                    intro_2: 'Je passerais les',
+                    title_1: 'Pour changer le nom de la branche',
+                    title_1_sub_1: 'pour renommer la branche de',
+                    title_1_sub_2: 'à',
+                    title_2: 'Ajouter des modifications au précédent commit poussé',
+                    title_2_sub_1: 'avec',
+                    title_2_sub_2: 'cela permet de ne pas changer le message du commit.',
+                    title_3: 'Si on a déplacé ou supprimé le projet et qu\'on veut changer l\'URL',
+                    title_3_sub: 'remplacez <url> par la nouvelle adresse de votre projet'
                 }
             }
         }
