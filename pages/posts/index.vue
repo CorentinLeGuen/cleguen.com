@@ -27,6 +27,16 @@
                     </figcaption>
                 </figure>
             </NuxtLink>
+            <NuxtLink to="/posts/3d-print">
+                <figure
+                    class="relative max-w-sm transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0 border rounded-lg shadow-md hover:shadow-lg">
+                    <img class="rounded-lg" src="/img/posts/3dprint.png" alt="image description">
+                    <figcaption
+                        class="text-center absolute px-4 text-xl md:text-3xl font-semibold text-white bottom-6 left-6">
+                        <p>3D print</p>
+                    </figcaption>
+                </figure>
+            </NuxtLink>
         </div>
     </div>
 </template>
