@@ -19,11 +19,6 @@ export default defineI18nConfig(() => ({
             form: {
                 email: 'Your Email'
             },
-            spicy: {
-                title: 'Spicy sauces',
-                description: 'This is some spicy sauces I made for friends',
-                spicy_factor: 'Spicy Factor'
-            },
             posts: {
                 title: 'Posts',
                 lotto649: {
@@ -81,11 +76,6 @@ export default defineI18nConfig(() => ({
             },
             form: {
                 email: 'Votre Courriel'
-            },
-            spicy: {
-                title: 'Sauces piquantes',
-                description: 'Voici quelques sauces piquantes que j\'ai fait pour des amis.',
-                spicy_factor: 'Facteur de piquance'
             },
             posts: {
                 title: 'Articles',

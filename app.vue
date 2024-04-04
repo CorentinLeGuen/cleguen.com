@@ -23,11 +23,6 @@
                                 <NuxtLink class="block py-2 px-3 md:p-0 text-gray-900 rounded md:hover:bg-transparent md:border-0 hover:text-forest-500"
                                     to="/posts">{{ $t('posts.title') }}</NuxtLink>
                             </li>
-                            <li>
-                                <NuxtLink
-                                    class="block py-2 px-3 md:p-0 text-gray-900 rounded md:hover:bg-transparent md:border-0 hover:text-forest-500"
-                                    to="/spicy">{{ $t('spicy.title') }}</NuxtLink>
-                            </li>
                         </ul>
                     </div>
                     <select class="border border-gray-300 rounded-lg bg-gray-50 text-sm p-2 focus:border-1 focus:border-gray-200 focus:ring-0" v-model="locale">

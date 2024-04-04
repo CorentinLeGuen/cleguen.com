@@ -1,0 +1,78 @@
+https://platform.openai.com/docs/quickstart?context=python
+
+
+from openai import OpenAI
+client = OpenAI()
+
+completion = client.chat.completions.create(
+  model="gpt-3.5-turbo",
+  messages=[
+    {"role": "system", "content": "You are a poetic assistant, skilled in explaining complex programming concepts with creative flair."},
+    {"role": "user", "content": "Compose a poem that explains the concept of recursion in programming."}
+  ]
+)
+
+print(completion.choices[0].message)
+
+
+
+
+
+Game@DESKTOP-N85VVO1 MINGW64 ~/Documents/test-openai (master)
+$ python main.py 
+Traceback (most recent call last):
+  File "C:\Users\Game\Documents\test-openai\main.py", line 5, in <module>
+    completion = client.chat.completions.create(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\_utils\_utils.py", line 271, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\resources\chat\completions.py", line 648, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\_base_client.py", line 1179, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\_base_client.py", line 868, in request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\_base_client.py", line 944, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\_base_client.py", line 992, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\_base_client.py", line 944, in _request
+    return self._retry_request(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\_base_client.py", line 992, in _retry_request
+    return self._request(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\Game\Documents\test-openai\.venv\Lib\site-packages\openai\_base_client.py", line 959, in _request
+    raise self._make_status_error_from_response(err.response) from None
+openai.RateLimitError: Error code: 429 - {'error': {'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/gui
+des/error-codes/api-errors.', 'type': 'insufficient_quota', 'param': None, 'code': 'insufficient_quota'}}
+
+ echo $OPENAI_API_KEY
+
+Game@DESKTOP-N85VVO1 MINGW64 ~/Documents/test-openai (master)
+$ python main.py
+ChatCompletionMessage(content="In the realm of ones and zeros, we find\nA concept abstract, an enigmatic kind\nRecursion, a word that dances in the code\nA loop within a loop, an endless ode\n\nLike a mirror reflecting its own r
+eflection,\nRecursion calls upon its own affection\nIt's a journey within, a rabbit hole deep,\nWhere the mystery of loops takes a daring leap\n\nImagine, if you will, a Russian doll so grand,\nNested within each other, they def
+iantly stand\nEach doll contains another, smaller and small,\nTill one reaches the smallest, the tiniest of all\n\nSo too, does recursion unveil its might,\nUnfolding layers, infinite in their sight\nA function calling itself, w
+ith fearless embrace,\nUnleashing its power in an infinite space\n\nThrough self-replication, it explores new ground,\nEmbedding its purpose with each cycle, profound\nProblems are conquered, boundaries are surpassed,\nWith recu
+rsion as an ally, nothing stands steadfast\n\nYet this wonder of code requires caution and care,\nFor infinite loops can create a nightmare\nConditionals and base cases, they must be known,\nTo break the cycle, and prevent a sta
+ck prone\n\nRecursion, a concept both magical and strange,\nUnleashing its beauty, with a poetic exchange\nIn the realm of programming, it shines so bright,\nA loop within a loop, traversing infinite height", role='assistant', f
+unction_call=None, tool_calls=None)
+
+
+
+C:\Users\Game\Documents\test-openai\.venv\Scripts\python.exe C:\Users\Game\Documents\test-openai\main.py
+ChatCompletionMessage(content="In the realm of coding, a tale unfolds,\nOf a powerful technique, the mind beholds,\nA mystical dance known as recursion,\nWhere elegance and complexity find collusion.\n\nImagine a forest, tranquil and serene,\nWith trees that stretch mighty and green,\nIn this vast expanse, a quest unfurls,\nTo trace the path of recursive swirls.\n\nA function embracing a looping embrace,\nCalling itself with a confident face,\nA mighty loop, not limited by time,\nRepeating the dance in a rhythm sublime.\n\nJust like a mirror reflecting its own,\nRecursion gazes deep, creating a clone,\nBreaking down problems into smaller parts,\nIt explores the depths with intricate smarts.\n\nWith each recursive step, the story begins,\nBathing in the spell of loops within,\nA mystical call, an enchanting spell,\nWhere memories reside, and answers dwell.\n\nIn this enchantment, we find a key,\nTo solve problems with effortless glee,\nDivide and conquer, the mantra resounds,\nAs recursion's magic circle rebounds.\n\nBut beware, dear friend, for an abyss awaits,\nA pitfall of endless loops, a perilous date,\nWithout a base case, the journey won't cease,\nInto infinite loops, it'll wander with ease.\n\nRecursion, a double-edged sword of might,\nUnraveling complexities day and night,\nWith patience and wisdom, it can conquer the space,\nUnleashing the power of programming's grace.\n\nSo programmers, dare to venture bold,\nHarness this technique, let your code unfold,\nEmbrace recursion, with caution, and zest,\nFor in its embrace, programming finds its best.", role='assistant', function_call=None, tool_calls=None)
+[Choice(finish_reason='stop', index=0, logprobs=None, message=ChatCompletionMessage(content="In the realm of coding, a tale unfolds,\nOf a powerful technique, the mind beholds,\nA mystical dance known as recursion,\nWhere elegance and complexity find collusion.\n\nImagine a forest, tranquil and serene,\nWith trees that stretch mighty and green,\nIn this vast expanse, a quest unfurls,\nTo trace the path of recursive swirls.\n\nA function embracing a looping embrace,\nCalling itself with a confident face,\nA mighty loop, not limited by time,\nRepeating the dance in a rhythm sublime.\n\nJust like a mirror reflecting its own,\nRecursion gazes deep, creating a clone,\nBreaking down problems into smaller parts,\nIt explores the depths with intricate smarts.\n\nWith each recursive step, the story begins,\nBathing in the spell of loops within,\nA mystical call, an enchanting spell,\nWhere memories reside, and answers dwell.\n\nIn this enchantment, we find a key,\nTo solve problems with effortless glee,\nDivide and conquer, the mantra resounds,\nAs recursion's magic circle rebounds.\n\nBut beware, dear friend, for an abyss awaits,\nA pitfall of endless loops, a perilous date,\nWithout a base case, the journey won't cease,\nInto infinite loops, it'll wander with ease.\n\nRecursion, a double-edged sword of might,\nUnraveling complexities day and night,\nWith patience and wisdom, it can conquer the space,\nUnleashing the power of programming's grace.\n\nSo programmers, dare to venture bold,\nHarness this technique, let your code unfold,\nEmbrace recursion, with caution, and zest,\nFor in its embrace, programming finds its best.", role='assistant', function_call=None, tool_calls=None))]
+
+
+
+
+
+
