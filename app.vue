@@ -1,10 +1,10 @@
 <template>
     <div>
         <NuxtLayout>
-            <nav class="border-gray-200 bg-gray-50  shadow-md mb-9">
+            <nav class="border-gray-200 bg-gray-50 shadow-md">
                 <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <NuxtLink class="flex items-center space-x-3 rtl:space-x-reverse" to="/">
-                        <span class="self-center text-2xl font-semibold whitespace-nowrap hover:text-forest-500">CLeGuen</span>
+                        <span class="self-center text-2xl font-semibold tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-forest-500 whitespace-nowrap hover:text-forest-400">CLeGuen</span>
                     </NuxtLink>
                     <button data-collapse-toggle="navbar-solid-bg" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 "
@@ -31,14 +31,14 @@
                     </select>
                 </div>
             </nav>
-            <div class="justify-between px-4 mx-auto max-w-screen-xl min-h-screen">
+            <div class="min-h-screen">
                 <NuxtPage />
             </div>
 
             <footer class="bg-white rounded-lg shadow m-3 mt-9">
                 <div class="w-full mx-auto max-w-screen-md p-3 flex items-center justify-between">
                     <span class="text-sm text-gray-500 sm:text-center">Cleguen © 2023 - {{ $t('all_right_reserved') }}</span>
-                    <NuxtLink class="me-3 md:me-5 title" to="/about">{{ $t('about.title') }}</NuxtLink>
+                    <NuxtLink class="me-3 md:me-5 capitalize" to="/about">{{ $t('about.title') }}</NuxtLink>
                 </div>
             </footer>
         </NuxtLayout>
@@ -53,9 +53,5 @@ const { locale } = useI18n();
 <style>
 .router-link-exact-active {
     color: #316844;
-}
-
-.title {
-    text-transform: capitalize;
 }
 </style>
