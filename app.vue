@@ -25,7 +25,7 @@
                             </li>
                         </ul>
                     </div>
-                    <select class="border border-gray-300 rounded-lg bg-gray-50 text-sm p-2 focus:border-1 focus:border-gray-200 focus:ring-0" v-model="locale">
+                    <select class="border border-gray-200 bg-gray-50 text-sm p-2 focus:border-1 focus:border-gray-200 focus:ring-0" v-model="locale">
                         <option value="en">English</option>
                         <option value="fr">Français</option>
                     </select>
@@ -37,9 +37,10 @@
 
             <div id="bottom-banner" tabindex="-1" class="fixed bottom-0 start-0 z-25 flex justify-between w-full p-4 border-t border-gray-200 bg-gray-50">
                 <div class="flex items-center mx-auto">
-                    <p class="flex items-center text-sm font-normal text-gray-500 dark:text-gray-400">
+                    🍪
+                    <p class="flex items-center mx-2 text-center text-sm font-normal text-gray-500">
                         <span>
-                            🍪 {{ $t('cookie_policy') }}
+                            {{ $t('cookie_policy') }}
                         </span>
                     </p>
                 </div>
