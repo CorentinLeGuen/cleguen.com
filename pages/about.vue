@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <title>cleguen | about</title>
+            <title>cleguen - {{ $t('about.title') }}</title>
         </header>
 
         <div class="my-8">

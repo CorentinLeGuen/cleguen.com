@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <title>cleguen | Git Cheat Sheet</title>
+            <title>cleguen - Git Cheat Sheet</title>
         </header>
 
         <div class="m-8">

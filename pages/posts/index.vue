@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <title>cleguen | posts</title>
+            <title>cleguen - {{ $t('posts.title') }}</title>
         </header>
 
         <div class="m-8">

@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <title>cleguen | homepage</title>
+            <title>cleguen - {{ $t('homepage') }}</title>
         </header>
 
         <section class="bg-center bg-no-repea bg-white-100 bg-blend-multiply shadow">

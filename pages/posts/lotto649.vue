@@ -11,7 +11,7 @@ const data_array = Object.entries(data_stats.value.draws).map((draws) => ({
 <template>
     <div>
         <header>
-            <title>cleguen | IRMA</title>
+            <title>cleguen - IRMA</title>
         </header>
 
         <div class="m-8">

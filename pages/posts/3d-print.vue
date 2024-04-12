@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-            <title>cleguen | 3D print</title>
+            <title>cleguen - 3D print</title>
         </header>
 
         <div class="m-8">

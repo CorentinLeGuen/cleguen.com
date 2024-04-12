@@ -11,7 +11,7 @@ export default defineI18nConfig(() => ({
             all_right_reserved: 'All Rights Reserved.',
             homepage: 'Home',
             about: {
-                title: 'about',
+                title: 'About',
                 job: 'Data Scientist, Strategist & Data Analyst',
                 resume: 'I am an experienced Data Scientist, Strategist, and Data Analyst with a solid background in back-end software development spanning over 7 years. Proficient in Python with a decade of experience, and adept at leveraging KDB/Q for data analysis. Specializing in the banking and trading sectors, with a keen understanding of industry dynamics. Possessing a strong global perspective in software development, coupled with a curiosity for learning new paradigms. Skilled in sorting, analyzing, and summarizing data to derive actionable insights.',
                 support: 'You can support and encourage me and my work with link bellow',
@@ -66,7 +66,7 @@ export default defineI18nConfig(() => ({
             all_right_reserved: 'Tous Droits Réservés.',
             homepage: 'Page principale',
             about: {
-                title: 'à propos',
+                title: 'À propos',
                 job: 'Data Scientist, Stratège et Data Analyst',
                 resume: 'Je suis un Data Scientist, un stratège et un Data Analyst expérimenté avec une solide expérience en développement de logiciels back-end depuis plus de 7 ans. Maîtrisant Python avec plus de 10 ans d\'expérience, et capable d\'utiliser efficacement KDB/Q pour l\'analyse de données. Spécialisé dans les secteurs bancaire et financier, avec une compréhension approfondie de la dynamique de l\'industrie. Possédant une forte perspective mondiale en développement de logiciels, associée à une curiosité pour apprendre de nouveaux paradigmes. Compétent dans le tri, l\'analyse et la synthèse des données pour en tirer des insights exploitables.',
                 support: 'Vous pouvez m\'offrir un café si vous le souhaitez pour me soutenir avec le lien ci-dessous',
