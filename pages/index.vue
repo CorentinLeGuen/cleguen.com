@@ -42,19 +42,19 @@
                             </svg>
                         </span>
                         <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900">
-                            {{  $t('about.job') }} <span class="text-base text-gray-400 mx-2"> @ Morgan Stanley</span>
-                            <span class="bg-forest-100 text-forest-500 text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Current position</span>
+                            {{ $t('resume.8.job_title') }} <span class="text-base text-gray-400 mx-2"> @ Morgan Stanley</span>
+                            <span class="bg-forest-100 text-forest-500 text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">{{ $t('resume.current_position') }}</span>
                         </h3>
                         <time class="block mb-2 text-sm font-normal leading-none text-gray-400">
-                            Started March 2023
+                            {{ $t('resume.8.date') }}
                         </time>
                         <ul class="ml-4 mb-4 text-base font-normal list-disc text-gray-500">
-                            <li>Develop and maintain tools and applications for data manipulation, visualization, and reporting</li>
-                            <li>Manage dashboard creation and maintenance for trading desks, providing key insights and performance metrics to facilitate informed decision-making</li>
-                            <li>Collaborate with cross-functional teams to gather requirements, design data-driven solutions, and implement scalable data pipelines</li>
-                            <li>Utilize KDB/Q for real-time data processing, querying, and analysis to support high-frequency trading strategies</li>
-                            <li>Conduct comprehensive data audits and quality assessments to ensure data integrity and reliability</li>
-                            <li>Generate actionable insights through exploratory data analysis and develop data-driven recommendations to optimize business processes and mitigate risks</li>
+                            <li>{{ $t('resume.8.line_1') }}</li>
+                            <li>{{ $t('resume.8.line_2') }}</li>
+                            <li>{{ $t('resume.8.line_3') }}</li>
+                            <li>{{ $t('resume.8.line_4') }}</li>
+                            <li>{{ $t('resume.8.line_5') }}</li>
+                            <li>{{ $t('resume.8.line_6') }}</li>
                         </ul>
                     </li>
                     <li class="mb-10 ms-6">
@@ -65,23 +65,23 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                            Senior Java Developer & Lead Tech
+                            {{ $t('resume.7.job_title') }}
                             <span class="text-base text-gray-400 mx-2"> @ Desjardins</span>
                         </h3>
                         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                            From August 2021 to March 2023
+                            {{ $t('resume.7.date') }}
                         </time>
                         <ul class="ml-4 mb-4 text-base font-normal list-disc text-gray-500">
-                            <li>Leadtech in the modernization team of Desjardins</li>
-                            <li>Deployment on Microsoft Azure</li>
-                            <li>Java/Spring API for Oracle security</li>
-                            <li>Deployment on Weblogic</li>
-                            <li>Participate to modernize the architecture</li>
-                            <li>Update / maintain an app to process files with Java/Spring</li>
-                            <li>CI/CD on BitBucket / GitHub and Concourse</li>
-                            <li>Testing with JUnit, Cucumber, Gherkin and Sonar</li>
-                            <li>Project management with Jira and Confluence for documentation</li>
-                            <li>Agile environment</li>
+                            <li>{{ $t('resume.7.line_1') }}</li>
+                            <li>{{ $t('resume.7.line_2') }}</li>
+                            <li>{{ $t('resume.7.line_3') }}</li>
+                            <li>{{ $t('resume.7.line_4') }}</li>
+                            <li>{{ $t('resume.7.line_5') }}</li>
+                            <li>{{ $t('resume.7.line_6') }}</li>
+                            <li>{{ $t('resume.7.line_7') }}</li>
+                            <li>{{ $t('resume.7.line_8') }}</li>
+                            <li>{{ $t('resume.7.line_9') }}</li>
+                            <li>{{ $t('resume.7.line_10') }}</li>
                         </ul>
                     </li>
                     <li class="mb-10 ms-6">
@@ -92,22 +92,22 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                            Senior Fullstack Developer
-                            <span class="text-base text-gray-400 mx-2"> @ National Bank of Canada</span>
+                            {{ $t('resume.6.job_title') }}
+                            <span class="text-base text-gray-400 mx-2"> @ {{ $t('resume.6.company') }}</span>
                         </h3>
                         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                            From September 2020 to August 2021
+                            {{ $t('resume.6.date') }}
                         </time>
                         <ul class="ml-4 mb-4 text-base font-normal list-disc text-gray-500">
-                            <li>Maintain apps with NodeJS</li>
-                            <li>Deployment with Ansible and Terraform</li>
-                            <li>Tests with Axios, Mocha and Sonar</li>
-                            <li>App monitoring with Splunk and DataDog</li>
-                            <li>Update of Dockerfiles</li>
-                            <li>Installation and OpenText Exstream for document generation</li>
-                            <li>Deployment scripts update with VI on Linux servers</li>
-                            <li>CI/CD on BitBucket, Jenkins, Terraform on OpenShift</li>
-                            <li>Agile environment</li>
+                            <li>{{ $t('resume.6.line_1') }}</li>
+                            <li>{{ $t('resume.6.line_2') }}</li>
+                            <li>{{ $t('resume.6.line_3') }}</li>
+                            <li>{{ $t('resume.6.line_4') }}</li>
+                            <li>{{ $t('resume.6.line_5') }}</li>
+                            <li>{{ $t('resume.6.line_6') }}</li>
+                            <li>{{ $t('resume.6.line_7') }}</li>
+                            <li>{{ $t('resume.6.line_8') }}</li>
+                            <li>{{ $t('resume.6.line_9') }}</li>
                         </ul>
                     </li>
                     <li class="mb-10 ms-6">
@@ -118,17 +118,17 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                            Fullstack Developer
-                            <span class="text-base text-gray-400 mx-2"> @ McGill University</span>
+                            {{ $t('resume.5.job_title') }}
+                            <span class="text-base text-gray-400 mx-2"> @ {{ $t('resume.5.company') }}</span>
                         </h3>
                         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                            From September 2019 to August 2020
+                            {{ $t('resume.5.date') }}
                         </time>
                         <ul class="ml-4 mb-4 text-base font-normal list-disc text-gray-500">
-                            <li>Maintain a RabbitMQ app with Java and JUnit</li>
-                            <li>Add a security layer on API Connect</li>
-                            <li>Create an algorithm and an app to confront JSON files with Jquery</li>
-                            <li>Deploy on OpenShift and GitLab</li>
+                            <li>{{ $t('resume.5.line_1') }}</li>
+                            <li>{{ $t('resume.5.line_2') }}</li>
+                            <li>{{ $t('resume.5.line_3') }}</li>
+                            <li>{{ $t('resume.5.line_4') }}</li>
                         </ul>
                     </li>
                     <li class="mb-10 ms-6">
@@ -139,20 +139,20 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                            Fullstack Developer
+                            {{ $t('resume.4.job_title') }}
                             <span class="text-base text-gray-400 mx-2"> @ BNP Paribas</span>
                         </h3>
                         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                            From November 2018 to August 2019
+                            {{ $t('resume.4.date') }}
                         </time>
                         <ul class="ml-4 mb-4 text-base font-normal list-disc text-gray-500">
-                            <li>Maintain a customer account consultation app on agile/scrum process</li>
-                            <li>Develop a Java, Spring app</li>
-                            <li>Create producers and consumers Kafka</li>
-                            <li>Upgrade Cassandra data models</li>
-                            <li>Testing with JUnit and Cucumber</li>
-                            <li>Testing load on servers with Gatling</li>
-                            <li>Help two Java junior developer</li>
+                            <li>{{ $t('resume.4.line_1')}}</li>
+                            <li>{{ $t('resume.4.line_2')}}</li>
+                            <li>{{ $t('resume.4.line_3')}}</li>
+                            <li>{{ $t('resume.4.line_4')}}</li>
+                            <li>{{ $t('resume.4.line_5')}}</li>
+                            <li>{{ $t('resume.4.line_6')}}</li>
+                            <li>{{ $t('resume.4.line_7')}}</li>
                         </ul>
                     </li>
                     <li class="mb-10 ms-6">
@@ -163,17 +163,17 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                            Fullstack Developer
-                            <span class="text-base text-gray-400 mx-2"> @ SFR (French Phone Operator)</span>
+                            {{ $t('resume.3.job_title') }}
+                            <span class="text-base text-gray-400 mx-2"> @ {{ $t('resume.3.company') }}</span>
                         </h3>
                         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                            From September 2018 to November 2018
+                            {{ $t('resume.3.date') }}
                         </time>
                         <ul class="ml-4 mb-4 text-base font-normal list-disc text-gray-500">
-                            <li>Migrate ERP (Enterprise Resource Planning)</li>
-                            <li>Migrate Oracle servers</li>
-                            <li>Maintain an app of professional accounts management</li>
-                            <li>Upgrade a Java app (upgrade Java version from Java 6 to Java 8)</li>
+                            <li>{{ $t('resume.3.line_1') }}</li>
+                            <li>{{ $t('resume.3.line_2') }}</li>
+                            <li>{{ $t('resume.3.line_3') }}</li>
+                            <li>{{ $t('resume.3.line_4') }}</li>
                         </ul>
                     </li>
                     <li class="mb-10 ms-6">
@@ -184,20 +184,20 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                            Developer
+                            {{ $t('resume.2.job_title') }}
                             <span class="text-base text-gray-400 mx-2"> @ Altitude Infrastructure</span>
                         </h3>
                         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                            From Jully 2017 to August 2018
+                            {{ $t('resume.2.date') }}
                         </time>
                         <ul class="ml-4 mb-4 text-base font-normal list-disc text-gray-500">
-                            <li>Application manager for phone operators</li>
-                            <li>Maintain a C# app</li>
-                            <li>Development of a new C# app with .NET</li>
-                            <li>Create a Front-end app to visualize KPI with C# and Bootstrap</li>
-                            <li>Installation of a new ERP (Enterprise Resource Planning) with transcoding tables</li>
-                            <li>Migrate ERP from Adonix to SageX3</li>
-                            <li>User testing</li>
+                            <li>{{ $t('resume.2.line_1') }}</li>
+                            <li>{{ $t('resume.2.line_2') }}</li>
+                            <li>{{ $t('resume.2.line_3') }}</li>
+                            <li>{{ $t('resume.2.line_4') }}</li>
+                            <li>{{ $t('resume.2.line_5') }}</li>
+                            <li>{{ $t('resume.2.line_6') }}</li>
+                            <li>{{ $t('resume.2.line_7') }}</li>
                         </ul>
                     </li>
                     <li class="mb-10 ms-6">
@@ -208,16 +208,16 @@
                             </svg>
                         </span>
                         <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">
-                            Developer
+                            {{ $t('resume.1.job_title') }}
                             <span class="text-base text-gray-400 mx-2"> @ Saagie</span>
                         </h3>
                         <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                            Starting October 2016 to June 2017
+                            {{ $t('resume.1.date') }}
                         </time>
                         <ul class="ml-4 mb-4 text-base font-normal list-disc text-gray-500">
-                            <li>Logging app to track customers journey on the website with Java, Hadoop, Cloudera and Hive</li>
-                            <li>Logging javascript library with JQuery</li>
-                            <li>UX/UI improvement</li>
+                            <li>{{ $t('resume.1.line_1') }}</li>
+                            <li>{{ $t('resume.1.line_2') }}</li>
+                            <li>{{ $t('resume.1.line_3') }}</li>
                         </ul>
                     </li>
                 </ol>
