@@ -32,7 +32,7 @@
 
             <h3 class="mb-8 text-2xl uppercase font-extrabold leading-none text-center tracking-tight text-forest-500">{{ $t('about.detailed') }}</h3>
 
-            <div class="m-8 xl:pl-64 lg:pl-32 md:pl-32 sm:pl-8">
+            <div class="m-8 2xl:pl-64 xl:pl-64 lg:pl-32 md:pl-16 sm:pl-8">
                 <ol class="relative border-s border-gray-300">
                     <li class="mb-10 ms-6">
                         <span class="absolute flex items-center justify-center w-6 h-6 bg-forest-100 rounded-full -start-3 ring-8 ring-gray-50">
