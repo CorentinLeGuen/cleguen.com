@@ -8,7 +8,7 @@
             <h1 class="text-center text-4xl uppercase font-extrabold tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-forest-500">{{ $t('posts.title') }}</h1>
             <hr class="w-1/3 h-1 mx-auto my-16 bg-gradient-to-br from-blue-50 to-forest-100 border-0 rounded"/>
 
-            <div class="grid xl:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+            <div class="grid justify-items-center gap-x-8 gap-y-4 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-2">
                 <NuxtLink to="/posts/lotto649">
                     <figure
                         class="transition-all mx-4 my-4 duration-300 cursor-pointer filter grayscale hover:grayscale-0 border rounded-lg shadow-md hover:shadow-lg">
