@@ -157,7 +157,7 @@ export default defineI18nConfig(() => ({
             about: {
                 title: 'À propos',
                 job: 'Data Scientist, Stratège et Data Analyst',
-                resume: 'Je suis un Data Scientist, un stratège et un Data Analyst expérimenté avec une solide expérience en développement de logiciels back-end depuis plus de 7 ans. Maîtrisant Python avec plus de 10 ans d\'expérience, et capable d\'utiliser efficacement KDB/Q pour l\'analyse de données. Spécialisé dans les secteurs bancaire et financier, avec une compréhension approfondie de la dynamique de l\'industrie. Possédant une forte perspective mondiale en développement de logiciels, associée à une curiosité pour apprendre de nouveaux paradigmes. Compétent dans le tri, l\'analyse et la synthèse des données pour en tirer des insights exploitables.',
+                resume: 'Je suis un Data scientist, Stratège et Data analyste qualifié avec une solide expérience de sept ans en développement de logiciel back-end. Aguerri en Python avec près de dix ans d’expérience, je suis aussi adroit pour utiliser efficacement KDB+/Q pour l’analyse de données. Spécialiste des secteurs bancaires et de trading, je possède une aisance de compréhension des dynamiques industrielles. Je suis compétent dans tous les aspects du développement logiciel, et possède une curiosité dans la découverte et la compréhension de nouveaux paradigmes. Je suis habile dans le tri, l’analyse et la compilation des données afin de les rendre exploitables.',
                 support: 'Vous pouvez m\'offrir un café si vous le souhaitez pour me soutenir avec le lien ci-dessous',
                 detailed: 'Carrière et experience professionnelle',
             },
