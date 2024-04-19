@@ -10,7 +10,7 @@
 
             <div class="bg-gray-50 py-16 shadow">
 
-                <h3 class="mb-8 text-2xl uppercase font-extrabold leading-none text-center tracking-tight text-forest-500">{{ $t('about.detailed') }}</h3>
+                <h3 class="mb-8 text-2xl uppercase font-extrabold leading-none text-center tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-forest-500">{{ $t('about.detailed') }}</h3>
 
                 <div class="m-8 2xl:pl-64 xl:pl-64 lg:pl-32 md:pl-16 sm:pl-8">
                     <ol class="relative border-s border-gray-300">
@@ -204,9 +204,20 @@
                 </div>
             </div>
 
-            <h4 class="text-md text-center mt-10 mb-5">{{ $t('about.support') }}</h4>
+            <!--<h4 class="text-md text-center mt-10 mb-5">{{ $t('about.support') }}</h4>
             <a href="https://www.buymeacoffee.com/corentinleguen" target="_blank">
                 <img class="h-auto max-w-lg mx-auto shadow-xl rounded-lg" src="/img/buy-me-a-coffee.png" alt="buy me a coffee img" />
+            </a>-->
+        </div>
+
+        <div class="text-center py-5">
+            <p class="text-gray-700 pt-10 pb-5">
+                {{ $t('about.support') }}
+            </p>
+            <a href="https://www.buymeacoffee.com/corentinleguen" target="_blank">
+                <button type="button" class="text-white font-semibold focus:outline-none font-medium text-xl px-32 py-2.5 bg-gradient-to-br from-green-400 to-blue-600">
+                    Buy Me A Coffee ☕ 
+                </button>
             </a>
         </div>
     </div>
