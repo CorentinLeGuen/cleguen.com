@@ -49,11 +49,16 @@
                 </button>
             </div>
 
-            <footer class="bg-white rounded-lg shadow m-3 mt-9">
-                <div class="w-full mx-auto max-w-screen-md p-3 flex items-center justify-between">
-                    <span class="text-sm text-gray-500 sm:text-center">Corentin Le Guen © 2024 - {{ $t('all_right_reserved') }}</span>
-                    <NuxtLink class="me-3 md:me-5 capitalize" to="/about">{{ $t('about.title') }}</NuxtLink>
-                </div>
+            <footer class="bg-white border-t text-center">
+                <p class="my-5">
+                    <NuxtLink class="text-gray-600" to="/about">
+                        {{ $t('about.title') }}
+                    </NuxtLink>
+                </p>
+
+                <hr class="w-1/2 h-1 mx-auto rounded"/>
+
+                <span class="text-sm text-gray-500 sm:text-center">Corentin Le Guen © 2024 - {{ $t('all_right_reserved') }}</span>
             </footer>
         </NuxtLayout>
     </div>
@@ -63,9 +68,3 @@
 import 'flowbite';
 const { locale } = useI18n();
 </script>
-
-<style>
-.router-link-exact-active {
-    color: #316844;
-}
-</style>
