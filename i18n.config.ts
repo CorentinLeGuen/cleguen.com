@@ -11,11 +11,11 @@ export default defineI18nConfig(() => ({
             all_right_reserved: 'All Rights Reserved.',
             homepage: 'Home',
             about: {
-                title: 'About',
+                title: 'About me',
                 job: 'Data Scientist, Strategist & Data Analyst',
                 resume: 'I am an experienced Data Scientist, Strategist, and Data Analyst with a solid background in back-end software development spanning over 7 years. Proficient in Python with a decade of experience, and adept at leveraging KDB/Q for data analysis. Specializing in the banking and trading sectors, with a keen understanding of industry dynamics. Possessing a strong global perspective in software development, coupled with a curiosity for learning new paradigms. Skilled in sorting, analyzing, and summarizing data to derive actionable insights.',
                 support: 'You can support and encourage me and my work with link bellow',
-                discover: 'Learn more',
+                discover: 'Discover more about my career',
                 detailed: 'Detailed work experience & career',
             },
             resume: {
@@ -156,11 +156,11 @@ export default defineI18nConfig(() => ({
             all_right_reserved: 'Tous Droits Réservés.',
             homepage: 'Page principale',
             about: {
-                title: 'À propos',
+                title: 'À propos de moi',
                 job: 'Data Scientist, Stratège et Data analyste',
                 resume: 'Je suis un Data scientist, Stratège et Data analyste qualifié avec une solide expérience de sept ans en développement de logiciel back-end. Aguerri en Python avec près de dix ans d’expérience, je suis aussi adroit pour utiliser efficacement KDB+/Q pour l’analyse de données. Spécialiste des secteurs bancaires et de trading, je possède une aisance de compréhension des dynamiques industrielles. Je suis compétent dans tous les aspects du développement logiciel, et possède une curiosité dans la découverte et la compréhension de nouveaux paradigmes. Je suis habile dans le tri, l’analyse et la compilation des données afin de les rendre exploitables.',
                 support: 'Vous pouvez m\'offrir un café si vous le souhaitez pour me soutenir avec le lien ci-dessous',
-                discover: 'En apprendre plus',
+                discover: 'En découvrir plus sur mon parcours',
                 detailed: 'Carrière et experience professionnelle',
             },
             resume: {
