@@ -15,8 +15,10 @@
                 </p>
 
                 <NuxtLink to="/about">
-                    <button class="relative inline-flex items-center px-32 py-4 overflow-hidden font-medium text-gray-100 bg-gradient-to-br from-blue-400 to-forest-500 group-hover:from-blue-400 group-hover:to-forest-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-200">
-                        {{ $t('about.discover')}}
+                    <button class="relative inline-flex items-center w-full 2xl:w-1/2 xl:w-1/2 md:w-1/2 h-16 overflow-hidden font-medium text-gray-100 bg-gradient-to-br from-blue-400 to-forest-500 group-hover:from-blue-400 group-hover:to-forest-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-200">
+                        <p class="mx-auto">
+                            {{ $t('about.discover')}}
+                        </p>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute right-2 w-8 h-8">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                         </svg>
