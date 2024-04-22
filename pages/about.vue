@@ -8,6 +8,40 @@
             <h1 class="text-center text-4xl uppercase font-extrabold tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-forest-500">{{ $t('about.title') }}</h1>
             <hr class="w-1/3 h-1 mx-auto my-16 bg-gradient-to-br from-blue-50 to-forest-100 border-0 rounded"/>
 
+            <div class="text-center my-16">
+                <div class="mb-8">
+                    <div class="uppercase text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-forest-500">{{ $t('about.experience.year') }}</div>
+                    <em class="text-sm text-gray-500">{{ $t('about.experience.start_date') }}</em>
+                </div>
+
+                <div class="grid text-center gap-x-8 grid-cols-3 mx-4 mb-4 md:mx-16 xl:mx-32">
+                    <div>
+                        <div class="text-2xl font-semibold text-gray-600">
+                            {{ $t('about.experience.cs_years') }}
+                        </div>
+                        <div class="text-gray-400 italic">
+                            {{ $t('about.experience.cs_resume') }}
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold text-gray-600">
+                            Python
+                        </div>
+                        <div class="text-gray-400 italic">
+                            {{ $t('about.experience.py_resume') }}
+                        </div>
+                    </div>
+                    <div>
+                        <div class="text-2xl font-semibold uppercase text-gray-600">
+                            KDB+ & Q
+                        </div>
+                        <div class="text-gray-400 italic">
+                            {{ $t('about.experience.kdb_resume') }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="bg-gray-50 py-16 shadow">
 
                 <h3 class="mb-8 text-2xl uppercase font-extrabold leading-none text-center tracking-tight text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-forest-500">{{ $t('about.detailed') }}</h3>

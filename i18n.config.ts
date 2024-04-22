@@ -17,6 +17,14 @@ export default defineI18nConfig(() => ({
                 support: 'You can support and encourage me and my work with link bellow',
                 discover: 'Discover more about my career',
                 detailed: 'Detailed work experience & career',
+                experience: {
+                    year: '+ 7 years experience',
+                    start_date: 'since 2016',
+                    cs_years: '+ 10 years',
+                    cs_resume: 'in Computer Science',
+                    py_resume: 'strong knowledge since 2012',
+                    kdb_resume: 'for Data Science and finance',
+                },
             },
             resume: {
                 current_position: 'Current position',
@@ -162,6 +170,14 @@ export default defineI18nConfig(() => ({
                 support: 'Vous pouvez m\'offrir un café si vous le souhaitez pour me soutenir avec le lien ci-dessous',
                 discover: 'En découvrir plus sur mon parcours',
                 detailed: 'Carrière et experience professionnelle',
+                experience: {
+                    year: '+ 7 ans d\'experience',
+                    start_date: 'depuis 2016',
+                    cs_years: '+ 10 ans',
+                    cs_resume: 'en Génie Logicielle',
+                    py_resume: 'maîtrise depuis 2012',
+                    kdb_resume: 'pour la Science des Données et la finance',
+                },
             },
             resume: {
                 current_position: 'Poste actuel',
