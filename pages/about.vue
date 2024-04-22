@@ -210,7 +210,7 @@
             </a>-->
         </div>
 
-        <div class="text-center py-5">
+        <div class="text-center py-5 mb-16">
             <p class="text-gray-700 pt-10 pb-5">
                 {{ $t('about.support') }}
             </p>
