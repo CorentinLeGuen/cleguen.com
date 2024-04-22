@@ -18,7 +18,7 @@ export default defineI18nConfig(() => ({
                 discover: 'Discover more about my career',
                 detailed: 'Detailed work experience & career',
                 experience: {
-                    year: '+ 7 years experience',
+                    year: '+ 7 years professional experience',
                     start_date: 'since 2016',
                     cs_years: '+ 10 years',
                     cs_resume: 'in Computer Science',
@@ -171,7 +171,7 @@ export default defineI18nConfig(() => ({
                 discover: 'En découvrir plus sur mon parcours',
                 detailed: 'Carrière et experience professionnelle',
                 experience: {
-                    year: '+ 7 ans d\'experience',
+                    year: '+ 7 ans d\'experience professionnelle',
                     start_date: 'depuis 2016',
                     cs_years: '+ 10 ans',
                     cs_resume: 'en Génie Logicielle',
