@@ -11,15 +11,15 @@
             <div class="text-center my-16">
                 <div class="mb-8">
                     <div class="uppercase text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-forest-500">{{ $t('about.experience.year') }}</div>
-                    <em class="text-sm text-gray-500">{{ $t('about.experience.start_date') }}</em>
+                    <div class="text-gray-400 italic text-sm md:text-base">{{ $t('about.experience.start_date') }}</div>
                 </div>
 
-                <div class="grid text-center gap-x-8 grid-cols-3 mx-4 mb-4 md:mx-16 xl:mx-32">
+                <div class="grid text-center gap-x-8 grid-cols-3 mx-4 mb-8 md:mx-16 xl:mx-32">
                     <div>
                         <div class="text-2xl font-semibold text-gray-600">
                             {{ $t('about.experience.cs_years') }}
                         </div>
-                        <div class="text-gray-400 italic">
+                        <div class="text-gray-400 italic text-sm md:text-base">
                             {{ $t('about.experience.cs_resume') }}
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                         <div class="text-2xl font-semibold text-gray-600">
                             Python
                         </div>
-                        <div class="text-gray-400 italic">
+                        <div class="text-gray-400 italic text-sm md:text-base">
                             {{ $t('about.experience.py_resume') }}
                         </div>
                     </div>
@@ -35,7 +35,7 @@
                         <div class="text-2xl font-semibold uppercase text-gray-600">
                             KDB+ & Q
                         </div>
-                        <div class="text-gray-400 italic">
+                        <div class="text-gray-400 italic text-sm md:text-base">
                             {{ $t('about.experience.kdb_resume') }}
                         </div>
                     </div>
