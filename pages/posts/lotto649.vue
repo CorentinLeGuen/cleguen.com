@@ -101,69 +101,69 @@
                         </svg>
                         <span class="sr-only">Info</span>
                         <div class="text-center">
-                            <span class="font-medium">Sorry !</span> The API is presently not available. We will be back soon.
+                            <span class="font-medium">{{ $t('posts.sorry') }} !</span> {{ $t('posts.error') }}
                         </div>
                     </div>
                 </div>
                 <div v-else class="grid grid-cols-2 gap-4 my-8">
                     <div class="text-center">
-                        Dernier tirage du {{ data_last.draw_date }}
+                        {{ $t('posts.lotto649.last_draw_from') }} {{ data_last.draw_date }}
                     </div>
                     <div>
                         <div class="relative overflow-x-auto">
                             <table class="w-full text-sm text-left rtl:text-right text-gray-500">
                                 <tbody>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
+                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
                                         <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            Numéro 1
+                                            {{ $t('posts.lotto649.n1') }}
                                         </th>
                                         <td>
                                             {{ data_last.number_1 }}
                                         </td>
                                     </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
+                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
                                         <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            Numéro 2
+                                            {{ $t('posts.lotto649.n2') }}
                                         </th>
                                         <td>
                                             {{ data_last.number_2 }}
                                         </td>
                                     </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
+                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
                                         <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            Numéro 3
+                                            {{ $t('posts.lotto649.n3') }}
                                         </th>
                                         <td>
                                             {{ data_last.number_3 }}
                                         </td>
                                     </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
+                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
                                         <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            Numéro 4
+                                            {{ $t('posts.lotto649.n4') }}
                                         </th>
                                         <td>
                                             {{ data_last.number_4 }}
                                         </td>
                                     </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
+                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
                                         <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            Numéro 5
+                                            {{ $t('posts.lotto649.n5') }}
                                         </th>
                                         <td>
                                             {{ data_last.number_5 }}
                                         </td>
                                     </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
+                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
                                         <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            Numéro 6
+                                            {{ $t('posts.lotto649.n6') }}
                                         </th>
                                         <td>
                                             {{ data_last.number_6 }}
                                         </td>
                                     </tr>
-                                    <tr class="bg-white hover:bg-gray-50">
+                                    <tr class="bg-white capitalize hover:bg-gray-50">
                                         <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            Numéro c
+                                            {{ $t('posts.lotto649.nc') }}
                                         </th>
                                         <td>
                                             {{ data_last.number_c }}
@@ -178,77 +178,79 @@
 
             <!-- 3 Main parts of IRMA -->
             <div class="bg-gray-50 py-8">
-                <h2 class="mx-2 my-8 text-2xl font-semibold text-center">IRMA est découpé en 3 parties</h2>
+                <h2 class="mx-2 my-8 text-2xl font-semibold text-center">{{ $t('posts.lotto649.split.title') }}</h2>
 
                 <div class="grid grid-flow-row-dense grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 xl:gap-8 mx-2 md:mx-16 xl:mx-32 mb-8">
                     <div class="mx-auto">
                         <a class="block max-w-sm p-6 bg-white rounded-lg shadow hover:shadow-lg" href="#scrap">
                             <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900">Scrap</h5>
-                            <p class="font-normal text-gray-700">Extrait les données des tirages depuis les pages HTML du site officiel.</p>
+                            <p class="font-normal text-gray-700">{{ $t('posts.lotto649.split.scrap_resume') }}</p>
                         </a>
                     </div>
                     <div class="mx-auto">
                         <a class="block max-w-sm p-6 bg-white rounded-lg shadow hover:shadow-lg" href="#analyze">
-                            <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900">Analyse & Prédiction</h5>
-                            <p class="font-normal text-gray-700">Le traitement des données se fait par IA qui analyse les tirages et extrait des paternes et des prédictions pour les prochains tirages.</p>
+                            <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900">{{ $t('posts.lotto649.split.analize_title') }}</h5>
+                            <p class="font-normal text-gray-700">{{ $t('posts.lotto649.split.analize_resume') }}</p>
                         </a>
                     </div>
                     <div class="mx-auto">
                         <a class="block max-w-sm p-6 bg-white rounded-lg shadow hover:shadow-lg" href="#api">
-                            <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900">Service API</h5>
-                            <p class="font-normal text-gray-700">Distribue par services API les statistiques et résultats des tirages et des résultats de l'IA.</p>
+                            <h5 class="mb-2 text-center text-2xl font-bold tracking-tight text-gray-900">{{ $t('posts.lotto649.split.api_title') }}</h5>
+                            <p class="font-normal text-gray-700">{{ $t('posts.lotto649.split.api_resume') }}</p>
                         </a>
                     </div>
                 </div>
             </div>
 
+            <!-- Scrap section -->
             <div class="bg-white py-8">
                 <h2 id="scrap" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">Scrap</h2>
                 <div class="p-4 mb-4 text-center w-1/2 mx-auto text-sm text-yellow-800 rounded-lg bg-yellow-50 shadow" role="alert">
-                    <span class="font-semibold">Work in progress !</span> This section is not made yet.
+                    <span class="font-semibold">{{ $t('posts.sorry') }} !</span> {{ $t('posts.wip') }}
                 </div>
             </div>
 
+            <!-- Analyze section -->
             <div class="bg-gray-50 py-8">
-                <h2 id="analyze" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">Analyse & Pédiction</h2>
+                <h2 id="analyze" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">{{ $t('posts.lotto649.split.analize_title') }}</h2>
                 <div class="p-4 mb-4 text-center w-1/2 mx-auto text-sm text-yellow-800 rounded-lg bg-yellow-50 shadow" role="alert">
-                    <span class="font-semibold">Work in progress !</span> This section is not made yet.
+                    <span class="font-semibold">{{ $t('posts.sorry') }} !</span> {{ $t('posts.wip') }}
                 </div>
             </div>
 
             <!-- Service API section -->
             <div class="bg-white py-8">
-                <h2 id="api" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">Service API</h2>
+                <h2 id="api" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">{{ $t('posts.lotto649.split.api_title') }}</h2>
 
                 <!-- List of APIs -->
                 <div class="mx-4 md:mx-16 xl:mx-64 2xl:mx-1/2 mt-16 mb-8">
                     <ul class="w-full md:w-2/3 xl:w-1/2 mx-auto text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg">
                         <li class="w-full px-4 py-2 border-b font-semibold border-gray-200 bg-gray-50 rounded-t-lg text-center">
-                            <h3 class="font-extrabold text-gray-800">Here is an example of what API are presently available</h3>
+                            <h3 class="font-extrabold text-gray-800">{{ $t('posts.lotto649.api.title') }}</h3>
                         </li>
                         <li class="w-full px-4 py-2 border-b border-gray-200">
                             <h3 class="font-extrabold text-gray-800">Dates</h3>
-                            <p class="text-gray-500">Provides a list of dates related to Lotto 6.49</p>
+                            <p class="text-gray-500">{{ $t('posts.lotto649.api.dates_resume') }}</p>
                         </li>
                         <li class="w-full px-4 py-2 border-b border-gray-200">
-                            <h3 class="font-extrabold text-gray-800">Historical draws values</h3>
-                            <p class="text-gray-500">Gives historical data for draws</p>
+                            <h3 class="font-extrabold text-gray-800">{{ $t('posts.lotto649.api.hist_draw_title') }}</h3>
+                            <p class="text-gray-500">{{ $t('posts.lotto649.api.hist_draw_resume') }}</p>
                         </li>
                         <li class="w-full px-4 py-2 border-b border-gray-200">
-                            <h3 class="font-extrabold text-gray-800">Historical predictions</h3>
-                            <p class="text-gray-500">Gives historical predictions that have been made and their accuracy</p>
+                            <h3 class="font-extrabold text-gray-800">{{ $t('posts.lotto649.api.hist_pred_title') }}</h3>
+                            <p class="text-gray-500">{{ $t('posts.lotto649.api.hist_pred_resume') }}</p>
                         </li>
                         <li class="w-full px-4 py-2 border-b border-gray-200">
-                            <h3 class="font-extrabold text-gray-800">Statistics</h3>
-                            <p class="text-gray-500">Gives statistics about draws <span class="italic">(see bellow for an example) </span></p>
+                            <h3 class="font-extrabold text-gray-800">{{ $t('posts.lotto649.api.stats_title') }}</h3>
+                            <p class="text-gray-500">{{ $t('posts.lotto649.api.stats_resume') }}</p>
                         </li>
                         <li class="w-full px-4 py-2 border-b border-gray-200">
-                            <h3 class="font-extrabold text-gray-800">Predictions</h3>
-                            <p class="text-gray-500">Provides the next prediction and his accuracy and trust score related</p>
+                            <h3 class="font-extrabold text-gray-800">{{ $t('posts.lotto649.api.pred_title') }}</h3>
+                            <p class="text-gray-500">{{ $t('posts.lotto649.api.pred_resume') }}</p>
                         </li>
                         <li class="w-full px-4 py-2 rounded-b-lg">
-                            <h3 class="font-extrabold text-gray-800">CSV, JSON and other formats</h3>
-                            <p class="text-gray-500">Return services to CSV, JSON, .tds, .hyper, flat file, and many other formats</p>
+                            <h3 class="font-extrabold text-gray-800">{{ $t('posts.lotto649.api.extr_title') }}</h3>
+                            <p class="text-gray-500">{{ $t('posts.lotto649.api.extr_resume') }}</p>
                         </li>
                     </ul>
                 </div>
@@ -259,7 +261,7 @@
                         <h2 id="accordion-collapse-heading-1">
                             <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3" data-accordion-target="#accordion-collapse-body-1" aria-expanded="false" aria-controls="accordion-collapse-body-1">
                                 <span class="mx-auto">
-                                    Example of stats results
+                                    {{ $t('posts.lotto649.api.example_stats') }}
                                 </span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -316,7 +318,7 @@
                         <h2 id="accordion-collapse-heading-2">
                             <button type="button" class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 gap-3" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
                                 <span class="mx-auto">
-                                    Example of prediction results
+                                    {{ $t('posts.lotto649.api.example_pred') }}
                                 </span>
                                 <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
@@ -392,7 +394,7 @@
                                 <path d="m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z"/>
                                 <path d="M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z"/>
                             </svg>
-                            Send me an email to get access to the full API
+                            {{ $t('posts.lotto649.api.contact') }}
                         </button>
                     </a>
                 </div>
