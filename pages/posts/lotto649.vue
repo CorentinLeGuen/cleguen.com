@@ -204,10 +204,16 @@
 
             <div class="bg-white py-8">
                 <h2 id="scrap" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">Scrap</h2>
+                <div class="p-4 mb-4 text-center w-1/2 mx-auto text-sm text-yellow-800 rounded-lg bg-yellow-50 shadow" role="alert">
+                    <span class="font-semibold">Work in progress !</span> This section is not made yet.
+                </div>
             </div>
 
             <div class="bg-gray-50 py-8">
                 <h2 id="analyze" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">Analyse & Pédiction</h2>
+                <div class="p-4 mb-4 text-center w-1/2 mx-auto text-sm text-yellow-800 rounded-lg bg-yellow-50 shadow" role="alert">
+                    <span class="font-semibold">Work in progress !</span> This section is not made yet.
+                </div>
             </div>
 
             <!-- Service API section -->
