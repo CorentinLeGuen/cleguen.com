@@ -125,6 +125,8 @@ export default defineI18nConfig(() => ({
                     description_date: 'Project started in 2023.',
                     catchphrase: 'What if you can predict the Lotto numbers ?',
                     github_repo: 'Public GitHub Repositories',
+                    official: 'Access the official Lotto Québec website',
+                    last_draw_example: 'This is the last draw example',
                     github: {
                         show_project: 'Show project on GitHub',
                         1: 'API service made in Java and the Postman collection',
@@ -302,6 +304,8 @@ export default defineI18nConfig(() => ({
                     description_date: 'Le projet a débuté en 2023.',
                     catchphrase: 'Et si vous pouviez prédire les numéros du lotto ?',
                     github_repo: 'Repos GitHub Publiques',
+                    official: 'Accéder au site officiel de Lotto Québec',
+                    last_draw_example: 'Voici un exemple du dernier tirage',
                     github: {
                         show_project: 'Voir le projet sur GitHub',
                         1: 'API faite en Java avec la collection Postman',

@@ -56,10 +56,20 @@
                 <div class="text-gray-500 italic">
                     {{ $t('posts.lotto649.description_date') }}
                 </div>
+                <div class="text-center">
+                    <a href="https://loteries.lotoquebec.com/loteries/en/lotteries/lotto-6-49" target="_blank">
+                        <button type="button" class="px-5 py-2.5 my-8 text-sm font-medium text-gray-500 inline-flex items-center bg-gray-50 focus:ring-0 focus:outline-none focus:ring-gray-100 text-center border hover:shadow">
+                            {{ $t('posts.lotto649.official') }}
+                        </button>
+                    </a>
+                </div>
             </div>
+
+            <hr class="w-1/3 h-1 mx-auto my-16 bg-gradient-to-br from-blue-50 to-forest-100 border-0 rounded"/>
 
             <!-- Last draw example -->
             <div class="mx-4 md:mx-16 xl:mx-64 2xl:mx-1/2 mt-16 mb-8">
+                <h2 class="mx-2 my-8 text-2xl font-semibold text-center">{{ $t('posts.lotto649.last_draw_example') }}</h2>
                 <div v-if="pending_last" class="grid grid-cols-2 gap-4 my-8">
                     <div role="status" class="max-w-sm animate-pulse">
                         <div class="h-2.5 bg-gray-200 mx-auto rounded-full w-1/2 mb-4"></div>
@@ -472,8 +482,8 @@
 </template>
 
 <script setup lang="ts">
-const { pending: pending_last, error: error_last, data: data_last } = useFetch('/draw/last', { timeout: 1200, server: false });
-const { pending: pending_stats, error: error_stats, data: data_stats } = useFetch('/draw/stats', { timeout: 1200, server: false });
+const { pending: pending_last, error: error_last, data: data_last } = await useFetch('/draw/last', { timeout: 1200, server: false });
+const { pending: pending_stats, error: error_stats, data: data_stats } = await useFetch('/draw/stats', { timeout: 1200, server: false });
 
 const sorted_data_stats = computed(() => {
     const items = Object.entries(data_stats.value.draws);
