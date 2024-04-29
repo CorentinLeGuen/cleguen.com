@@ -215,8 +215,40 @@
             <!-- Scrap section -->
             <div class="bg-white py-8">
                 <h2 id="scrap" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">Scrap</h2>
-                <div class="p-4 mb-4 text-center w-1/2 mx-auto text-sm text-yellow-800 rounded-lg bg-yellow-50 shadow" role="alert">
-                    <span class="font-semibold">{{ $t('posts.sorry') }} !</span> {{ $t('posts.wip') }}
+                <div class="text-center mx-4 md:mx-8 xl:mx-16 py-4">
+                    <p>
+                        {{ $t('posts.lotto649.scrap.intro_1') }}
+                    </p>
+                    <p>
+                        {{ $t('posts.lotto649.scrap.intro_2') }}
+                    </p>
+                    <p>
+                        {{ $t('posts.lotto649.scrap.intro_3_1') }} <a class="font-mono text-purple-700" href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">beautifulsoup4</a> {{ $t('posts.lotto649.scrap.intro_3_2') }}
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 mx-2 md:mx-4 xl:mx-16 gap-2 md:gap-6 xl:gap-8 my-4">
+                    <div class="mx-auto">
+                        <img class="shadow hover:shadow-xl" src="/img/posts/irma/scrap-screenshot.png" title="scrap technique" alt="scrap screenshot" />
+                    </div>
+                    <div>
+                        <div class="py-4">
+                            {{ $t('posts.lotto649.scrap.side_1_1') }} <span class="font-mono"> div.lqZoneResultatsStructure</span> {{ $t('posts.lotto649.scrap.side_1_2') }} <span class="font-mono">bs4</span>.
+                        </div>
+                        <div class="py-4">
+                            {{ $t('posts.lotto649.scrap.side_2') }}
+                        </div>
+                        <div class="py-4">
+                            <span class="font-mono">April 27, 2024</span> -> <span class="font-mono">2024-04-27</span> {{ $t('posts.lotto649.scrap.side_3') }} <span class="font-mono">04/27/2024</span>
+                        </div>
+                        <div class="py-4">
+                            {{ $t('posts.lotto649.scrap.side_4') }}
+                        </div>
+                        <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">
+                            <button type="button" class="py-2.5 my-8 w-full text-center font-medium text-gray-500 bg-gray-50 focus:ring-0 focus:outline-none focus:ring-gray-100 border hover:shadow">
+                                {{ $t('posts.lotto649.scrap.side_5') }} <span class="font-semibold font-mono">beautifulsoup4</span>
+                            </button>
+                        </a>
+                    </div>
                 </div>
             </div>
 
