@@ -63,131 +63,21 @@
                         </button>
                     </a>
                 </div>
+                <div class="flex items-center mx-4 md:mx-16 xl:mx-32 justify-center p-4 mb-4 text-sm text-blue-800 border border-blue-300 rounded-lg bg-blue-50" role="alert">
+                    <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                    </svg>
+                    <span class="sr-only">Info</span>
+                    <div class="text-center">
+                        <span class="font-semibold"> {{ $t('posts.lotto649.alert_1') }} !</span> {{ $t('posts.lotto649.alert_2') }} <a class="text-purple-700" href="#github">{{ $t('posts.lotto649.alert_3') }}</a> {{ $t('posts.lotto649.alert_4') }}
+                    </div>
+                </div>
             </div>
 
             <hr class="w-1/3 h-1 mx-auto my-16 bg-gradient-to-br from-blue-50 to-forest-100 border-0 rounded"/>
 
-            <!-- Last draw example -->
-            <div class="mx-4 md:mx-16 xl:mx-64 2xl:mx-1/2 mt-16 mb-8">
-                <h2 class="mx-2 my-8 text-2xl font-semibold text-center">{{ $t('posts.lotto649.last_draw_example') }}</h2>
-                <div v-if="pending_last" class="grid grid-cols-2 gap-4 my-8">
-                    <div role="status" class="max-w-sm animate-pulse">
-                        <div class="h-2.5 bg-gray-200 mx-auto rounded-full w-1/2 mb-4"></div>
-                    </div>
-                    <div class="relative overflow-x-auto text-center">
-                        <div class="relative overflow-x-auto">
-                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 animate-pulse">
-                                <tbody>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
-                                        <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
-                                    </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
-                                        <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
-                                    </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
-                                        <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
-                                    </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
-                                        <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
-                                    </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
-                                        <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
-                                    </tr>
-                                    <tr class="bg-white border-b hover:bg-gray-50">
-                                        <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
-                                    </tr>
-                                    <tr class="bg-white hover:bg-gray-50">
-                                        <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div v-else-if="error_last">
-                    <div class="flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 justify-center" role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
-                        </svg>
-                        <span class="sr-only">Info</span>
-                        <div class="text-center">
-                            <span class="font-medium">{{ $t('posts.sorry') }} !</span> {{ $t('posts.error') }}
-                        </div>
-                    </div>
-                </div>
-                <div v-else class="grid grid-cols-2 gap-4 my-8">
-                    <div class="text-center">
-                        {{ $t('posts.lotto649.last_draw_from') }} {{ data_last.draw_date }}
-                    </div>
-                    <div>
-                        <div class="relative overflow-x-auto">
-                            <table class="w-full text-sm text-left rtl:text-right text-gray-500">
-                                <tbody>
-                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
-                                        <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            {{ $t('posts.lotto649.n1') }}
-                                        </th>
-                                        <td>
-                                            {{ data_last.number_1 }}
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
-                                        <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            {{ $t('posts.lotto649.n2') }}
-                                        </th>
-                                        <td>
-                                            {{ data_last.number_2 }}
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
-                                        <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            {{ $t('posts.lotto649.n3') }}
-                                        </th>
-                                        <td>
-                                            {{ data_last.number_3 }}
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
-                                        <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            {{ $t('posts.lotto649.n4') }}
-                                        </th>
-                                        <td>
-                                            {{ data_last.number_4 }}
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
-                                        <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            {{ $t('posts.lotto649.n5') }}
-                                        </th>
-                                        <td>
-                                            {{ data_last.number_5 }}
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white capitalize border-b hover:bg-gray-50">
-                                        <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            {{ $t('posts.lotto649.n6') }}
-                                        </th>
-                                        <td>
-                                            {{ data_last.number_6 }}
-                                        </td>
-                                    </tr>
-                                    <tr class="bg-white capitalize hover:bg-gray-50">
-                                        <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
-                                            {{ $t('posts.lotto649.nc') }}
-                                        </th>
-                                        <td>
-                                            {{ data_last.number_c }}
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
             <!-- 3 Main parts of IRMA -->
-            <div class="bg-gray-50 py-8">
+            <div class="bg-white py-8">
                 <h2 class="mx-2 my-8 text-2xl font-semibold text-center">{{ $t('posts.lotto649.split.title') }}</h2>
 
                 <div class="grid grid-flow-row-dense grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 xl:gap-8 mx-2 md:mx-16 xl:mx-32 mb-8">
@@ -213,7 +103,7 @@
             </div>
 
             <!-- Scrap section -->
-            <div class="bg-white py-8">
+            <div class="bg-gray-50 py-8">
                 <h2 id="scrap" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">Scrap</h2>
                 <div class="text-center mx-4 md:mx-8 xl:mx-16 py-4">
                     <p>
@@ -253,7 +143,7 @@
             </div>
 
             <!-- Analyze section -->
-            <div class="bg-gray-50 py-8">
+            <div class="bg-white py-8">
                 <h2 id="analyze" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">{{ $t('posts.lotto649.split.analize_title') }}</h2>
                 <div class="p-4 mb-4 text-center w-1/2 mx-auto text-sm text-yellow-800 rounded-lg bg-yellow-50 shadow" role="alert">
                     <span class="font-semibold">{{ $t('posts.sorry') }} !</span> {{ $t('posts.wip') }}
@@ -261,7 +151,7 @@
             </div>
 
             <!-- Service API section -->
-            <div class="bg-white py-8">
+            <div class="bg-gray-50 py-8">
                 <h2 id="api" class="mx-2 my-8 text-2xl text-gray-800 font-semibold text-center">{{ $t('posts.lotto649.split.api_title') }}</h2>
 
                 <!-- List of APIs -->
@@ -299,6 +189,182 @@
 
                 <!-- Examples of results -->
                 <div class="w-5/6 md:w-2/3 xl:w-1/3 mx-auto">
+                    <!-- Last draw -->
+                    <div class="p-5">
+                        <h2 class="text-center text-semibold text-xl underline underlin-offset-2 pb-2">{{ $t('posts.lotto649.last_draw_example') }}</h2>
+                        <div v-if="pending_last" class="grid grid-cols-2 gap-4 my-8">
+                            <div role="status" class="max-w-sm animate-pulse">
+                                <div class="h-2.5 bg-gray-200 mx-auto rounded-full w-1/2 mb-4"></div>
+                            </div>
+                            <div class="relative overflow-x-auto text-center">
+                                <div class="relative overflow-x-auto">
+                                    <table class="w-full text-sm text-left rtl:text-right text-gray-500 animate-pulse">
+                                        <tbody>
+                                            <tr class="bg-white border-b hover:bg-gray-50">
+                                                <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
+                                            </tr>
+                                            <tr class="bg-white border-b hover:bg-gray-50">
+                                                <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
+                                            </tr>
+                                            <tr class="bg-white border-b hover:bg-gray-50">
+                                                <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
+                                            </tr>
+                                            <tr class="bg-white border-b hover:bg-gray-50">
+                                                <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
+                                            </tr>
+                                            <tr class="bg-white border-b hover:bg-gray-50">
+                                                <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
+                                            </tr>
+                                            <tr class="bg-white border-b hover:bg-gray-50">
+                                                <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
+                                            </tr>
+                                            <tr class="bg-white hover:bg-gray-50">
+                                                <div class="h-2 bg-gray-200 rounded-full max-w-1/2 my-2.5 mx-16"></div>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div v-else-if="error_last">
+                            <div class="flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 justify-center" role="alert">
+                                <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                                </svg>
+                                <span class="sr-only">Info</span>
+                                <div class="text-center">
+                                    <span class="font-medium">{{ $t('posts.sorry') }} !</span> {{ $t('posts.error') }}
+                                </div>
+                            </div>
+                        </div>
+                        <div v-else class="grid grid-cols-2 gap-4 my-8">
+                            <div class="text-center">
+                                {{ $t('posts.lotto649.last_draw_from') }} <br /> {{ data_last.draw_date }}
+                            </div>
+                            <div>
+                                <div class="relative overflow-x-auto">
+                                    <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+                                        <tbody>
+                                            <tr class="bg-gray-50 capitalize border-b hover:bg-white">
+                                                <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                                                    {{ $t('posts.lotto649.n1') }}
+                                                </th>
+                                                <td>
+                                                    {{ data_last.number_1 }}
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-gray-50 capitalize border-b hover:bg-white">
+                                                <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                                                    {{ $t('posts.lotto649.n2') }}
+                                                </th>
+                                                <td>
+                                                    {{ data_last.number_2 }}
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-gray-50 capitalize border-b hover:bg-white">
+                                                <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                                                    {{ $t('posts.lotto649.n3') }}
+                                                </th>
+                                                <td>
+                                                    {{ data_last.number_3 }}
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-gray-50 capitalize border-b hover:bg-white">
+                                                <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                                                    {{ $t('posts.lotto649.n4') }}
+                                                </th>
+                                                <td>
+                                                    {{ data_last.number_4 }}
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-gray-50 capitalize border-b hover:bg-white">
+                                                <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                                                    {{ $t('posts.lotto649.n5') }}
+                                                </th>
+                                                <td>
+                                                    {{ data_last.number_5 }}
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-gray-50 capitalize border-b hover:bg-white">
+                                                <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                                                    {{ $t('posts.lotto649.n6') }}
+                                                </th>
+                                                <td>
+                                                    {{ data_last.number_6 }}
+                                                </td>
+                                            </tr>
+                                            <tr class="bg-gray-50 capitalize hover:bg-white">
+                                                <th scope="row" class="px-4 py-2 font-medium text-gray-900 whitespace-nowrap">
+                                                    {{ $t('posts.lotto649.nc') }}
+                                                </th>
+                                                <td>
+                                                    {{ data_last.number_c }}
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Predictions -->
+                    <div class="p-5">
+                        <h2 class="text-center text-semibold text-xl underline underlin-offset-2 pb-2">{{ $t('posts.lotto649.api.example_pred') }}</h2>
+                        <div class="text-center my-4 text-gray-500">
+                            Prediction for <span class="text-red-400 font-semibold" >2024-04-20</span>
+                        </div>
+                        <table class="w-full text-sm text-gray-500 text-center">
+                            <thead>
+                                <tr class="border py-2 px-6 bg-gray-50">
+                                    <th>Number</th>
+                                    <th>Actual</th>
+                                    <th>Predicted</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="px-6 py-2 text-center hover:bg-white">
+                                    <td>1</td>
+                                    <td>9</td>
+                                    <td class="text-forest-300 font-semibold">9</td>
+                                </tr>
+                                <tr class="px-6 py-2 text-center hover:bg-white">
+                                    <td>2</td>
+                                    <td>14</td>
+                                    <td class="text-forest-300 font-semibold">14</td>
+                                </tr>
+                                <tr class="px-6 py-2 text-center hover:bg-white">
+                                    <td>3</td>
+                                    <td>23</td>
+                                    <td class="text-red-300 font-semibold">22</td>
+                                </tr>
+                                <tr class="px-6 py-2 text-center hover:bg-white">
+                                    <td>4</td>
+                                    <td>26</td>
+                                    <td class="text-red-300 font-semibold">28</td>
+                                </tr>
+                                <tr class="px-6 py-2 text-center hover:bg-white">
+                                    <td>5</td>
+                                    <td>30</td>
+                                    <td class="text-red-300 font-semibold">35</td>
+                                </tr>
+                                <tr class="px-6 py-2 text-center hover:bg-white">
+                                    <td>6</td>
+                                    <td>43</td>
+                                    <td class="text-forest-300 font-semibold">43</td>
+                                </tr>
+                                <tr class="px-6 py-2 text-center hover:bg-white border-b">
+                                    <td>c</td>
+                                    <td>35</td>
+                                    <td class="text-red-300 font-semibold">34</td>
+                                </tr>
+                                <tr class="px-6 py-2 text-center font-semibold">
+                                    <td>Accurracy</td>
+                                    <td>42.86 %</td>
+                                    <td>$ 10.00 gain</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <!-- Stats -->
                     <div class="p-5">
                         <h2 class="text-center text-semibold text-xl underline underlin-offset-2 pb-2">{{ $t('posts.lotto649.api.example_stats') }}</h2>
@@ -332,7 +398,7 @@
                                         <tr class="bg-white border-b hover:bg-gray-50">
                                             <th scope="col" class="px-6 py-2">#</th>
                                             <th scope="col" class="px-6 py-2 text-center">Total</th>
-                                            <th scope="col" class="px-6 py-2 text-center">Complementary</th>
+                                            <th scope="col" class="px-6 py-2 text-center">Comp.</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -345,64 +411,6 @@
                                 </table>
                             </div>
                         </div>
-                    </div>
-                    <!-- Predictions -->
-                    <div class="p-5">
-                        <h2 class="text-center text-semibold text-xl underline underlin-offset-2 pb-2">{{ $t('posts.lotto649.api.example_pred') }}</h2>
-                        <div class="text-center my-4 text-gray-500">
-                            Prediction for <span class="text-red-400 font-semibold" >2024-04-20</span>
-                        </div>
-                        <table class="w-full text-sm text-gray-500 text-center">
-                            <thead>
-                                <tr class="border py-2 px-6 bg-gray-50">
-                                    <th>Number</th>
-                                    <th>Actual</th>
-                                    <th>Predicted</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr class="px-6 py-2 text-center hover:bg-gray-50">
-                                    <td>1</td>
-                                    <td>9</td>
-                                    <td class="text-forest-300 font-semibold">9</td>
-                                </tr>
-                                <tr class="px-6 py-2 text-center hover:bg-gray-50">
-                                    <td>2</td>
-                                    <td>14</td>
-                                    <td class="text-forest-300 font-semibold">14</td>
-                                </tr>
-                                <tr class="px-6 py-2 text-center hover:bg-gray-50">
-                                    <td>3</td>
-                                    <td>23</td>
-                                    <td class="text-red-300 font-semibold">22</td>
-                                </tr>
-                                <tr class="px-6 py-2 text-center hover:bg-gray-50">
-                                    <td>4</td>
-                                    <td>26</td>
-                                    <td class="text-red-300 font-semibold">28</td>
-                                </tr>
-                                <tr class="px-6 py-2 text-center hover:bg-gray-50">
-                                    <td>5</td>
-                                    <td>30</td>
-                                    <td class="text-red-300 font-semibold">35</td>
-                                </tr>
-                                <tr class="px-6 py-2 text-center hover:bg-gray-50">
-                                    <td>6</td>
-                                    <td>43</td>
-                                    <td class="text-forest-300 font-semibold">43</td>
-                                </tr>
-                                <tr class="px-6 py-2 text-center hover:bg-gray-50 border-b">
-                                    <td>c</td>
-                                    <td>35</td>
-                                    <td class="text-red-300 font-semibold">34</td>
-                                </tr>
-                                <tr class="px-6 py-2 text-center font-semibold hover:bg-gray-50">
-                                    <td>Accurracy</td>
-                                    <td>42.86 %</td>
-                                    <td>$ 10.00 gain</td>
-                                </tr>
-                            </tbody>
-                        </table>
                     </div>
                 </div>
 
@@ -421,8 +429,8 @@
             </div>
             
             <!-- GitHub repos -->
-            <div class="bg-gray-50 py-16">
-                <h2 class="flex justify-center font-semibold text-2xl mb-8">
+            <div class="bg-white py-16">
+                <h2 id="github" class="flex justify-center font-semibold text-2xl mb-8">
                     <svg class="w-8 h-8 me-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.475 2 2 6.475 2 12C2 16.425 4.8625 20.1625 8.8375 21.4875C9.3375 21.575 9.525 21.275 9.525 21.0125C9.525 20.775 9.5125 19.9875 9.5125 19.15C7 19.6125 6.35 18.5375 6.15 17.975C6.0375 17.6875 5.55 16.8 5.125 16.5625C4.775 16.375 4.275 15.9125 5.1125 15.9C5.9 15.8875 6.4625 16.625 6.65 16.925C7.55 18.4375 8.9875 18.0125 9.5625 17.75C9.65 17.1 9.9125 16.6625 10.2 16.4125C7.975 16.1625 5.65 15.3 5.65 11.475C5.65 10.3875 6.0375 9.4875 6.675 8.7875C6.575 8.5375 6.225 7.5125 6.775 6.1375C6.775 6.1375 7.6125 5.875 9.525 7.1625C10.325 6.9375 11.175 6.825 12.025 6.825C12.875 6.825 13.725 6.9375 14.525 7.1625C16.4375 5.8625 17.275 6.1375 17.275 6.1375C17.825 7.5125 17.475 8.5375 17.375 8.7875C18.0125 9.4875 18.4 10.375 18.4 11.475C18.4 15.3125 16.0625 16.1625 13.8375 16.4125C14.2 16.725 14.5125 17.325 14.5125 18.2625C14.5125 19.6 14.5 20.675 14.5 21.0125C14.5 21.275 14.6875 21.5875 15.1875 21.4875C17.1727 20.8173 18.8977 19.5415 20.1198 17.8395C21.3419 16.1376 21.9995 14.0953 22 12C22 6.475 17.525 2 12 2Z" fill="#000000"></path> </g></svg>
                     {{ $t('posts.lotto649.github_repo') }}
                 </h2>
