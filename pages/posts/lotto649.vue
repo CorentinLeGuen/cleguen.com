@@ -44,7 +44,7 @@
 
             <h1 class="text-center my-8 text-4xl uppercase font-extrabold tracking-tight leading-none text-transparent bg-clip-text bg-gradient-to-br from-blue-400 to-forest-500">Lotto 6.49 - {{ $t('posts.lotto649.title') }}</h1>
 
-            <img class="max-w-md mx-auto rounded-full w-96 h-96 drop-shadow-xl" src="/img/posts/irma/IRMA-logo.webp" alt="IRMA logo" />
+            <img class="max-w-md mx-auto rounded-full w-80 h-80 md:w-96 md:h-96 drop-shadow-xl" src="/img/posts/irma/IRMA-logo.webp" alt="IRMA logo" />
 
             <h1 class="text-4xl font-semibold text-center my-4">{{ $t('posts.lotto649.catchphrase') }}</h1>
 
