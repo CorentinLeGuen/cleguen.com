@@ -15,13 +15,10 @@
                 </p>
 
                 <NuxtLink to="/about">
-                    <button class="relative inline-flex items-center w-full 2xl:w-1/2 xl:w-1/2 md:w-1/2 h-16 overflow-hidden font-medium text-gray-100 bg-gradient-to-br from-blue-400 to-forest-500 group-hover:from-blue-400 group-hover:to-forest-500 hover:text-white focus:ring-4 focus:outline-none focus:ring-gray-200">
-                        <p class="mx-auto">
+                    <button id="discover" class="shadow-inner">
+                        <span>
                             {{ $t('about.discover')}}
-                        </p>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute right-2 w-8 h-8">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                        </svg>
+                        </span>
                     </button>
                 </NuxtLink>
 
@@ -40,3 +37,39 @@
         </section>
     </div>
 </template>
+
+<style scoped>
+button#discover {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  width: 350px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transform: skew(-12deg);
+}
+button#discover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  left: 0;
+  background: linear-gradient(90deg, rgba(59,130,246,1) 10%, rgba(75,156,103,1) 90%);
+  opacity: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+button#discover:hover {
+  color: #fff;
+}
+
+button#discover:hover::before {
+  left: 0;
+  right: 0;
+  opacity: 0.7;
+}
+</style>
