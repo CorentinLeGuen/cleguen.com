@@ -15,7 +15,7 @@
                 </p>
 
                 <NuxtLink to="/about">
-                    <button id="discover" class="shadow-inner">
+                    <button id="discover" class="shadow-inner font-normal border border-1 text-gray-600">
                         <span>
                             {{ $t('about.discover')}}
                         </span>
@@ -41,21 +41,18 @@
 <style scoped>
 button#discover {
   background: #fff;
-  border: none;
   padding: 10px 20px;
   display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
   width: 350px;
-  text-transform: uppercase;
   cursor: pointer;
-  transform: skew(-12deg);
+  transform: skew(0deg);
 }
 button#discover::before {
   content: '';
   position: absolute;
   top: 0;
   bottom: 0;
+  font-weight: bold;
   right: 100%;
   left: 0;
   background: linear-gradient(90deg, rgba(59,130,246,1) 10%, rgba(75,156,103,1) 90%);
