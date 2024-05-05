@@ -25,7 +25,7 @@
                             </li>
                         </ul>
                     </div>
-                    <select class="border border-gray-200 bg-gray-50 text-sm p-2 focus:border-1 focus:border-gray-200 focus:ring-0" v-model="locale">
+                    <select class="border-0 bg-gray-50 text-gray-500 p-0 focus:border-0 focus:ring-0" v-model="locale">
                         <option value="en">English</option>
                         <option value="fr">Français</option>
                     </select>
