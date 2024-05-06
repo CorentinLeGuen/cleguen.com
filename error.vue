@@ -9,7 +9,7 @@
                 <h1 class="mb-4 text-3xl font-bold tracking-tight leading-none text-gray-900 lg:mb-6 md:text-4xl xl:text-5xl">
                     Oops something went wrong
                 </h1>
-                <NuxtLink to="/about">
+                <NuxtLink to="/">
                     <button class="px-16 py-4 overflow-hidden font-medium text-gray-400 hover:text-blue-500">
                         Go back to the website
                     </button>
