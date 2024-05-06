@@ -4,7 +4,7 @@
             <title>cleguen - Git Cheat Sheet</title>
         </header>
 
-        <div class="m-8">
+        <div class="m-8 md:mx-32 xl:mx-64">
             <nav class="flex" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-2 ">
                     <li class="inline-flex items-center">
@@ -48,19 +48,21 @@
 
             <hr class="w-48 h-1 mx-auto my-4 bg-gray-100 border-0 rounded md:my-10 dark:bg-gray-700">
 
-            <p>{{ $t('posts.git.intro_1') }}</p>
-            <p>{{ $t('posts.git.intro_2') }} <em>git init</em>, <em>git push</em>, <em>git commit</em>, etc.</p>
+            <div class="text-gray-600">
+                <p>{{ $t('posts.git.intro_1') }}</p>
+                <p>{{ $t('posts.git.intro_2') }} <em>git init</em>, <em>git push</em>, <em>git commit</em>, etc.</p>
+            </div>
 
             <div class="mt-10">
                 <h4 class="text-xl items-center flex gap-3">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="w-6 h-6 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 8 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
                     </svg>
                     {{ $t('posts.git.title_1') }} <em>master</em>:
                 </h4>
-                <div class="border border-l-8 bg-gray-50 pl-5 my-5 font-mono">
+                <div class="border border-l-8 bg-gray-50 text-gray-600 pl-5 my-5 font-mono">
                     <p>git branch -M main</p>
                 </div>
                 <p class="text-sm text-gray-600 ml-0 md:ml-5">{{ $t('posts.git.title_1_sub_1') }} <em>master</em> {{ $t('posts.git.title_1_sub_2') }} <em>main</em></p>
@@ -68,14 +70,14 @@
 
             <div class="mt-10">
                 <h4 class="text-xl items-center flex gap-3">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="w-6 h-6 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 8 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
                     </svg>
                     {{ $t('posts.git.title_2') }}:
                 </h4>
-                <div class="border border-l-8 bg-gray-50 pl-5 my-5 font-mono">
+                <div class="border border-l-8 bg-gray-50 text-gray-600 pl-5 my-5 font-mono">
                     <p>git add .</p>
                     <p>git commit --amend --no-edit</p>
                     <p>git push -f</p>
@@ -85,14 +87,14 @@
 
             <div class="mt-10">
                 <h4 class="text-xl items-center flex gap-3">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                    <svg class="w-6 h-6 text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
                         fill="none" viewBox="0 0 8 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="m1 13 5.7-5.326a.909.909 0 0 0 0-1.348L1 1" />
                     </svg>
                     {{ $t('posts.git.title_3') }}:
                 </h4>
-                <div class="border border-l-8 bg-gray-50 pl-5 my-5 font-mono">
+                <div class="border border-l-8 bg-gray-50 text-gray-600 pl-5 my-5 font-mono">
                     <p>git remote set-url origin &lt;url&gt;</p>
                 </div>
                 <p class="text-sm text-gray-600 ml-0 md:ml-5">{{ $t('posts.git.title_3_sub') }}</p>

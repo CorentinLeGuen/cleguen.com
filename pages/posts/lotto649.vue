@@ -5,7 +5,7 @@
         </header>
 
         <div>
-            <nav class="flex m-8" aria-label="Breadcrumb">
+            <nav class="flex m-8 md:mx-32 xl:mx-64" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-1 md:space-x-2 ">
                     <li class="inline-flex items-center">
                         <NuxtLink to="/"
@@ -74,10 +74,8 @@
                 </div>
             </div>
 
-            <hr class="w-1/3 h-1 mx-auto my-16 bg-gradient-to-br from-blue-50 to-forest-100 border-0 rounded"/>
-
             <!-- 3 Main parts of IRMA -->
-            <div class="bg-white py-8">
+            <div class="bg-white">
                 <h2 class="mx-2 my-8 text-2xl font-semibold text-center">{{ $t('posts.lotto649.split.title') }}</h2>
 
                 <div class="grid grid-flow-row-dense grid-cols-1 md:grid-cols-3 gap-2 md:gap-4 xl:gap-8 mx-2 md:mx-16 xl:mx-32 mb-8">
