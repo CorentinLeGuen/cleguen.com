@@ -288,48 +288,5 @@
                 </ol>
             </div>
         </div>
-
-        <div class="text-center py-5 mb-16">
-            <a href="https://www.buymeacoffee.com/corentinleguen" target="_blank">
-                <button id="coffee" class="shadow">
-                    <span>
-                        Buy Me A Coffee ☕
-                    </span>
-                </button>
-            </a>
-        </div>
     </div>
 </template>
-
-<style scoped>
-button#coffee {
-  background: #fff;
-  padding: 10px 20px;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  width: 300px;
-  cursor: pointer;
-  transform: skew(0deg);
-}
-button#coffee::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 100%;
-  left: 0;
-  background: linear-gradient(90deg, rgba(59,130,246,1) 10%, rgba(75,156,103,1) 90%);
-  opacity: 0;
-  z-index: -1;
-  transition: all 0.5s;
-}
-button#coffee:hover {
-  color: #fff;
-}
-button#coffee:hover::before {
-  left: 0;
-  right: 0;
-  opacity: 1;
-}
-</style>
