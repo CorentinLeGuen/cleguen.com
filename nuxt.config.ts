@@ -2,9 +2,11 @@ import { resolve } from "path";
 export default defineNuxtConfig({
   app: {},
   css: ['~/assets/input.css'],
+
   alias: {
     "@": resolve(__dirname, "/"),
   },
+
   routeRules: {
     '/draw/last': {
       proxy: {
@@ -17,11 +19,15 @@ export default defineNuxtConfig({
       },
     }
   },
+
   modules: [
     '@nuxtjs/i18n',
     '@nuxtjs/tailwindcss',
   ],
+
   i18n: {
     vueI18n: './i18n.config.ts'
-  }
+  },
+
+  compatibilityDate: '2025-02-03'
 })
