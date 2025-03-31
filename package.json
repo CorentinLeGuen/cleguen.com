@@ -1,30 +1,36 @@
 {
-  "name": "nuxt-app",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "overrides": {
-    "vite": {
-      "rollup": "npm:@rollup/wasm-node"
-    }
-  },
-  "devDependencies": {
-    "@intlify/vue-router-bridge": "^1.0.1",
-    "@nuxt/devtools": "latest",
-    "@nuxtjs/i18n": "npm:@nuxtjs/i18n-edge@^8.0.0-rc.6-28359903.bcd6198",
-    "@nuxtjs/tailwindcss": "^6.10.1",
-    "nuxt": "^3.16.0",
-    "vue": "^3.3.8",
-    "vue-router": "^4.2.5"
-  },
-  "dependencies": {
-    "@intlify/vue-i18n-bridge": "^1.0.1",
-    "flowbite": "^2.2.0"
-  }
+	"name": "cleguen.com",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"lint": "prettier --check ."
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^4.0.0",
+		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@tailwindcss/vite": "^4.0.0",
+		"mdsvex": "^0.12.3",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.11",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"tailwindcss": "^4.0.0",
+		"typescript": "^5.0.0",
+		"vite": "^6.0.0"
+	},
+	"dependencies": {
+		"flowbite": "^3.1.2",
+		"flowbite-svelte": "^0.48.4",
+		"flowbite-svelte-icons": "^2.1.0"
+	}
 }
