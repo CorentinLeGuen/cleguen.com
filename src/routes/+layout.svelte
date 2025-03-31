@@ -1,7 +1,9 @@
 <script lang="ts">
 	import '../app.css';
-
-	let { children } = $props();
+	import ThemeToggle from '$lib/components/ThemeToggle.svelte';
 </script>
 
-{@render children()}
+<div class="min-h-screen bg-white text-black transition-colors dark:bg-gray-900 dark:text-white">
+	<ThemeToggle />
+	<slot />
+</div>
