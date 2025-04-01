@@ -5,6 +5,10 @@
         "contact": "Contact"
     },
     "intro": "Welcome to my website!",
+    "error": {
+        "title": "Oops.",
+        "details": "Something went wrong. Sorry !"
+    },
     "about": {
         "title": "About",
         "short_description": "Back-end software developer with +9 years of professional experience.",

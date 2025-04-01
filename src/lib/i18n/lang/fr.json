@@ -5,6 +5,10 @@
         "contact": "Contact"
     },
     "intro": "Bienvenue sur mon site !",
+    "error": {
+        "title": "Oups.",
+        "details": "Quelque chose s’est mal passé. Désolé !"
+    },
     "about": {
         "title": "À propos",
         "short_description": "Développeur back-end avec +9 ans d'expérience pro.",
