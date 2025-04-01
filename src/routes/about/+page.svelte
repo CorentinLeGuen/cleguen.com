@@ -16,18 +16,18 @@
 	<FeatureDefault class="grid grid-cols-3 text-center my-2 sm:my-4 md:my-12">
 		<FeatureItem class="mx-auto">
 		  <svelte:fragment slot="icon"><AwardOutline class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
-		  <svelte:fragment slot="h3">+ 12 years</svelte:fragment>
-		  <svelte:fragment slot="paragraph">experience in Software Development</svelte:fragment>
+		  <svelte:fragment slot="h3">{$t('translations.about.features.exp')}</svelte:fragment>
+		  <svelte:fragment slot="paragraph">{$t('translations.about.features.exp_text')}</svelte:fragment>
 		</FeatureItem>
 		<FeatureItem class="mx-auto">
 			<svelte:fragment slot="icon"><Python class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
 			<svelte:fragment slot="h3">Python</svelte:fragment>
-			<svelte:fragment slot="paragraph">strong knowledge since 2012</svelte:fragment>
+			<svelte:fragment slot="paragraph">{$t('translations.about.features.python')}</svelte:fragment>
 		</FeatureItem>
 		<FeatureItem class="mx-auto">
 			<svelte:fragment slot="icon"><ChartOutline class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
-			<svelte:fragment slot="h3">Domain</svelte:fragment>
-			<svelte:fragment slot="paragraph">in Data Science and finance</svelte:fragment>
+			<svelte:fragment slot="h3">{$t('translations.about.features.domain')}</svelte:fragment>
+			<svelte:fragment slot="paragraph">{$t('translations.about.features.domain_text')}</svelte:fragment>
 		</FeatureItem>
 	</FeatureDefault>
 </Section>

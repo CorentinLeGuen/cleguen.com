@@ -7,13 +7,20 @@
     "intro": "Welcome to my website!",
     "about": {
         "title": "About",
-        "short_description": "Back-end software developer with +9 years of experience",
+        "short_description": "Back-end software developer with +9 years of professional experience.",
         "description": {
             "1": "I am a Data Scientist, Strategist, and Data Analyst with <strong>over 9 years of experience</strong> in backend development.",
             "2": "Python expert with nearly a decade of experience, I design robust, high-performance, and maintainable APIs in complex environments.",
             "3": "I also have strong expertise in KDB+/Q for real-time data analysis, enabling me to deliver fast and accurate insights to trading teams.",
             "4": "Specialized in the finance and trading industries, I have a deep understanding of the constraints and dynamics of these critical environments.",
             "5": "My curiosity drives me to explore new paradigms thoroughly while maintaining a strong focus on software quality, architecture, and system scalability."
+        },
+        "features": {
+            "exp": "+12 years",
+            "exp_text": "of experience in Software Development",
+            "python": "strong knowledge since 2012",
+            "domain": "Field",
+            "domain_text": "in Finance and Data Science"
         },
         "resume_download": "Download my resume"
     },
