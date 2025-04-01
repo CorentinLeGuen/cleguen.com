@@ -3,6 +3,7 @@
 	import { onMount } from 'svelte';
 	import { locale, loadTranslations } from '$lib/i18n/config';
 	import Navbar from '$lib/components/Navbar.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 	import { Spinner } from 'flowbite-svelte';
 
 	let isReady = false;
@@ -21,11 +22,12 @@
 </script>
 
 {#if isReady}
-	<div class="min-h-screen bg-white text-black transition-colors dark:bg-gray-900 dark:text-white">
+	<div class="min-h-screen flex flex-col bg-white text-black transition-colors dark:bg-gray-900 dark:text-white">
 		<Navbar />
-		<main class="p-6">
+		<main class="p-6 flex-grow text-gray-700 dark:text-gray-400">
 			<slot />
 		</main>
+		<Footer />
 	</div>
 {:else}
 	<div class="p-6 text-xl text-center"><Spinner /> Loading ...</div>

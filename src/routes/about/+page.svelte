@@ -8,7 +8,7 @@
 
 </script>
 
-<h1 class="mb-4 text-center text-3xl font-bold">{$t('translations.about.title')}</h1>
+<h1 class="mb-4 text-center text-3xl font-bold text-gray-900 dark:text-gray-100">{$t('translations.about.title')}</h1>
 
 <p class="mb-4 text-center text-2xl">{$t('translations.about.short_description')}</p>
 
@@ -48,7 +48,7 @@
 	</Button>
 </div>
 
-<Hr classHr="my-8 w-64">{$t('translations.contact.title')}</Hr>
+<Hr classHr="my-8 w-64 text-gray-900 dark:text-gray-100">{$t('translations.contact.title')}</Hr>
 
 <div class="flex justify-center gap-4">
 	<a href="https://github.com/CorentinLeGuen" target="_blank">

@@ -22,6 +22,7 @@
     },
     "legal": {
         "title": "Legal Notice",
+        "rights": "All Rights Reserved.",
         "publisher": {
             "title": "Site Publisher",
             "text": "This website is a personal site edited by <strong>Corentin Le Guen</strong>, based in Montreal QC. For any inquiries, please contact: <a class='text-blue-500 hover:underline' href='mailto:cleguen.refined872@passmail.net'>cleguen.refined872@passmail.net</a>."
