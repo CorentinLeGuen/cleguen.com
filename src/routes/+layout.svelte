@@ -28,5 +28,5 @@
 		</main>
 	</div>
 {:else}
-	<div class="p-6 text-xl text-center"><Spinner /> Loading translations ...</div>
+	<div class="p-6 text-xl text-center"><Spinner /> Loading ...</div>
 {/if}

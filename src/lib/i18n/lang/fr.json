@@ -4,5 +4,21 @@
         "about": "À propos",
         "contact": "Contact"
     },
-    "intro": "Bienvenue sur mon site !"
+    "intro": "Bienvenue sur mon site !",
+    "about": {
+        "title": "À propos",
+        "short_description": "Développeur back-end avec +9 ans d'expérience.",
+        "description": {
+            "1": "Je suis un Data Scientist, Stratège et Analyste de données avec plus de 9 ans d'expérience en développement backend.",
+            "2": "Expert Python avec près de dix ans de pratique, je conçois des APIs robustes, performantes et maintenables dans des environnements complexes.",
+            "3": "Je maîtrise également KDB+/Q pour l’analyse de données en temps réel, ce qui me permet d'apporter des insights rapides et précis aux équipes de trading.",
+            "4": "Spécialisé dans les secteurs de la finance et du trading, j’ai une excellente compréhension des contraintes et des dynamiques de ces environnements critiques.",
+            "5": "Ma curiosité me pousse à explorer en profondeur de nouveaux paradigmes, tout en restant rigoureux sur la qualité logicielle, l’architecture et la scalabilité des systèmes."
+        },
+        "resume_download": "Télécharger mon CV"
+    },
+    "contact": {
+        "title": "Contact",
+        "text": "Vous pouvez m'envoyer un courriel à cette adresse"
+    }
 }

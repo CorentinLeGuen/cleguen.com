@@ -9,4 +9,4 @@
     }));
 </script>
 
-<Select class="w-18" items={options}	bind:value={$locale} placeholder=""/>
+<Select class="w-18" items={options} bind:value={$locale} placeholder=""/>
