@@ -1,14 +1,39 @@
 <script>
-	import { Button } from 'flowbite-svelte';
+	import { Button, GradientButton } from 'flowbite-svelte';
 	import { FileLinesSolid } from 'flowbite-svelte-icons';
 	import { t } from '$lib/i18n/config';
+	import { Section, FeatureDefault, FeatureItem } from "flowbite-svelte-blocks";
+	import { AwardOutline, PersonChalkboardOutline, ChartOutline } from "flowbite-svelte-icons";
+	import { Python, Github, Linkedin } from "svelte-supertiny";
+
 </script>
 
 <h1 class="mb-4 text-center text-3xl font-bold">{$t('translations.about.title')}</h1>
 
 <p class="mb-4 text-center text-2xl">{$t('translations.about.short_description')}</p>
 
-<div class="m-4 text-justify">
+<Section name="feature">
+	<FeatureDefault class="grid grid-cols-3 text-center my-2 sm:my-4 md:my-12">
+		<FeatureItem class="mx-auto">
+		  <svelte:fragment slot="icon"><AwardOutline class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+		  <svelte:fragment slot="h3">+ 12 years</svelte:fragment>
+		  <svelte:fragment slot="paragraph">experience in Software Development</svelte:fragment>
+		</FeatureItem>
+		<FeatureItem class="mx-auto">
+			<svelte:fragment slot="icon"><Python class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+			<svelte:fragment slot="h3">Python</svelte:fragment>
+			<svelte:fragment slot="paragraph">strong knowledge since 2012</svelte:fragment>
+		</FeatureItem>
+		<FeatureItem class="mx-auto">
+			<svelte:fragment slot="icon"><ChartOutline class="text-primary-600 dark:text-primary-300" /></svelte:fragment>
+			<svelte:fragment slot="h3">Domain</svelte:fragment>
+			<svelte:fragment slot="paragraph">in Data Science and finance</svelte:fragment>
+		</FeatureItem>
+	</FeatureDefault>
+</Section>
+
+
+<div class="paragraph text-justify">
 	<p class="my-2">{$t('translations.about.description.1')}</p>
 	<p class="my-2">{$t('translations.about.description.2')}</p>
 	<p class="my-2">{$t('translations.about.description.3')}</p>
@@ -16,19 +41,25 @@
 	<p class="my-2">{$t('translations.about.description.5')}</p>
 </div>
 
-<div class="flex justify-center">
+<div class="flex justify-center my-4 sm:my-8 md:my-12">
 	<Button outline class="x-auto w-md" href="/Resume_CorentinLeGuen.pdf" target="_blank">
 		<FileLinesSolid class="me-2 h-5 w-5" />
 		{$t('translations.about.resume_download')}
 	</Button>
 </div>
 
+<div class="flex justify-center space-x-4">
+	<GradientButton  outline color="pinkToOrange">
+		<Github /><span class="px-4">{$t('translations.contact.accounts.github')}</span>
+	</GradientButton >
+	<GradientButton  outline color="cyanToBlue">
+		<Linkedin /><span class="px-4">{$t('translations.contact.accounts.linkedin')}</span>
+	</GradientButton >
+</div>
+
 <h2 class="mt-8 mb-2 text-2xl font-semibold text-center">📬 {$t('translations.contact.title')}</h2>
 
-<p>
+<p class="paragraph text-justify">
 	{$t('translations.contact.text')}:
-	<a
-		class="text-blue-700 hover:underline dark:text-blue-400"
-		href="mailto:cleguen.refined872@passmail.net">cleguen.refined872@passmail.net</a
-	>
+	<a class="text-blue-700 hover:underline dark:text-blue-400" href="mailto:cleguen.refined872@passmail.net">cleguen.refined872@passmail.net</a>
 </p>

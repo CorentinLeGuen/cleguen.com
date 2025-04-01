@@ -19,6 +19,10 @@
     },
     "contact": {
         "title": "Contact",
-        "text": "You can contact me at this email address"
+        "text": "You can contact me at this email address",
+        "accounts": {
+            "github": "GitHub Account",
+            "linkedin": "Linkedin Account"
+        }
     }
 }
