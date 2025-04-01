@@ -34,7 +34,7 @@
 
 
 <div class="paragraph text-justify">
-	<p class="my-2">{$t('translations.about.description.1')}</p>
+	<p class="my-2">{@html $t('translations.about.description.1')}</p>
 	<p class="my-2">{$t('translations.about.description.2')}</p>
 	<p class="my-2">{$t('translations.about.description.3')}</p>
 	<p class="my-2">{$t('translations.about.description.4')}</p>

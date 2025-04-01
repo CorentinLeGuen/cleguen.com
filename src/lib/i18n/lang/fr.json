@@ -19,5 +19,33 @@
     },
     "contact": {
         "title": "Contacts"
+    },
+    "legal": {
+        "title": "Mentions légales",
+        "publisher": {
+            "title": "Éditeur du site",
+            "text": "Ce site est un site personnel édité par <strong>Corentin Le Guen</strong>, domicilié à Montréal QC. Pour toute demande, vous pouvez me contacter à l'adresse suivante : <a class='text-blue-500 hover:underline' href='mailto:cleguen.refined872@passmail.net'>cleguen.refined872@passmail.net</a>."
+        },
+        "hosting": {
+            "title": "Hébergement",
+            "text": "Ce site est hébergé par : Netlify (https://netlify.com), 512 2nd Street, Fl 2, San Francisco, CA 94107 USA."
+        },
+        "ip": {
+            "title": "Propriété intellectuelle",
+            "text": "Tous les contenus présents sur ce site (textes, code, images, etc.) sont la propriété exclusive de l’éditeur, sauf mention contraire. Toute reproduction ou distribution sans autorisation préalable est interdite."
+        },
+        "rgpd": {
+            "title": "Données personnelles & RGPD",
+            "text1": "Ce site ne collecte pas de données personnelles à votre insu. Aucun cookie de suivi ni service d’analyse (comme Google Analytics) n’est utilisé.",
+            "text2": "Si vous envoyez un email, les données ne seront utilisées que dans le cadre de l’échange engagé. Conformément au RGPD, vous pouvez demander l’accès, la modification ou la suppression de vos données en écrivant à l’adresse indiquée ci-dessus."
+        },
+        "liability": {
+            "title": "Responsabilité",
+            "text": "L’éditeur décline toute responsabilité quant à l’utilisation des informations présentes sur ce site. Ce site peut contenir des liens vers des sites externes sur lesquels l’éditeur n’a aucun contrôle."
+        },
+        "updated": {
+            "title": "Dernière mise à jour",
+            "date": "1er Avril 2025"
+        }
     }
 }
