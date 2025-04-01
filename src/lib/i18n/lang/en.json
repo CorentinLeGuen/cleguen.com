@@ -1,0 +1,59 @@
+{
+    "nav": {
+        "blog": "Blog",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "intro": "Welcome to my website!",
+    "about": {
+        "title": "About",
+        "short_description": "Back-end software developer with +9 years of professional experience.",
+        "description": {
+            "1": "I am a Data Scientist, Strategist, and Data Analyst with <strong>over 9 years of experience</strong> in backend development.",
+            "2": "Python expert with nearly a decade of experience, I design robust, high-performance, and maintainable APIs in complex environments.",
+            "3": "I also have strong expertise in KDB+/Q for real-time data analysis, enabling me to deliver fast and accurate insights to trading teams.",
+            "4": "Specialized in the finance and trading industries, I have a deep understanding of the constraints and dynamics of these critical environments.",
+            "5": "My curiosity drives me to explore new paradigms thoroughly while maintaining a strong focus on software quality, architecture, and system scalability."
+        },
+        "features": {
+            "exp": "+12 years",
+            "exp_text": "of experience in Software Development",
+            "python": "strong knowledge since 2012",
+            "domain": "Field",
+            "domain_text": "in Finance and Data Science"
+        },
+        "resume_download": "Download my resume"
+    },
+    "contact": {
+        "title": "Contacts"
+    },
+    "legal": {
+        "title": "Legal Notice",
+        "rights": "All Rights Reserved.",
+        "publisher": {
+            "title": "Site Publisher",
+            "text": "This website is a personal site edited by <strong>Corentin Le Guen</strong>, based in Montreal QC. For any inquiries, please contact: <a class='text-blue-500 hover:underline' href='mailto:cleguen.refined872@passmail.net'>cleguen.refined872@passmail.net</a>."
+        },
+        "hosting": {
+            "title": "Hosting",
+            "text": "This site is hosted by: Netlify (https://netlify.com), 512 2nd Street, Fl 2, San Francisco, CA 94107 USA."
+        },
+        "ip": {
+            "title": "Intellectual Property",
+            "text": "All content on this site (texts, code, images, etc.) is the exclusive property of the publisher unless otherwise stated. Any reproduction or distribution without prior authorization is prohibited."
+        },
+        "rgpd": {
+            "title": "Personal Data & GDPR",
+            "text1": "This site does not collect personal data without your knowledge. No tracking cookies or analytics services (such as Google Analytics) are used.",
+            "text2": "If you send an email, the data will only be used in the context of the initiated conversation. In accordance with GDPR, you can request access, modification, or deletion of your data by writing to the email address above."
+        },
+        "liability": {
+            "title": "Disclaimer",
+            "text": "The publisher is not responsible for the use of the information presented on this site. This site may contain links to external websites over which the publisher has no control."
+        },
+        "updated": {
+            "title": "Last Update",
+            "date": "April 1st, 2025"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "nav": {
+        "blog": "Blog",
+        "about": "À propos",
+        "contact": "Contact"
+    },
+    "intro": "Bienvenue sur mon site !",
+    "about": {
+        "title": "À propos",
+        "short_description": "Développeur back-end avec +9 ans d'expérience pro.",
+        "description": {
+            "1": "Je suis un Data Scientist, Stratège et Analyste de données avec plus de 9 ans d'expérience en développement backend.",
+            "2": "Expert Python avec près de dix ans de pratique, je conçois des APIs robustes, performantes et maintenables dans des environnements complexes.",
+            "3": "Je maîtrise également KDB+/Q pour l’analyse de données en temps réel, ce qui me permet d'apporter des insights rapides et précis aux équipes de trading.",
+            "4": "Spécialisé dans les secteurs de la finance et du trading, j’ai une excellente compréhension des contraintes et des dynamiques de ces environnements critiques.",
+            "5": "Ma curiosité me pousse à explorer en profondeur de nouveaux paradigmes, tout en restant rigoureux sur la qualité logicielle, l’architecture et la scalabilité des systèmes."
+        },
+        "features": {
+            "exp": "+12 ans",
+            "exp_text": "d’expérence en Développement logiciel",
+            "python": "connaissances solides depuis 2012",
+            "domain": "Domaine",
+            "domain_text": "en Finance et Data Science"
+        },
+        "resume_download": "Télécharger mon CV"
+    },
+    "contact": {
+        "title": "Contacts"
+    },
+    "legal": {
+        "title": "Mentions légales",
+        "publisher": {
+            "title": "Éditeur du site",
+            "text": "Ce site est un site personnel édité par <strong>Corentin Le Guen</strong>, domicilié à Montréal QC. Pour toute demande, vous pouvez me contacter à l'adresse suivante : <a class='text-blue-500 hover:underline' href='mailto:cleguen.refined872@passmail.net'>cleguen.refined872@passmail.net</a>."
+        },
+        "hosting": {
+            "title": "Hébergement",
+            "text": "Ce site est hébergé par : Netlify (https://netlify.com), 512 2nd Street, Fl 2, San Francisco, CA 94107 USA."
+        },
+        "ip": {
+            "title": "Propriété intellectuelle",
+            "text": "Tous les contenus présents sur ce site (textes, code, images, etc.) sont la propriété exclusive de l’éditeur, sauf mention contraire. Toute reproduction ou distribution sans autorisation préalable est interdite."
+        },
+        "rgpd": {
+            "title": "Données personnelles & RGPD",
+            "text1": "Ce site ne collecte pas de données personnelles à votre insu. Aucun cookie de suivi ni service d’analyse (comme Google Analytics) n’est utilisé.",
+            "text2": "Si vous envoyez un email, les données ne seront utilisées que dans le cadre de l’échange engagé. Conformément au RGPD, vous pouvez demander l’accès, la modification ou la suppression de vos données en écrivant à l’adresse indiquée ci-dessus."
+        },
+        "liability": {
+            "title": "Responsabilité",
+            "text": "L’éditeur décline toute responsabilité quant à l’utilisation des informations présentes sur ce site. Ce site peut contenir des liens vers des sites externes sur lesquels l’éditeur n’a aucun contrôle."
+        },
+        "updated": {
+            "title": "Dernière mise à jour",
+            "date": "1er Avril 2025"
+        }
+    }
+}
