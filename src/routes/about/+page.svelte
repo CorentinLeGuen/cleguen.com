@@ -1,10 +1,10 @@
 <script>
-	import { Button, GradientButton } from 'flowbite-svelte';
+	import { Button, GradientButton, Hr } from 'flowbite-svelte';
 	import { FileLinesSolid } from 'flowbite-svelte-icons';
 	import { t } from '$lib/i18n/config';
 	import { Section, FeatureDefault, FeatureItem } from "flowbite-svelte-blocks";
 	import { AwardOutline, PersonChalkboardOutline, ChartOutline } from "flowbite-svelte-icons";
-	import { Python, Github, Linkedin } from "svelte-supertiny";
+	import { Python, Github, Linkedin, Mail } from "svelte-supertiny";
 
 </script>
 
@@ -48,18 +48,16 @@
 	</Button>
 </div>
 
-<div class="flex justify-center space-x-4">
-	<GradientButton  outline color="pinkToOrange">
-		<Github /><span class="px-4">{$t('translations.contact.accounts.github')}</span>
-	</GradientButton >
-	<GradientButton  outline color="cyanToBlue">
-		<Linkedin /><span class="px-4">{$t('translations.contact.accounts.linkedin')}</span>
-	</GradientButton >
+<Hr classHr="my-8 w-64">{$t('translations.contact.title')}</Hr>
+
+<div class="flex justify-center gap-4">
+	<a href="https://github.com/CorentinLeGuen" target="_blank">
+		<Github class="size-12"/>
+	</a>
+	<a href="https://www.linkedin.com/in/corentinleguen/" target="_blank">
+		<Linkedin class="size-12" />
+	</a>
+	<a href="mailto:cleguen.refined872@passmail.net" target="_blank">
+		<Mail class="size-12" />
+	</a>
 </div>
-
-<h2 class="mt-8 mb-2 text-2xl font-semibold text-center">📬 {$t('translations.contact.title')}</h2>
-
-<p class="paragraph text-justify">
-	{$t('translations.contact.text')}:
-	<a class="text-blue-700 hover:underline dark:text-blue-400" href="mailto:cleguen.refined872@passmail.net">cleguen.refined872@passmail.net</a>
-</p>

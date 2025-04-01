@@ -18,11 +18,6 @@
         "resume_download": "Télécharger mon CV"
     },
     "contact": {
-        "title": "Contact",
-        "text": "Vous pouvez m'envoyer un courriel à cette adresse",
-        "accounts": {
-            "github": "Compte GitHub",
-            "linkedin": "Compte Linkedin"
-        }
+        "title": "Contacts"
     }
 }
