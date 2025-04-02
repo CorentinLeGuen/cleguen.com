@@ -25,7 +25,7 @@ html {
 
 @layer utilities {
     .paragraph {
-      @apply mx-4 sm:mx-6 md:mx-12 lg:mx-24 xl:mx-56 2xl:text-center;
+      @apply mx-4 sm:mx-6 md:mx-12 lg:mx-24 xl:mx-56 2xl:max-w-1/2 2xl:mx-auto;
     }
   }
   
