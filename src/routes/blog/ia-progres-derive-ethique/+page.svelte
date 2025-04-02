@@ -55,7 +55,7 @@
             Ainsi que le souligne la sénatrice Erin Maye Quade dans cette vidéo, membre du <span class="underline decoration-dotted" title="Democratic–Farmer–Labor Party">DFL</span> :
         </p>
         <div>
-            <iframe width="560" height="315" class="mx-auto" src="https://www.youtube.com/embed/eNsOpmRqOjA?si=o3k-P3jXkbnKc2Ml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe class="mx-auto w-full h-67" src="https://www.youtube.com/embed/eNsOpmRqOjA?si=o3k-P3jXkbnKc2Ml" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
         <p>
             L’éthique, dans ce contexte, ne se limite pas à la morale individuelle. Il s’agit d’un questionnement sur les
@@ -81,9 +81,7 @@
         <p>
             Je vous recommande cette vidéo de MonsieurPhi sur YouTube à propos de ChatGPT, et plus largement, à propos des IA:
         </p>
-        <iframe class="mx-auto" width="560" height="315"
-            src="https://www.youtube.com/embed/R2fjRbc9Sa0?si=0C4eMWIxKSJTr3I4" title="YouTube video player"
-            frameborder="0"
+        <iframe class="mx-auto w-full h-67" src="https://www.youtube.com/embed/R2fjRbc9Sa0?si=0C4eMWIxKSJTr3I4" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         <p>
