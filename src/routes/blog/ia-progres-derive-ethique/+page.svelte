@@ -21,10 +21,8 @@
 
     <div class="text-justify space-y-4">
         <p>Ces dernières années, l’intelligence artificielle (IA) a quitté le domaine réservé des laboratoires de
-            recherche
-            pour s’immiscer dans la vie quotidienne : assistants vocaux, recommandations de contenu, génération
-            d’images,
-            traitement automatisé du langage… L’IA fascine par ses capacités, mais interroge aussi sur ses implications
+            recherche pour s’immiscer dans la vie quotidienne : assistants vocaux, recommandations de contenu, génération
+            d’images, traitement automatisé du langage… L’IA fascine par ses capacités, mais interroge aussi sur ses implications
             profondes.</p>
         <p>Il est aujourd’hui facile de copier un style, d’imiter un artiste avec l’IA. Cela prend quelques secondes à générer :</p>
 
@@ -37,8 +35,7 @@
             Une question fondamentale en émerge : que sacrifions-nous lorsque nous
             automatisons la créativité, la pensée, ou la décision ?</p>
         <p class="font-medium">Sans chercher à juger ou à trancher, cet article propose une réflexion sur les enjeux
-            éthiques de l’intelligence
-            artificielle, à travers des exemples concrets et des questions ouvertes.</p>
+            éthiques de l’intelligence artificielle, à travers des exemples concrets et des questions ouvertes.</p>
     </div>
 
     <Hr classHr="w-48 h-1 mx-auto my-4 rounded-sm md:my-10" />
