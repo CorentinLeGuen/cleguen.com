@@ -4,7 +4,7 @@
         "about": "À propos",
         "contact": "Contact"
     },
-    "intro": "Bienvenue sur mon site !",
+    "intro": "Bienvenue sur mon site!",
     "error": {
         "title": "Oups.",
         "details": "Quelque chose s’est mal passé. Désolé !"
@@ -26,7 +26,8 @@
             "domain": "Domaine",
             "domain_text": "en Finance et Data Science"
         },
-        "resume_download": "Télécharger mon CV"
+        "resume_download": "Télécharger mon CV",
+        "see_about_section": "Voir mon expérience professionnelle"
     },
     "contact": {
         "title": "Contacts"
