@@ -4,7 +4,7 @@
 	import { t } from '$lib/i18n/config';
 </script>
 
-<form action="https://formspree.io/f/xpwpypbj" method="POST" class="border border-gray-600 rounded-lg p-4 shadow-2xl my-8 max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2 2xl:max-w-1/3 mx-auto">
+<form action="https://formspree.io/f/xpwpypbj" method="POST" class="border border-gray-200 dark:border-gray-600 rounded-lg p-4 shadow-2xl my-8 max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2 2xl:max-w-1/3 mx-auto">
     <h2 class="text-2xl mb-2">{$t('translations.contact.form')}</h2>
     <Input type="email" name="email" required placeholder="contact@email.com" />
     <Textarea class="my-2" required placeholder="{$t('translations.contact.msg')}" name="message"/>
