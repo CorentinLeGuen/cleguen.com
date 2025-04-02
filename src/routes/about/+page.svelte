@@ -60,11 +60,4 @@
 	<a href="mailto:cleguen.refined872@passmail.net" target="_blank">
 		<Mail class="size-12" />
 	</a>
-	<a href="https://buymeacoffee.com/corentinleguen" target="_blank">
-		<Mastercard class="size-12" />
-	</a>
-	<span>
-		<Bitcoin id="btc" class="size-12" /> 
-		<Popover class="w-84 text-sm font-light" title="Bitcoin Wallet" triggeredBy="#btc">bc1ql5r7266eq0llshrfc93j7a72av2huyhdc9sa64</Popover>
-	</span>
 </div>
