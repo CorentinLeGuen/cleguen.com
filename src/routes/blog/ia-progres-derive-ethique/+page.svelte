@@ -28,8 +28,8 @@
 
         <Img src="/blog/ai-ethic/ai-ghibli-style-prompt.png" figClass="max-w-full my-8" alignment="mx-auto" alt="Prompt example of Ghibli from ChatGPT" caption="Image générée par ChatGPT 4.0 - 2 Avril 2025" />
 
-        <p>Le <a href="https://apnews.com/article/studio-ghibli-chatgpt-images-hayao-miyazaki-openai-0f4cb487ec3042dd5b43ad47879b91f4"
-                class="text-orange-600 dark:text-orange-500 font-light hover:underline" target="_blank">réalisateur japonais Hayao Miyazaki, figure majeure de
+        <p><a href="https://apnews.com/article/studio-ghibli-chatgpt-images-hayao-miyazaki-openai-0f4cb487ec3042dd5b43ad47879b91f4"
+                class="text-orange-600 dark:text-orange-500 font-light hover:underline" target="_blank">Le réalisateur japonais Hayao Miyazaki, figure majeure de
                 l’animation, a exprimé mon scepticisme face au rôle de l’IA dans le monde de l'animation</a>.
             Cette technologie soulève des questions d'éthique, de droits d'auteurs et remet en question l’utilisation de l’IA dans les processus de création artistique.
             Une question fondamentale en émerge : que sacrifions-nous lorsque nous
