@@ -4,7 +4,8 @@
 	import { t } from '$lib/i18n/config';
 	import { Section, FeatureDefault, FeatureItem } from "flowbite-svelte-blocks";
 	import { AwardOutline, ChartOutline } from "flowbite-svelte-icons";
-	import { Python, Github, Linkedin, Mail, Mastercard, Bitcoin } from "svelte-supertiny";
+	import { Python, Github, Linkedin, Mail, } from "svelte-supertiny";
+    import ContactForm from '$lib/components/ContactForm.svelte';
 
 </script>
 
@@ -57,7 +58,6 @@
 	<a href="https://www.linkedin.com/in/corentinleguen/" target="_blank">
 		<Linkedin class="size-12" />
 	</a>
-	<a href="mailto:cleguen.refined872@passmail.net" target="_blank">
-		<Mail class="size-12" />
-	</a>
 </div>
+
+<ContactForm />

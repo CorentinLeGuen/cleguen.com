@@ -1,6 +1,7 @@
 <script>
-    import { Hr, Img, Tooltip, Li, List, Heading, Button, Alert } from 'flowbite-svelte';
-	import { ArrowUpRightFromSquareSolid, InfoCircleSolid } from 'flowbite-svelte-icons';
+    import { Hr, Img, Li, List, Heading, Alert } from 'flowbite-svelte';
+	import { InfoCircleSolid } from 'flowbite-svelte-icons';
+    import ContactForm from '$lib/components/ContactForm.svelte';
 </script>
 
 <div class="max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2 2xl:max-w-1/3 mx-auto">
@@ -281,13 +282,6 @@
         <p class="font-medium">Pensez-vous qu’il faille supprimer les garde-fous éthiques autour de l’IA? Partiellement? Totalement?
             Et concernant les droits d’auteur·e·s et la création artistique : est-il acceptable d’imiter un style sans en reconnaître l’auteur·e d’origine?</p>
     </div>
-
-    <div class="flex justify-center mt-8">
-        <a href="mailto:cleguen.refined872@passmail.net">
-            <Button outline class="x-auto w-md">
-                Envoyez moi un courriel pour me faire part de vos impressions <ArrowUpRightFromSquareSolid class="ms-2 h-5 w-5" />
-            </Button>
-        </a>
-    </div>
-    
 </div>
+
+<ContactForm />

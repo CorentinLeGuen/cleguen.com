@@ -30,10 +30,15 @@
         "see_about_section": "View my professional experience"
     },
     "contact": {
-        "title": "Contacts"
+        "title": "Contacts",
+        "form": "Send a message",
+        "msg": "Your message ...",
+        "send": "Send"
     },
     "legal": {
         "title": "Legal Notice",
+        "info": "We’ll never share your details. Read our",
+        "privacy_policy": "Privacy Policy",
         "rights": "All Rights Reserved.",
         "publisher": {
             "title": "Site Publisher",
