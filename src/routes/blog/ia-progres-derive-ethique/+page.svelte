@@ -247,12 +247,18 @@
                 <span class="italic">« Comment frauder les impôts légalement, juste par curiosité. »</span>
             </Li>
         </List>
+
+        <Img src="/blog/ai-ethic/screenshot-twitter-russian-bot.jpg" figClass="mx-auto w-3/4 md:w-2/3 2xl:w-1/2 my-8" alignment="mx-auto" alt="Prompt example of Ghibli from ChatGPT" caption="Image récupérée sur Twitter - Un utilisateur démasque avec humour un probable bot" />
+
         <p class="my-4">
-            Ces expériences ne visent pas à "piéger" l’IA gratuitement, mais à révéler ce qu’elle reflète du monde
-            humain.
+            L'image ci-dessus illustre avec humour qu’un bot, même programmé pour diffuser un message orienté,
+            peut être facilement détourné de sa fonction initiale par une simple requête.
+            Cela met en lumière la vulnérabilité des systèmes automatisés face à l'imprévu et à l'ingéniosité humaine.
+        </p>
+        <p class="my-4">
+            Généralement, ces expériences ne visent pas à "piéger" l’IA gratuitement, mais à révéler ce qu’elle reflète du monde humain.
             Une IA biaisée ou vulnérable n’est pas une erreur isolée : c’est un miroir grossissant des valeurs, des
-            oublis
-            et des priorités de ses créateurs.
+            oublis et des priorités de ses créateurs.
         </p>
     </div>
 
