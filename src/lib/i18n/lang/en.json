@@ -11,9 +11,9 @@
     },
     "about": {
         "title": "About",
-        "short_description": "Back-end software developer with +9 years of professional experience.",
+        "short_description": "Back-end software developer and Data Analyst with +9 years of professional experience.",
         "description": {
-            "1": "I am a Backend Developer and Data Analyst with <strong>over 9 years of experience</strong>.",
+            "1": "I am a Senior Backend Developer and Data Analyst with <strong>over 9 years of experience</strong>.",
             "2": "Python expert with nearly a decade of experience, I design robust, high-performance, and maintainable APIs in complex environments.",
             "3": "I also have strong expertise in KDB+/Q for real-time data analysis, enabling me to deliver fast and accurate insights to trading teams.",
             "4": "Specialized in the finance and trading industries, I have a deep understanding of the constraints and dynamics of these critical environments.",
