@@ -12,7 +12,7 @@
 
 <div class="flex justify-center mt-8">
 	<a href="/about">
-		<Button outline class="x-auto w-md">
+		<Button outline class="x-auto">
 			{$t('translations.about.see_about_section')}<ArrowRightOutline class="ms-2 h-5 w-5" />
 		</Button>
 	</a>
