@@ -65,5 +65,15 @@
             "title": "Last Update",
             "date": "April 1st, 2025"
         }
+    },
+    "articles": {
+        "tips": {
+            "columbia_course": {
+                "title": "Free courses from University of Columbia !",
+                "desc": "Explore foundational concepts in Artificial Intelligence, Machine Learning, and Deep Learning & Foundations of Behavioral Science",
+                "info": "Simply add code <strong>2YEARPLUS</strong> while registering to get courses free !",
+                "link": "Access courses"
+            }
+        }
     }
 }
