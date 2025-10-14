@@ -2,6 +2,11 @@
 	import { t } from '$lib/i18n/config';
 </script>
 
+
+<svelte:head>
+	<title>{$t('translations.legal.title')}</title>
+</svelte:head>
+
 <div class="max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2 2xl:max-w-1/3 mx-auto">
 	<h1 class="mb-6 text-3xl font-bold">{$t('translations.legal.title')}</h1>
 

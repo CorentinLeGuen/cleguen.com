@@ -1,12 +1,14 @@
 <script>
 	import { Button, Hr, Popover } from 'flowbite-svelte';
-	import { FileLinesSolid } from 'flowbite-svelte-icons';
 	import { t } from '$lib/i18n/config';
-	import { Section, FeatureDefault, FeatureItem } from "flowbite-svelte-blocks";
-	import { AwardOutline, ChartOutline } from "flowbite-svelte-icons";
-	import { Python, Github, Linkedin, Mail, } from "svelte-supertiny";
+	import { Github, Linkedin } from "svelte-supertiny";
     import ContactForm from '$lib/components/ContactForm.svelte';
 </script>
+
+
+<svelte:head>
+	<title>{$t('translations.about.title')}</title>
+</svelte:head>
 
 <div class="max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2 2xl:max-w-1/3 mx-auto">
 	<h1 class="mb-4 text-center text-3xl font-bold text-gray-900 dark:text-gray-100">{$t('translations.about.title')}</h1>
@@ -29,12 +31,11 @@
 
 	<div class="flex justify-center my-4 sm:my-8 md:my-12">
 		<Button outline class="x-auto w-md" href="/Resume_CorentinLeGuen.pdf" target="_blank">
-			<FileLinesSolid class="me-2 h-5 w-5" />
 			{$t('translations.about.resume_download')}
 		</Button>
 	</div>
 
-	<Hr classHr="my-8 w-64 text-gray-900 dark:text-gray-100">{$t('translations.contact.title')}</Hr>
+	<Hr class="my-8 w-64 text-gray-900 dark:text-gray-100">{$t('translations.contact.title')}</Hr>
 
 	<div class="flex justify-center gap-4">
 		<a href="https://github.com/CorentinLeGuen" target="_blank">

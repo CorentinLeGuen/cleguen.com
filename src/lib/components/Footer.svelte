@@ -3,8 +3,8 @@
 	import { t } from '$lib/i18n/config';
 </script>
 
-<Footer class="border-t-1 border-gray-100 dark:border-gray-800">
-	<div class="w-full mx-auto max-w-screen-xl p-4 space-x-8 flex items-center justify-between">
+<Footer>
+	<div class="w-full mx-auto max-w-screen-xl flex items-center justify-between">
         <span class="self-center text-sm text-gray-700 dark:text-gray-400">
             &copy; 2025 <a href="/" class="font-semibold">Corentin Le Guen</a> - {$t('translations.legal.rights')} 
         </span>
