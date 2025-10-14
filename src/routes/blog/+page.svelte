@@ -7,10 +7,11 @@
 <div class="mx-auto max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2 2xl:max-w-1/3">
     <h1 class="text-center text-4xl font-extrabold mb-8">{$t('translations.nav.blog')}</h1>
 
-	<Card class="text-justify mx-auto">
-		<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white text-center">
+	<Card class="text-justify mx-auto p-4">
+		<h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">
 			L’intelligence artificielle, progrès ou dérive ?
 		</h5>
+		<hr class="text-gray-200 mb-4"/>
         <div class="flex justify-between mx-4">
             <p class="text-sm italic mb-2 text-gray-500 dark:text-gray-400">Publié le 2 Avril 2025</p>
             <p class="font-bold">FR</p>
