@@ -1,8 +1,11 @@
 <script>
 	import { Button } from 'flowbite-svelte';
-	import { ArrowRightOutline } from 'flowbite-svelte-icons';
 	import { t } from '$lib/i18n/config';
 </script>
+
+<svelte:head>
+	<title>cleguen.com</title>
+</svelte:head>
 
 <h1 class="text-center text-4xl font-extrabold">{$t('translations.intro')}</h1>
 
@@ -13,7 +16,7 @@
 <div class="flex justify-center mt-8">
 	<a href="/about">
 		<Button outline class="x-auto">
-			{$t('translations.about.see_about_section')}<ArrowRightOutline class="ms-2 h-5 w-5" />
+			{$t('translations.about.see_about_section')}
 		</Button>
 	</a>
 </div>

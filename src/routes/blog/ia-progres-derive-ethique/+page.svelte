@@ -1,12 +1,14 @@
 <script>
     import { Hr, Img, Li, List, Heading, Alert } from 'flowbite-svelte';
-	import { InfoCircleSolid } from 'flowbite-svelte-icons';
     import ContactForm from '$lib/components/ContactForm.svelte';
 </script>
 
+<svelte:head>
+    <title>Article IA et l'Art</title>
+</svelte:head>
+
 <div class="max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2 2xl:max-w-1/3 mx-auto">
     <Alert rounded={false} class="border-t-4 mb-8">
-        <InfoCircleSolid slot="icon" class="w-5 h-5" />
         <span class="font-medium">Traduction non disponible.</span>
         Cet article est disponible en français uniquement.
       </Alert>
