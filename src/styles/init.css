@@ -3,3 +3,15 @@
 @import "flowbite/src/themes/default";
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
+
+@font-face {
+    font-family: 'Quicksand';
+    src: url('@/assets/fonts/Quicksand.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@theme {
+    --font-family-sans: 'Quicksand', ui-sans-serif, system-ui, sans-serif;
+    --font-family-quicksand: 'Quicksand', sans-serif;
+}

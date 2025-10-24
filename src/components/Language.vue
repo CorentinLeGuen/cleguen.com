@@ -35,8 +35,8 @@ watch(locale, newVal => {
             :key="code" 
             @click="changeLanguage(code)" 
             :class="[
-                'border hover:cursor-pointer',
-                currentLocale === code ? 'bg-amber-400' : ''
+                'hover:cursor-pointer',
+                currentLocale === code ? 'hidden' : ''
             ]"
         >
             {{ label }}

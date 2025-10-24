@@ -1,10 +1,17 @@
+import Legal from '@/components/Legal.vue'
+import Main from '@/components/Main.vue'
 import {createRouter, createWebHistory, type RouteRecordRaw} from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
     {
         path: '/',
         name: 'home',
-        component: () => import('@/components/Main.vue')
+        component: () => Main,
+    },
+    {
+        path: '/legal',
+        name: 'legal',
+        component: () => Legal,
     }
 ]
 
