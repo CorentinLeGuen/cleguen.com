@@ -5,11 +5,16 @@ import { ref, watch } from 'vue'
 const { locale } = useI18n()
 
 const languages = {
-    en: 'English',
-    fr: 'Français',
+    en: 'EN',
+    fr: 'FR',
 }
 
 const currentLocale = ref(localStorage.getItem('locale') || locale.value)
+
+const changeLanguage = (code: string) => {
+    currentLocale.value = code
+    updateLanguage()
+}
 
 const updateLanguage = () => {
   locale.value = currentLocale.value
@@ -24,10 +29,18 @@ watch(locale, newVal => {
 
 <template>
   <div>
-    <select v-model="currentLocale" @change="updateLanguage">
-      <option v-for="(label, code) in languages" :key="code" :value="code">
-        {{ label }}
-      </option>
-    </select>
+    <ul class="flex">
+        <li
+            v-for="(label, code) in languages" 
+            :key="code" 
+            @click="changeLanguage(code)" 
+            :class="[
+                'border hover:cursor-pointer',
+                currentLocale === code ? 'bg-amber-400' : ''
+            ]"
+        >
+            {{ label }}
+        </li>
+    </ul>
   </div>
 </template>
