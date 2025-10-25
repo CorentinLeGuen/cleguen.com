@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
+import Contact from '@/components/Contact.vue'
 const {t, locale} = useI18n()
 
 </script>
@@ -31,6 +32,20 @@ const {t, locale} = useI18n()
             </a>
         </div>
 
+        <div class="max-w-full sm:max-w-1/2 mx-auto">
+            <Contact />
+        </div>
+
         <hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10 drop-shadow"/>
+
+        <h2 class="text-4xl font-extrabold text-gray-700 ml-4">{{ t('blog.title') }}</h2>
+
+        <router-link to="/ia-progress-or-downfall">
+            <div class="px-4 py-2 bg-white rounded border border-gray-200 transition duration-300 ease-in-out hover:shadow hover:cursor-pointer">
+                <h3 class="text-xl font-bold text-gray-700">{{ t('blog.1.title') }}</h3>
+                <p class="text-sm text-gray-600">{{ t('blog.1.description') }}</p>
+                <p class="italic text-sm text-gray-500">{{ t('blog.1.date_publication') }}</p>
+            </div>
+        </router-link>
     </div>
 </template>
