@@ -6,7 +6,7 @@ const {t, locale} = useI18n()
 
 <template>
     <div class="space-y-10 my-8 md:my-18 mx-auto">
-        <h1 class="text-center text-4xl text-gray-700">{{ t('welcome') }}</h1>
+        <h1 class="font-extrabold drop-shadow text-center text-4xl text-gray-700">{{ t('welcome') }}</h1>
         <div class="max-w-full sm:max-w-1/2 text-justify mx-auto space-y-2 text-gray-700">
             <p>{{ t('about.description.1') }}</p>
             <p>{{ t('about.description.2') }}</p>
@@ -30,5 +30,7 @@ const {t, locale} = useI18n()
                 {{ t('about.resume_download') }}
             </a>
         </div>
+
+        <hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10 drop-shadow"/>
     </div>
 </template>
