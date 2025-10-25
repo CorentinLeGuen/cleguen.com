@@ -9,6 +9,5 @@ const {t} = useI18n()
         <input type="email" name="email" required placeholder="contact@email.com" class="rounded border-gray-100 bg-transparent"/>
         <textarea required name="message" placeholder="..."  class="rounded border-gray-100 bg-transparent"/>
         <button class="border border-gray-200 text-gray-600 transition duration-300 ease-in-out hover:shadow hover:cursor-pointer">{{ t('contact.send') }}</button>
-        <p v-html="t('contact.legal')" class="text-sm text-gray-600"></p>
     </form>
 </template>

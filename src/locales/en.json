@@ -5,7 +5,7 @@
         "website_sources": "website codesource",
         "resume_download": "Download my resume",
         "description": {
-            "1": "I am a Senior Backend Developer and Data Analyst with over 9 years of experience.",
+            "1": "I am a <span class=\"font-extrabold\">Senior Backend Developer and Data Analyst with over 9 years of experience</span>.",
             "2": "Python expert with nearly a decade of experience, I design robust, high-performance, and maintainable APIs in complex environments.",
             "3": "I also have strong expertise in KDB+/Q for real-time data analysis, enabling me to deliver fast and accurate insights to trading teams.",
             "4": "Specialized in the finance and trading industries, I have a deep understanding of the constraints and dynamics of these critical environments.",
