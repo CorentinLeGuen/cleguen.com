@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import Language from './Language.vue'
 import { useI18n } from 'vue-i18n'
 const {t} = useI18n()
-
+import Language from './Language.vue'
 </script>
 
 

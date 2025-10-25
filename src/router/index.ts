@@ -1,29 +1,33 @@
-import IAProgressDownfall from '@/components/blog/IAProgressDownfall.vue'
-import Legal from '@/components/Legal.vue'
-import Main from '@/components/Main.vue'
 import {createRouter, createWebHistory, type RouteRecordRaw} from 'vue-router'
 
 const routes: RouteRecordRaw[] = [
     {
         path: '/',
         name: 'home',
-        component: () => Main,
+        component: () => import('@/components/Main.vue'),
+        meta: { title: 'cleguen' }
     },
     {
         path: '/legal',
         name: 'legal',
-        component: () => Legal,
+        component: () => import('@/components/Legal.vue'),
+        meta: { title: 'Legal'}
     },
     {
         path: '/ia-progress-or-downfall',
         name: 'article1',
-        component: () => IAProgressDownfall
+        component: () => import('@/components/blog/IAProgressDownfall.vue'),
+        meta: { title: 'cleguen.com - IA article'}
     }
 ]
 
 const router = createRouter({
     history: createWebHistory(),
     routes
+})
+
+router.afterEach((to) => {
+  document.title = (to.meta.title as string) || 'cleguen.com'
 })
 
 export default router

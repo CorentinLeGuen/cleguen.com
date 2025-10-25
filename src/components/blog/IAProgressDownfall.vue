@@ -1,11 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import Contact from '../Contact.vue';
 const {t} = useI18n()
-
-
-document.title = t('blog.1.title')
-
+import Contact from '@/components/Contact.vue'
 </script>
 
 <template>

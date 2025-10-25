@@ -5,8 +5,7 @@ import Footer from '@/components/Footer.vue'
 
 <template>
     <main 
-      class="min-h-screen w-full bg-repeat select-none"
-      style="background-image: url('/src/assets/images/dot-grid.webp')"
+      class="min-h-screen w-full bg-repeat select-none bg-dot-grid"
     >
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <Navbar />
@@ -15,3 +14,9 @@ import Footer from '@/components/Footer.vue'
     <Footer />
   </main>
 </template>
+
+<style scoped>
+.bg-dot-grid {
+  background-image: url('@/assets/images/dot-grid.webp');
+}
+</style>

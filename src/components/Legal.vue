@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 const {t} = useI18n()
-
-document.title = 'Legal'
-
+import Contact from "@/components/Contact.vue"
 </script>
 
 <template>
@@ -14,6 +12,8 @@ document.title = 'Legal'
             <h2 class="mb-2 text-xl font-semibold">{{t('legal.publisher.title')}}</h2>
             <p v-html="t('legal.publisher.text')"></p>
         </section>
+
+        <Contact />
 
         <section class="mb-8">
             <h2 class="mb-2 text-xl font-semibold">{{t('legal.hosting.title')}}</h2>

@@ -10,16 +10,13 @@ import fr from '@/locales/fr.json'
 
 const i18n = createI18n({
     legacy: false,
-    globalInjection: true,
     locale: 'en',
-    fallbackLocale: 'fr',
+    fallbackLocale: 'en',
     messages: {
         en,
         fr,
     },
 })
-
-initFlowbite()
 
 const app = createApp(App)
 
@@ -27,3 +24,5 @@ app.use(i18n)
 app.use(router)
 
 app.mount('#app')
+
+initFlowbite()
