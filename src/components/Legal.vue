@@ -7,7 +7,7 @@ document.title = 'Legal'
 </script>
 
 <template>
-    <div class="my-8 mx-auto text-gray-700">
+    <div class="my-8 max-w-full sm:max-w-3/4 md:max-w-2/3 xl:max-w-1/2 mx-auto text-gray-700">
         <h1 class="mb-6 text-3xl font-bold">{{t('legal.title')}}</h1>
 
         <section class="mb-8">
