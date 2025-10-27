@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 const {t} = useI18n()
-import Language from './Language.vue'
 </script>
 
 
@@ -15,7 +14,6 @@ import Language from './Language.vue'
         </div>
         
         <div class="flex flex-wrap items-center space-x-4">
-            <Language />
             <RouterLink to="/legal">
                 {{ t('legal.title') }}
             </RouterLink>

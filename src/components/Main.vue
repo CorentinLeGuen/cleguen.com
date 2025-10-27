@@ -20,13 +20,13 @@ const {t, locale} = useI18n()
         </div>
         <div class="flex items-center justify-center max-w-full sm:max-w-1/2 mx-auto">
             <a href="https://www.credly.com/badges/1640cacc-f529-4c92-bcea-50b422c32a80/public_url" target="_blank">
-                <img src="@/assets/images/aws-certified-developer-associate.png" alt="AWS certified logo" class="h-36 drop-shadow-lg"/>
+                <img src="@/assets/images/aws-certified-developer-associate.png" alt="AWS certified logo" class="w-32 h-auto md:w-48 lg:w-64 drop-shadow-lg"/>
             </a>
             <a href="https://github.com/CorentinLeGuen" target="_blank">
-                <img src="@/assets/images/github.svg" alt="GitHub logo" class="h-36 drop-shadow-lg"/>
+                <img src="@/assets/images/github.svg" alt="GitHub logo" class="w-32 h-auto md:w-48 lg:w-64 drop-shadow-lg"/>
             </a>
             <a href="https://www.linkedin.com/in/corentinleguen/" target="_blank">
-                <img src="@/assets/images/linkedin.svg" alt="GitHub logo" class="h-40 drop-shadow-lg"/>
+                <img src="@/assets/images/linkedin.svg" alt="GitHub logo" class="w-32 h-auto md:w-48 lg:w-64 drop-shadow-lg"/>
             </a>
         </div>
         <div class="flex justify-between max-w-full sm:max-w-1/2 mx-auto">
@@ -39,10 +39,9 @@ const {t, locale} = useI18n()
             <h2 class="text-4xl font-extrabold text-gray-700 ml-4">{{ t('blog.title') }}</h2>
 
             <router-link to="/ia-progress-or-downfall">
-                <div class="flex items-center  justify-center space-x-4 px-4 py-2 bg-white rounded border border-gray-200 transition duration-300 ease-in-out hover:shadow hover:cursor-pointer">
-                    <img src="@/assets/images/blog/1/logo.svg" alt="ai progress or downfall logo" class="h-24" />
+                <div class="block md:flex items-center justify-center px-4 py-2 bg-white rounded border border-gray-200 transition duration-300 ease-in-out hover:shadow hover:cursor-pointer">
                     <div>
-                        <h3 class="text-xl font-bold text-gray-700">{{ t('blog.1.title') }}</h3>
+                        <h3 class="text-xl font-bold text-amber-600">{{ t('blog.1.title') }}</h3>
                         <p class="text-sm text-gray-600">{{ t('blog.1.description') }}</p>
                         <p class="italic text-sm text-gray-500">{{ t('blog.1.date_publication') }}</p>
                     </div>
