@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { ref, watch } from 'vue'
+import { ref, watch, onMounted } from 'vue'
 
 const { locale } = useI18n()
 
@@ -9,26 +9,30 @@ const languages = {
     fr: 'FR',
 }
 
-const currentLocale = ref(localStorage.getItem('locale') || locale.value)
+const currentLocale = ref(locale.value)
+
+onMounted(() => {
+  const savedLocale = localStorage.getItem('locale')
+  if (savedLocale && (savedLocale === 'en' || savedLocale === 'fr')) {
+    currentLocale.value = savedLocale
+    locale.value = savedLocale
+  }
+})
 
 const changeLanguage = (code: string) => {
-    currentLocale.value = code
-    updateLanguage()
+  currentLocale.value = code
+  locale.value = code
+  localStorage.setItem('locale', code)
 }
 
-const updateLanguage = () => {
-  locale.value = currentLocale.value
-  localStorage.setItem('locale', currentLocale.value)
-}
-
-watch(locale, newVal => {
-  currentLocale.value = newVal
+watch(locale, (newValue) => {
+  currentLocale.value = newValue
 })
 
 </script>
 
 <template>
-  <div>
+  <div class="mt-1 text-gray-600">
     <ul class="flex">
         <li
             v-for="(label, code) in languages" 
