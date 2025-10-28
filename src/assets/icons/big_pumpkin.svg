@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="63.721329mm"
+   height="59.604164mm"
+   viewBox="0 0 63.721329 59.604164"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <ellipse
+     style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+     id="path1-6-93"
+     cx="15.930336"
+     cy="37.814388"
+     rx="15.930333"
+     ry="21.789764" />
+  <ellipse
+     style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+     id="path1-6-93-7"
+     cx="47.791"
+     cy="37.814388"
+     rx="15.930333"
+     ry="21.789764" />
+  <ellipse
+     style="fill:#ec9500;fill-opacity:1;stroke-width:8.18917;stroke-linecap:round"
+     id="path1-3-3-2"
+     cx="44.692001"
+     cy="37.814388"
+     rx="15.477166"
+     ry="20.705225" />
+  <ellipse
+     style="fill:#ec9500;fill-opacity:1;stroke-width:8.18917;stroke-linecap:round"
+     id="path1-3-3-2-3"
+     cx="20.620682"
+     cy="37.169155"
+     rx="15.477166"
+     ry="20.705225" />
+  <path
+     id="rect1"
+     style="fill:#1d8f28;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+     d="M 37.013135,0.61500392 42.256929,-6.0878557e-6 C 38.538069,4.8014139 36.631874,10.379684 36.538353,16.734824 h -8.42672 c 1.78439,-6.09907 3.424695,-12.2865501 8.901502,-16.11982008 z" />
+  <ellipse
+     style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+     id="path1-6"
+     cx="23.345795"
+     cy="37.440044"
+     rx="15.930333"
+     ry="21.789764" />
+  <ellipse
+     style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+     id="path1-6-9"
+     cx="41.716324"
+     cy="37.440044"
+     rx="15.930333"
+     ry="21.789764" />
+  <g
+     id="layer1"
+     transform="translate(-47.35334,-111.05996)">
+    <ellipse
+       style="fill:#ec9500;fill-opacity:1;stroke-width:8.18917;stroke-linecap:round"
+       id="path1-3"
+       cx="75.464973"
+       cy="148.5"
+       rx="15.477166"
+       ry="20.705225" />
+    <ellipse
+       style="fill:#ec9500;fill-opacity:1;stroke-width:8.18917;stroke-linecap:round"
+       id="path1-3-3"
+       cx="83.891693"
+       cy="148.5"
+       rx="15.477166"
+       ry="20.705225" />
+    <ellipse
+       style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+       id="path1"
+       cx="79.869995"
+       cy="148.5"
+       rx="15.930333"
+       ry="21.789764" />
+  </g>
+</svg>

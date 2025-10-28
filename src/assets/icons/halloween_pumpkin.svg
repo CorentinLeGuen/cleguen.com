@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="63.721329mm"
+   height="59.604164mm"
+   viewBox="0 0 63.721329 59.604164"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-47.35334,-111.05996)">
+    <g
+       id="g2">
+      <ellipse
+         style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+         id="path1-6-93"
+         cx="63.283676"
+         cy="148.87434"
+         rx="15.930333"
+         ry="21.789764" />
+      <ellipse
+         style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+         id="path1-6-93-7"
+         cx="95.144341"
+         cy="148.87434"
+         rx="15.930333"
+         ry="21.789764" />
+      <ellipse
+         style="fill:#ec9500;fill-opacity:1;stroke-width:8.18917;stroke-linecap:round"
+         id="path1-3-3-2"
+         cx="92.045341"
+         cy="148.87434"
+         rx="15.477166"
+         ry="20.705225" />
+      <ellipse
+         style="fill:#ec9500;fill-opacity:1;stroke-width:8.18917;stroke-linecap:round"
+         id="path1-3-3-2-3"
+         cx="67.974022"
+         cy="148.22911"
+         rx="15.477166"
+         ry="20.705225" />
+      <path
+         id="rect1"
+         style="fill:#1d8f28;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+         d="m 84.366475,111.67496 5.243794,-0.61501 c -3.71886,4.80142 -5.625055,10.37969 -5.718576,16.73483 h -8.42672 c 1.78439,-6.09907 3.424695,-12.28655 8.901502,-16.11982 z" />
+      <ellipse
+         style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+         id="path1-6"
+         cx="70.699135"
+         cy="148.5"
+         rx="15.930333"
+         ry="21.789764" />
+      <ellipse
+         style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+         id="path1-6-9"
+         cx="89.069664"
+         cy="148.5"
+         rx="15.930333"
+         ry="21.789764" />
+      <ellipse
+         style="fill:#ec9500;fill-opacity:1;stroke-width:8.18917;stroke-linecap:round"
+         id="path1-3"
+         cx="75.464973"
+         cy="148.5"
+         rx="15.477166"
+         ry="20.705225" />
+      <ellipse
+         style="fill:#ec9500;fill-opacity:1;stroke-width:8.18917;stroke-linecap:round"
+         id="path1-3-3"
+         cx="83.891693"
+         cy="148.5"
+         rx="15.477166"
+         ry="20.705225" />
+      <ellipse
+         style="fill:#fca800;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+         id="path1"
+         cx="79.869995"
+         cy="148.5"
+         rx="15.930333"
+         ry="21.789764" />
+    </g>
+  </g>
+  <path
+     style="fill:#2c2c2c;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+     id="path2"
+     d="M 70.130087,77.271273 49.113951,75.122577 61.482844,57.996417 Z"
+     transform="matrix(0.65499471,0,0,0.66413135,-17.535395,-15.67369)" />
+  <path
+     id="path2-0"
+     style="fill:#555555;stroke-width:4.87092;stroke-linecap:round"
+     d="m 28.001482,34.872024 -11.797076,-1.28627 6.531137,-10.74221 z" />
+  <path
+     style="fill:#2c2c2c;fill-opacity:1;stroke-width:8.523;stroke-linecap:round"
+     id="path2-7"
+     d="M 70.130087,77.271273 49.113951,75.122577 61.482844,57.996417 Z"
+     transform="matrix(-0.65499471,0,0,0.66413135,83.66103,-15.495564)" />
+  <path
+     id="path2-0-6"
+     style="fill:#555555;stroke-width:4.87092;stroke-linecap:round"
+     d="m 38.124149,35.050144 11.797077,-1.28627 -6.531138,-10.7422 z" />
+  <g
+     id="g5"
+     transform="translate(-61.336791,-41.142702)">
+    <path
+       d="m 71.211701,77.262579 a 24.341565,9.1267578 0 0 0 -1.553379,3.20834 24.341565,9.1267578 0 0 0 24.341397,9.12677 24.341565,9.1267578 0 0 0 24.341741,-9.12677 24.341565,9.1267578 0 0 0 -0.0647,-0.66536 24.341565,9.1267578 0 0 1 -22.788368,5.91843 24.341565,9.1267578 0 0 1 -24.276741,-8.46141 z"
+       style="fill:#2e2e2e;fill-opacity:1;stroke-width:4.92089;stroke-linecap:round"
+       id="path5" />
+    <path
+       d="M 71.854593,76.411628 A 24.158458,8.7203141 0 0 0 70.3129,79.47709 24.158458,8.7203141 0 0 0 94.471195,88.197416 24.158458,8.7203141 0 0 0 118.62982,79.47709 24.158458,8.7203141 0 0 0 118.56561,78.841361 24.158458,8.7203141 0 0 1 95.948666,84.496224 24.158458,8.7203141 0 0 1 71.854544,76.411628 Z"
+       style="fill:#555555;stroke-width:4.79194;stroke-linecap:round"
+       id="path5-2" />
+  </g>
+</svg>
