@@ -7,7 +7,6 @@ const {t, locale} = useI18n()
 
 <template>
     <div class="space-y-10 my-8 md:my-18 mx-auto">
-        <img src="@/assets/icons/big_pumpkin.svg" class="absolute top-12 left-1/2 h-24" />
         <div class="flex items-center justify-baseline max-w-full sm:max-w-1/2 mx-auto">
             <img src="@/assets/images/profile.jpeg" alt="profile picture" class="w-1/2 rounded-full drop-shadow-xl" />
             <h1 class="font-extrabold drop-shadow text-center text-4xl text-gray-700">{{ t('welcome') }}</h1>
