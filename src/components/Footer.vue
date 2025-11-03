@@ -13,7 +13,6 @@ const {t} = useI18n()
                 {{ t('about.website_sources') }}
             </a>
         </div>
-        <img src="@/assets/icons/small_pumpkin.svg" class="mx-4 h-24" />
         
         <div class="flex flex-wrap items-center space-x-4">
             <RouterLink to="/legal">
