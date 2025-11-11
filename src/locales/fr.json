@@ -129,6 +129,33 @@
                     "p_7": "Pensez-vous qu’il faille supprimer les garde-fous éthiques autour de l’IA ? Partiellement ? Totalement ? Et concernant les droits d’auteur·e·s et la création artistique : est-il acceptable d’imiter un style sans en reconnaître l’auteur·e d’origine?"
                 }
             }
+        },
+        "2": {
+            "title": "L'intelligence artificielle hallucine !",
+            "date_publication": "Publié le 11 Novembre 2025",
+            "description": "Ce bref article montre un exemple d'hallucination et pourquoi il ne faut pas leur faire confiance.",
+            "content": {
+                "1": {
+                    "title": "Introduction",
+                    "p_1": "Il y a quelques jours, j'ai commencé à apprendre <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://rust-lang.org/\">Rust</a> et donc tout naturellement, un projet <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://github.com/CorentinLeGuen/rose\">Rose sur GitHub qui permet de connaître l'espace de stockage utilisé sur un Object Storage (AWS S3 ou d'autres services cloud).</a>",
+                    "p_2": "Après avoir un peu avancé sur le projet, je me suis demandé comment savoir si des dépendances présentes dans mon <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://github.com/CorentinLeGuen/rose/blob/main/Cargo.toml\">Cargo.toml</a> n'étaient pas inutiles et pouvaient être nettoyées avec <em>cargo</em>. J'ai donc demandé si une commande existait à ChatGPT."
+                },
+                "2": {
+                    "title": "Qu'est-ce qu'une hallucination de l'IA ?",
+                    "p_1": "<a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://www.ibm.com/think/topics/ai-hallucinations\">Le site d'IBM</a> décrit parfaitement ce phénomène:",
+                    "p_1_c": "« L'hallucination de l'IA est un phénomène où, dans les LLM (Large Language Model), souvent les chatbots d'IA générative ou les outils de visualisation, perçoivent des motifs ou des objets qui sont inexistants ou imperceptibles pour les observateurs humains, créant des réponses qui ne font pas sens ou sont incohérentes. »",
+                    "p_2": "J'observe régulièrement ce phénomène chez les chatbots lors de mes travaux liés au développement logiciel, et voici un des exemples les plus récents :",
+                    "p_3": "Ici, ChatGPT, dans la deuxième option, me parle d'une méthode <em>cargo check -W unused-dependencies</em>. Je teste donc cette solution :",
+                    "p_4": "Surprise ! La commande n'existe pas ! Je demande donc confirmation à ChatGPT, au cas où j'aurais raté quelque chose :",
+                    "p_5": "C'est bien une hallucination, la commande n'existe bel et bien pas !"
+                },
+                "3": {
+                    "title": "Conclusion",
+                    "p_1": "Ce genre d'hallucinations est courant, je dois régulièrement vérifier et confirmer les résultats donnés et ne jamais faire confiance au code. Il m'arrive même, beaucoup plus souvent qu'on pourrait le penser et que je le voudrais, de corriger moi-même les chatbots et de leur proposer une solution... une solution à leurs propres problèmes.",
+                    "p_2": "Ici, on parle d'une commande simple, mais qu'en serait-il des fausses informations ? De fausses données ? N'oubliez pas de toujours vérifier les informations et de tester le code.",
+                    "p_3": "Est-ce une stratégie pour épuiser plus vite le quota sans abonnement ? Est-ce si grave ? N'hésitez pas à me donner vos retours !"
+                }
+            }
         }
     }
 }
