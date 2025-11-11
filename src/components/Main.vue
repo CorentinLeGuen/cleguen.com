@@ -2,7 +2,6 @@
 import { useI18n } from 'vue-i18n'
 import Contact from '@/components/Contact.vue'
 const {t, locale} = useI18n()
-
 </script>
 
 <template>
@@ -38,6 +37,16 @@ const {t, locale} = useI18n()
         <div class="max-w-full sm:max-w-1/2 mx-auto space-y-6">
             <h2 class="text-4xl font-extrabold text-gray-700 ml-4">{{ t('blog.title') }}</h2>
 
+            <router-link to="/ia-hallucination">
+                <div class="block md:flex my-4 items-center justify-center px-4 py-2 bg-white rounded border border-gray-200 transition duration-300 ease-in-out hover:shadow hover:cursor-pointer">
+                    <div>
+                        <h3 class="text-xl font-bold text-amber-600">{{ t('blog.2.title') }}</h3>
+                        <p class="text-sm text-gray-600">{{ t('blog.2.description') }}</p>
+                        <p class="italic text-sm text-gray-500">{{ t('blog.2.date_publication') }}</p>
+                    </div>
+                </div>
+            </router-link>
+            
             <router-link to="/ia-progress-or-downfall">
                 <div class="block md:flex items-center justify-center px-4 py-2 bg-white rounded border border-gray-200 transition duration-300 ease-in-out hover:shadow hover:cursor-pointer">
                     <div>

@@ -129,6 +129,33 @@
                     "p_7": "Do you think ethical safeguards around AI should be removed? Partially? Completely? And regarding copyright and artistic creation—is it acceptable to imitate a style without crediting the original creator?"
                 }
             }
+        },
+        "2": {
+            "title": "Artificial Intelligence Hallucinates!",
+            "date_publication": "Published on November 11, 2025",
+            "description": "This brief article shows an example of a hallucination and why you should not fully trust them.",
+            "content": {
+                "1": {
+                    "title": "Introduction",
+                    "p_1": "A few days ago, I started learning <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://rust-lang.org/\">Rust</a> and, quite naturally, I began a Rust project <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://github.com/CorentinLeGuen/rose\">Rose on GitHub, which allows you to know the amount of storage used on an Object Storage service (AWS S3 or other cloud services).</a>",
+                    "p_2": "After making some progress on the project, I wondered how to determine if some dependencies in my <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://github.com/CorentinLeGuen/rose/blob/main/Cargo.toml\">Cargo.toml</a> were unnecessary and could be removed with <em>cargo</em>. So, I asked ChatGPT if such a command existed."
+                },
+                "2": {
+                    "title": "What Is an AI Hallucination?",
+                    "p_1": "<a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://www.ibm.com/think/topics/ai-hallucinations\">IBM's website</a> describes this phenomenon perfectly:",
+                    "p_1_c": "“AI hallucination is a phenomenon where, in a large language model (LLM) often a generative AI chatbot or computer vision tool, perceives patterns or objects that are nonexistent or imperceptible to human observers, creating outputs that are nonsensical or altogether inaccurate.”",
+                    "p_2": "I regularly observe this phenomenon in chatbots during my software development work, and here is one of the most recent examples:",
+                    "p_3": "Here, ChatGPT, in the second option, mentions a <em>cargo check -W unused-dependencies</em> method. So I try this solution:",
+                    "p_4": "Surprise! The command does not exist! So I ask ChatGPT for confirmation, just in case I had missed something:",
+                    "p_5": "It is indeed a hallucination — the command simply does not exist!"
+                },
+                "3": {
+                    "title": "Conclusion",
+                    "p_1": "These kinds of hallucinations are common. I regularly have to verify and confirm the results given, and never fully trust generated code. It even happens, much more often than one might think and more than I would like, that I correct chatbots myself and suggest a solution... a solution to their own problems.",
+                    "p_2": "Here, we are talking about a simple command, but what about false information? False data? Always remember to verify information and test the code.",
+                    "p_3": "Is this a strategy to deplete the free quota faster? Is it that serious? Feel free to share your thoughts!"
+                }
+            }
         }
     }
 }

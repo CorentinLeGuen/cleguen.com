@@ -18,6 +18,12 @@ const routes: RouteRecordRaw[] = [
         name: 'article1',
         component: () => import('@/components/blog/IAProgressDownfall.vue'),
         meta: { title: 'cleguen.com - IA article'}
+    },
+    {
+        path: '/ia-hallucination',
+        name: 'article2',
+        component: () => import('@/components/blog/IAHallucination.vue'),
+        meta: { title: 'cleguen.com - IA Hallucination' }
     }
 ]
 
