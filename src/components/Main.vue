@@ -21,8 +21,11 @@ const {t, locale} = useI18n()
             <a href="https://www.credly.com/badges/1640cacc-f529-4c92-bcea-50b422c32a80/public_url" target="_blank">
                 <img src="@/assets/images/aws-certified-developer-associate.png" alt="AWS certified logo" class="w-32 h-auto md:w-48 lg:w-64 drop-shadow-lg"/>
             </a>
+            <img src="@/assets/images/microsoft_gh-200_certification.png" alt="GH-200 certified logo" class="w-32 h-auto md:w-48 lg:w-64 drop-shadow-lg"/>
+        </div>
+        <div class="flex items-center justify-center max-w-full sm:max-w-1/2 mx-auto">
             <a href="https://github.com/CorentinLeGuen" target="_blank">
-                <img src="@/assets/images/github.svg" alt="GitHub logo" class="w-32 h-auto md:w-48 lg:w-64 drop-shadow-lg"/>
+                <img src="@/assets/images/github.svg" alt="GitHub logo" class="w-26 h-auto md:w-40 lg:w-54 drop-shadow-lg"/>
             </a>
             <a href="https://www.linkedin.com/in/corentinleguen/" target="_blank">
                 <img src="@/assets/images/linkedin.svg" alt="GitHub logo" class="w-32 h-auto md:w-48 lg:w-64 drop-shadow-lg"/>
