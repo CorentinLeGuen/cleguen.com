@@ -36,7 +36,7 @@
         },
         "rgpd": {
             "title": "Données personnelles & RGPD",
-            "text1": "Ce site ne collecte pas de données personnelles à votre insu. Nous utilisons uniquement Umami (https://umami.is) pour obtenir des statistiques sur le site qui respecte les GDPR & CCPA et des données anonymes.",
+            "text1": "Ce site ne collecte pas de données personnelles à votre insu. Aucun cookie de suivi ni service d’analyse (comme Google Analytics) n’est utilisé.",
             "text2": "Si vous envoyez un email, les données ne seront utilisées que dans le cadre de l’échange engagé. Conformément au RGPD, vous pouvez demander l’accès, la modification ou la suppression de vos données en écrivant à l’adresse indiquée ci-dessus."
         },
         "liability": {
