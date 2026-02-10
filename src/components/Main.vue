@@ -1,7 +1,37 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import Contact from '@/components/Contact.vue'
-const {t, locale} = useI18n()
+import { onMounted, onUnmounted } from 'vue'
+
+const {t} = useI18n()
+
+let observer: IntersectionObserver | null = null;
+
+onMounted(() => {
+  const observerOptions = {
+    root: null,
+    threshold: 0.1
+  };
+
+  observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('is-visible');
+        observer?.unobserve(entry.target); 
+      } 
+    });
+  }, observerOptions);
+
+  const elements = document.querySelectorAll('.animate-on-scroll');
+  
+  elements.forEach(el => {
+    observer?.observe(el);
+  });
+});
+
+onUnmounted(() => {
+  if (observer) observer.disconnect();
+});
 </script>
 
 <template>
@@ -63,8 +93,22 @@ const {t, locale} = useI18n()
 
         <hr class="w-48 h-1 mx-auto my-4 bg-gray-300 border-0 rounded-sm md:my-10 drop-shadow"/>
 
-        <div class="max-w-full sm:max-w-1/2 mx-auto">
+        <div class="max-w-full sm:max-w-1/2 mx-auto animate-on-scroll">
             <Contact />
         </div>
     </div>
 </template>
+
+<style lang="css">
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  will-change: opacity, transform; 
+}
+
+.animate-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
