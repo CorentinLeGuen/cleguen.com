@@ -50,6 +50,7 @@
     },
     "blog": {
         "title": "Articles du blog",
+        "link": "Lire l'article",
         "1": {
             "title": "L'intelligence artificielle: progrès ou dérive ? Réflexions éthiques autour de l'art et de son utilisation pour des processus créatifs.",
             "date_publication": "Publié le 2 Avril 2025",
