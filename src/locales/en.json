@@ -50,6 +50,7 @@
     },
     "blog": {
         "title": "Blog Articles",
+        "link": "Read the article",
         "1": {
             "title": "Artificial Intelligence: Progress or Drift? Ethical Reflections on Art and Its Use in Creative Processes.",
             "date_publication": "Published on April 2, 2025",
