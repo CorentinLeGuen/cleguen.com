@@ -5,11 +5,11 @@
         "website_sources": "code source du site",
         "resume_download": "Télécharger mon CV",
         "description": {
-            "1": "Je suis un <span class=\"font-extrabold text-amber-600\">Développeur Sénior Backend et Analyste de données avec plus de 9 ans d'expérience</span>.",
-            "2": "Expert Python avec près de dix ans de pratique, je conçois des APIs robustes, performantes et maintenables dans des environnements complexes.",
-            "3": "Je maîtrise également KDB+/Q pour l’analyse de données en temps réel, ce qui me permet d'apporter des insights rapides et précis aux équipes de trading.",
+            "1": "Je suis un <span class=\"font-extrabold text-amber-600\">Développeur Sénior Principal avec plus de 10 ans d'expérience</span>.",
+            "2": "Expert backend, avec une solide maîtrise de l'architecture et du frontend, je conçois des applications et des solutions robustes, performantes et modernes.",
+            "3": "Passionné par la transmission, j'accompagne les équipes dans leur montée en compétences tout en insufflant une culture d'amélioration continue.",
             "4": "Spécialisé dans les secteurs de la finance et du trading, j’ai une excellente compréhension des contraintes et des dynamiques de ces environnements critiques.",
-            "5": "Ma curiosité me pousse à explorer en profondeur de nouveaux paradigmes, tout en restant rigoureux sur la qualité logicielle, l’architecture et la scalabilité des systèmes."
+            "5": "Curieux et rigoureux, j'explore en permanence de nouveaux paradigmes sans jamais perdre de vue la qualité logicielle, l'architecture et la scalabilité."
         }
     },
     "contact": {
