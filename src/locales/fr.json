@@ -71,13 +71,13 @@
                 },
                 "3": {
                     "title": "2. À qui revient la responsabilité éthique ? Le code ou le codeur ?",
-                    "p_1": "Dans le domaine informatique classique, la question de l’éthique ne se pose que rarement : un programme exécute ce qu’on lui demande. Il suit des instructions déterministes, sans intention, sans conscience. Si une erreur survient, elle est généralement due à un bug, un oubli ou une mauvaise conception — en d’autres termes, une faute humaine.",
+                    "p_1": "Dans le domaine informatique classique, la question de l’éthique ne se pose que rarement : un programme exécute ce qu’on lui demande. Il suit des instructions déterministes, sans intention, sans conscience. Si une erreur survient, elle est généralement due à un bug, un oubli ou une mauvaise conception ; en d’autres termes, une faute humaine.",
                     "p_2": "Avec l’intelligence artificielle, cette frontière s’estompe. L’IA ne suit plus un script rigide, elle apprend à partir de données et peut générer des réponses qui n’ont pas été explicitement codées. Pourtant, cette \"intelligence\" reste dépourvue de volonté propre. Elle n’a pas de conscience, pas de morale, pas de jugement de valeur.",
                     "p_3": "Je vous recommande cette vidéo de MonsieurPhi sur YouTube à propos de ChatGPT, et plus largement, à propos des IA:",
                     "p_4": "Cela soulève un dilemme : si une IA produit un résultat biaisé, injuste ou offensant, à qui revient la faute ?",
-                    "p_5": "Le plus souvent, à l’humain qui l’a conçue ou entraînée — car c’est dans le choix des données, des objectifs, ou dans l’absence de garde-fous que se trouvent les erreurs.",
+                    "p_5": "Le plus souvent, à l’humain qui l’a conçue ou entraînée, car c’est dans le choix des données, des objectifs, ou dans l’absence de garde-fous que se trouvent les erreurs.",
                     "p_6": "On peut aussi considérer que la responsabilité revient parfois à l’utilisateur lui-même : il ne devrait pas détourner l’IA à des fins illégales, ni l’utiliser pour produire du contenu inapproprié ou choquant. C’est un raisonnement similaire à celui que l’on tient envers les personnes qui exploitent des failles logicielles ou des bugs sur des sites web pour réduire indûment leur facture ou commander plusieurs articles en ne payant qu’un seul. Cela dit, les développeurs en sont bien conscients : lorsqu’on conçoit un système, il faut toujours anticiper les pires usages possibles afin de prévenir les abus.",
-                    "p_7": "On pourrait imaginer, à terme, des IA capables de refuser certaines tâches : par exemple, refuser de générer un discours haineux ou une image raciste. Mais cela impliquerait qu’elles disposent d’une forme de jugement moral — ce qui n’est pas le cas aujourd’hui. Toute forme de \"frein éthique\" intégré dans une IA est elle-même programmée, décidée, calibrée par un humain. Ainsi, l’éthique de l’IA n’est jamais celle de l’IA elle-même, mais celle de ses concepteurs."
+                    "p_7": "On pourrait imaginer, à terme, des IA capables de refuser certaines tâches : par exemple, refuser de générer un discours haineux ou une image raciste. Mais cela impliquerait qu’elles disposent d’une forme de jugement moral, ce qui n’est pas le cas aujourd’hui. Toute forme de \"frein éthique\" intégré dans une IA est elle-même programmée, décidée, calibrée par un humain. Ainsi, l’éthique de l’IA n’est jamais celle de l’IA elle-même, mais celle de ses concepteurs."
                 },
                 "4": {
                     "title": "3. Des exemples concrets de dérives : quand l’éthique vacille",
@@ -134,12 +134,14 @@
         "2": {
             "title": "L'intelligence artificielle hallucine !",
             "date_publication": "Publié le 11 Novembre 2025",
+            "date_update": "Mis à jour le 22 Juin 2026",
             "description": "Ce bref article montre un exemple d'hallucination et pourquoi il ne faut pas leur faire confiance.",
             "content": {
                 "1": {
                     "title": "Introduction",
-                    "p_1": "Il y a quelques jours, j'ai commencé à apprendre <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://rust-lang.org/\">Rust</a> et donc tout naturellement, un projet <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://github.com/CorentinLeGuen/rose\">Rose sur GitHub qui permet de connaître l'espace de stockage utilisé sur un Object Storage (AWS S3 ou d'autres services cloud).</a>",
-                    "p_2": "Après avoir un peu avancé sur le projet, je me suis demandé comment savoir si des dépendances présentes dans mon <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://github.com/CorentinLeGuen/rose/blob/main/Cargo.toml\">Cargo.toml</a> n'étaient pas inutiles et pouvaient être nettoyées avec <em>cargo</em>. J'ai donc demandé si une commande existait à ChatGPT."
+                    "p_1": "Il y a quelques jours, j'ai commencé à apprendre <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://rust-lang.org/\">Rust</a> et donc tout naturellement, un projet appelé Rose qui permet de connaître l'espace de stockage utilisé sur un Object Storage (AWS S3 ou d'autres services cloud).",
+                    "p_2": "Après avoir un peu avancé sur le projet, je me suis demandé comment savoir si des dépendances présentes dans mon <em>Cargo.toml</em> n'étaient pas inutiles et pouvaient être nettoyées avec <em>cargo</em>. J'ai donc demandé si une commande existait à ChatGPT.",
+                    "p_3": "Note : le projet Rose n'est plus disponible sur GitHub. Je l'ai depuis retiré car je ne fais pas confiance à GitHub, et à Microsoft plus généralement, concernant ma vie privée."
                 },
                 "2": {
                     "title": "Qu'est-ce qu'une hallucination de l'IA ?",
@@ -151,10 +153,24 @@
                     "p_5": "C'est bien une hallucination, la commande n'existe bel et bien pas !"
                 },
                 "3": {
+                    "title": "Quand les hallucinations ont de vraies conséquences",
+                    "p_1": "Ma commande cargo inexistante est sans gravité : au pire, je perds quelques minutes. Mais les hallucinations ont déjà causé des dégâts bien concrets, loin du terminal d'un développeur. Voici quelques cas documentés.",
+                    "p_2": "En 2023, dans l'affaire <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Mata_v._Avianca,_Inc.\">Mata v. Avianca</a>, un avocat new-yorkais a remis au tribunal un mémoire rédigé avec ChatGPT citant au moins six décisions de justice totalement fictives. Interrogé, le chatbot affirmait même que ces affaires étaient réelles et consultables sur Westlaw et LexisNexis. Le juge a condamné les avocats à une amende de 5 000 $ pour mauvaise foi.",
+                    "p_3": "En 2024, le Tribunal de résolution civile de Colombie-Britannique a condamné <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416\">Air Canada</a> à indemniser un passager après que son chatbot eut inventé une politique de tarif de deuil qui n'existait pas. La compagnie a plaidé qu'elle ne pouvait être tenue responsable des propos de son chatbot ; le tribunal a rejeté cet argument et l'a jugée responsable des informations fournies.",
+                    "p_4": "Même les géants ne sont pas épargnés. Lors de la toute première démonstration publique de <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://www.cnn.com/2023/02/08/tech/google-ai-bard-demo-error\">Google Bard</a> en 2023, le chatbot a affirmé à tort que le télescope spatial James Webb avait pris « la toute première image d'une planète en dehors de notre système solaire », un exploit réalisé en réalité près de vingt ans plus tôt. La bourde a contribué à une chute d'environ 100 milliards de dollars de la valeur d'Alphabet en une seule journée.",
+                    "p_5": "Plus proche de ma situation, les hallucinations touchent aussi le code. Une étude universitaire de 2024 a généré 576 000 extraits de code et constaté que près de 20 % des paquets recommandés par les modèles n'existaient tout simplement pas. Des attaquants ont commencé à enregistrer ces noms de paquets hallucinés pour diffuser des logiciels malveillants, une technique désormais appelée <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Slopsquatting\">slopsquatting</a>."
+                },
+                "4": {
+                    "title": "Alors, pourquoi cela arrive-t-il ?",
+                    "p_1": "Pour comprendre ces erreurs, il faut se rappeler ce que fait réellement un modèle de langage. Il ne cherche rien et ne « connaît » pas les faits comme le ferait une base de données. Il prédit, mot après mot, la suite la plus plausible d'un texte à partir des schémas vus pendant son entraînement.",
+                    "p_2": "Un modèle n'a pas de véritable notion du vrai ou du faux. Il produit ce qui sonne juste, pas forcément ce qui est juste. Alors quand il n'a pas la réponse, il se tait rarement : il comble le vide avec quelque chose de statistiquement convaincant, comme une option cargo qui ressemble exactement à celle qui devrait exister.",
+                    "p_3": "C'est aussi pour ça que les hallucinations sont si sûres d'elles et si bien présentées. Le modèle est optimisé pour paraître fluide et utile, pas pour être exact. Pour lui, une mauvaise réponse écrite avec un aplomb parfait vaut autant qu'une bonne."
+                },
+                "5": {
                     "title": "Conclusion",
                     "p_1": "Ce genre d'hallucinations est courant, je dois régulièrement vérifier et confirmer les résultats donnés et ne jamais faire confiance au code. Il m'arrive même, beaucoup plus souvent qu'on pourrait le penser et que je le voudrais, de corriger moi-même les chatbots et de leur proposer une solution... une solution à leurs propres problèmes.",
                     "p_2": "Ici, on parle d'une commande simple, mais qu'en serait-il des fausses informations ? De fausses données ? N'oubliez pas de toujours vérifier les informations et de tester le code.",
-                    "p_3": "Est-ce une stratégie pour épuiser plus vite le quota sans abonnement ? Est-ce si grave ? N'hésitez pas à me donner vos retours !"
+                    "p_3": "Pendant un moment, je me suis même demandé si c'était une astuce pour épuiser plus vite le quota gratuit. Mais la section précédente est claire : ce n'est ni de la mauvaise volonté ni une stratégie commerciale, c'est simplement la façon dont la technologie fonctionne pour l'instant. Ça ne la rend pas moins problématique pour autant. Et vous, vérifiez-vous vraiment ce que l'IA vous répond, ou lui faites-vous confiance ? N'hésitez pas à me donner vos retours !"
                 }
             }
         }

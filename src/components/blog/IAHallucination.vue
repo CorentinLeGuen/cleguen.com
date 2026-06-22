@@ -8,10 +8,12 @@ import Contact from '@/components/Contact.vue'
     <article class="px-4 py-0.5 max-w-full sm:max-w-3/4 md:max-w-2/3 mx-auto bg-white">
         <h1 class="my-4 text-4xl font-extrabold text-gray-700">{{ t('blog.2.title') }}</h1>
         <p class="italic text-sm text-gray-400">{{ t('blog.2.date_publication') }}</p>
+        <p class="italic text-sm text-gray-400">{{ t('blog.2.date_update') }}</p>
         <section class="my-4 space-y-2.5 text-justify">
             <h2 class="text-2xl font-bold text-gray-700">{{ t('blog.2.content.1.title') }}</h2>
             <p v-html="t('blog.2.content.1.p_1')" class="text-gray-600"></p>
             <p v-html="t('blog.2.content.1.p_2')" class="text-gray-600"></p>
+            <p v-html="t('blog.2.content.1.p_3')" class="italic text-gray-500"></p>
         </section>
         <hr class="my-4 text-gray-200" />
         <section class="my-4 space-y-2.5 text-justify">
@@ -32,6 +34,22 @@ import Contact from '@/components/Contact.vue'
             <p v-html="t('blog.2.content.3.p_1')" class="text-gray-600"></p>
             <p v-html="t('blog.2.content.3.p_2')" class="text-gray-600"></p>
             <p v-html="t('blog.2.content.3.p_3')" class="text-gray-600"></p>
+            <p v-html="t('blog.2.content.3.p_4')" class="text-gray-600"></p>
+            <p v-html="t('blog.2.content.3.p_5')" class="text-gray-600"></p>
+        </section>
+        <hr class="my-4 text-gray-200" />
+        <section class="my-4 space-y-2.5 text-justify">
+            <h2 class="text-2xl font-bold text-gray-700">{{ t('blog.2.content.4.title') }}</h2>
+            <p v-html="t('blog.2.content.4.p_1')" class="text-gray-600"></p>
+            <p v-html="t('blog.2.content.4.p_2')" class="text-gray-600"></p>
+            <p v-html="t('blog.2.content.4.p_3')" class="text-gray-600"></p>
+        </section>
+        <hr class="my-4 text-gray-200" />
+        <section class="my-4 space-y-2.5 text-justify">
+            <h2 class="text-2xl font-bold text-gray-700">{{ t('blog.2.content.5.title') }}</h2>
+            <p v-html="t('blog.2.content.5.p_1')" class="text-gray-600"></p>
+            <p v-html="t('blog.2.content.5.p_2')" class="text-gray-600"></p>
+            <p v-html="t('blog.2.content.5.p_3')" class="text-gray-600"></p>
         </section>
         <Contact />
     </article>

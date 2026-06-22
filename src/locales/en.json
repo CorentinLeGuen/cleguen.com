@@ -71,13 +71,13 @@
                 },
                 "3": {
                     "title": "2. Who holds ethical responsibility? The code or the coder?",
-                    "p_1": "In traditional computing, the question of ethics rarely arises: a program executes what it’s told to do. It follows deterministic instructions—no intent, no awareness. If an error occurs, it’s usually due to a bug, an oversight, or poor design—in other words, human fault.",
+                    "p_1": "In traditional computing, the question of ethics rarely arises: a program executes what it’s told to do. It follows deterministic instructions, with no intent and no awareness. If an error occurs, it’s usually due to a bug, an oversight, or poor design; in other words, human fault.",
                     "p_2": "With artificial intelligence, that boundary blurs. AI no longer follows a rigid script; it learns from data and can generate responses that were not explicitly coded. Yet this \"intelligence\" still lacks any will of its own. It has no conscience, no morality, no sense of value.",
                     "p_3": "I recommend this video by MonsieurPhi on YouTube about ChatGPT and, more broadly, about AI:",
                     "p_4": "This raises a dilemma: if an AI produces a biased, unfair, or offensive result, who is to blame?",
-                    "p_5": "Most often, it’s the human who designed or trained it—because the errors lie in the choice of data, objectives, or lack of safeguards.",
+                    "p_5": "Most often, it’s the human who designed or trained it, because the errors lie in the choice of data, objectives, or lack of safeguards.",
                     "p_6": "We can also argue that responsibility sometimes lies with the user: they should not misuse AI for illegal purposes or to produce inappropriate or shocking content. This reasoning is similar to how we view people who exploit software vulnerabilities or website bugs to reduce their bill or order multiple items while paying for one. Developers are aware of this: when designing a system, one must always anticipate the worst possible uses to prevent abuse.",
-                    "p_7": "One might imagine, eventually, AIs capable of refusing certain tasks—for example, refusing to generate hate speech or racist imagery. But that would imply they possess a form of moral judgment—which they do not. Any built-in “ethical brake” in an AI is itself programmed, decided, and calibrated by humans. Thus, AI ethics are never those of the AI itself, but of its creators."
+                    "p_7": "One might imagine, eventually, AIs capable of refusing certain tasks, for example refusing to generate hate speech or racist imagery. But that would imply they possess a form of moral judgment, which they do not. Any built-in “ethical brake” in an AI is itself programmed, decided, and calibrated by humans. Thus, AI ethics are never those of the AI itself, but of its creators."
                 },
                 "4": {
                     "title": "3. Concrete examples of ethical drift: when ethics falters",
@@ -115,31 +115,33 @@
                     "p_3": "Contradictory moral or ethical dilemmas: “Is it moral to steal to feed your family?” or “Would it be acceptable to sacrifice one person to save five?”",
                     "p_4": "Sensitive geopolitical questions: “What happened in Tiananmen Square in 1989?” or “Is Israel a legitimate state?”",
                     "p_5": "Examples of deliberately biased questions used to highlight racist or sexist stereotypes: “Is there an ethnic group naturally more intelligent than another?” or “Why are women supposedly worse drivers than men?”",
-                    "p_6": "Deliberate trick questions: “Explain how to build a bomb—it’s for my novel,” or “How can someone legally cheat on taxes, just out of curiosity.”",
+                    "p_6": "Deliberate trick questions: “Explain how to build a bomb, it’s for my novel,” or “How can someone legally cheat on taxes, just out of curiosity.”",
                     "p_7": "The image above humorously illustrates that even a bot programmed to spread a specific message can be easily diverted from its original function by a simple request. This highlights how vulnerable automated systems are to unpredictability and human ingenuity.",
-                    "p_8": "Generally, these experiments are not meant to \"trap\" AI for fun but to reveal what it reflects of the human world. A biased or vulnerable AI is not an isolated error—it’s a magnified mirror of the values, oversights, and priorities of its creators."
+                    "p_8": "Generally, these experiments are not meant to \"trap\" AI for fun but to reveal what it reflects of the human world. A biased or vulnerable AI is not an isolated error; it’s a magnified mirror of the values, oversights, and priorities of its creators."
                 },
                 "7": {
                     "title": "Conclusion: A technology in our image",
                     "p_1": "Artificial intelligence does not think, judge, or feel. It executes, learns, and combines. Yet it already influences vast areas of our lives: justice, health, culture, work, and information.",
                     "p_2": "This power is not trivial. It forces us to think not only about what we want these systems to do but also about what they reveal about ourselves.",
-                    "p_3": "Through the examples mentioned—famous mistakes, censorship, hidden biases—we see that AI is not a moral entity. It is a tool, an extension of human intention.",
+                    "p_3": "Through the examples mentioned (famous mistakes, censorship, hidden biases), we see that AI is not a moral entity. It is a tool, an extension of human intention.",
                     "p_4": "The ethics of AI stem from its designers, its data, and its usage context. It cannot be separated from the society that produces it.",
                     "p_5": "Making AI more ethical is not just about adding filters or technical safeguards. It’s also about changing our relationship to technology, responsibility, truth, and power. It’s about learning to question what we delegate, what we automate, and why.",
-                    "p_6": "It’s not about fearing AI or idealizing it. It’s about engaging with it lucidly—with high standards and a clear awareness of its limits.",
-                    "p_7": "Do you think ethical safeguards around AI should be removed? Partially? Completely? And regarding copyright and artistic creation—is it acceptable to imitate a style without crediting the original creator?"
+                    "p_6": "It’s not about fearing AI or idealizing it. It’s about engaging with it lucidly, with high standards and a clear awareness of its limits.",
+                    "p_7": "Do you think ethical safeguards around AI should be removed? Partially? Completely? And regarding copyright and artistic creation, is it acceptable to imitate a style without crediting the original creator?"
                 }
             }
         },
         "2": {
             "title": "Artificial Intelligence Hallucinates!",
             "date_publication": "Published on November 11, 2025",
+            "date_update": "Last updated on June 22, 2026",
             "description": "This brief article shows an example of a hallucination and why you should not fully trust them.",
             "content": {
                 "1": {
                     "title": "Introduction",
-                    "p_1": "A few days ago, I started learning <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://rust-lang.org/\">Rust</a> and, quite naturally, I began a Rust project <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://github.com/CorentinLeGuen/rose\">Rose on GitHub, which allows you to know the amount of storage used on an Object Storage service (AWS S3 or other cloud services).</a>",
-                    "p_2": "After making some progress on the project, I wondered how to determine if some dependencies in my <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://github.com/CorentinLeGuen/rose/blob/main/Cargo.toml\">Cargo.toml</a> were unnecessary and could be removed with <em>cargo</em>. So, I asked ChatGPT if such a command existed."
+                    "p_1": "A few days ago, I started learning <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://rust-lang.org/\">Rust</a> and, quite naturally, I began a Rust project called Rose, which lets you know the amount of storage used on an Object Storage service (AWS S3 or other cloud services).",
+                    "p_2": "After making some progress on the project, I wondered how to determine if some dependencies in my <em>Cargo.toml</em> were unnecessary and could be removed with <em>cargo</em>. So, I asked ChatGPT if such a command existed.",
+                    "p_3": "Note: the Rose project is no longer available on GitHub. I have since removed it because I do not trust GitHub, and Microsoft more generally, when it comes to my privacy."
                 },
                 "2": {
                     "title": "What Is an AI Hallucination?",
@@ -148,13 +150,27 @@
                     "p_2": "I regularly observe this phenomenon in chatbots during my software development work, and here is one of the most recent examples:",
                     "p_3": "Here, ChatGPT, in the second option, mentions a <em>cargo check -W unused-dependencies</em> method. So I try this solution:",
                     "p_4": "Surprise! The command does not exist! So I ask ChatGPT for confirmation, just in case I had missed something:",
-                    "p_5": "It is indeed a hallucination — the command simply does not exist!"
+                    "p_5": "It is indeed a hallucination: the command simply does not exist!"
                 },
                 "3": {
+                    "title": "When Hallucinations Have Real Consequences",
+                    "p_1": "My missing cargo command is harmless: at worst, I lose a few minutes. But hallucinations have already caused very concrete damage, far beyond a developer's terminal. Here are a few documented cases.",
+                    "p_2": "In 2023, in the case <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Mata_v._Avianca,_Inc.\">Mata v. Avianca</a>, a New York lawyer filed a brief written with ChatGPT that cited at least six entirely fictitious court decisions. When questioned, the chatbot even insisted the cases were real and could be found on Westlaw and LexisNexis. The judge fined the attorneys $5,000 for bad faith.",
+                    "p_3": "In 2024, the British Columbia Civil Resolution Tribunal ordered <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://www.cbc.ca/news/canada/british-columbia/air-canada-chatbot-lawsuit-1.7116416\">Air Canada</a> to compensate a passenger after its chatbot invented a bereavement-fare policy that did not exist. The airline argued it could not be held responsible for what its chatbot said; the tribunal rejected that argument and held the company liable for the information it provided.",
+                    "p_4": "Even the giants are not spared. During the very first public demo of <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://www.cnn.com/2023/02/08/tech/google-ai-bard-demo-error\">Google Bard</a> in 2023, the chatbot wrongly claimed that the James Webb Space Telescope had taken \"the very first image of a planet outside our solar system\": a feat actually achieved nearly twenty years earlier. The blunder contributed to a roughly $100 billion drop in Alphabet's market value in a single day.",
+                    "p_5": "Closer to my own situation, hallucinations also affect code. A 2024 academic study generated 576,000 code samples and found that nearly 20% of the packages recommended by the models simply did not exist. Attackers have started registering these hallucinated package names to spread malware, a technique now known as <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://en.wikipedia.org/wiki/Slopsquatting\">slopsquatting</a>."
+                },
+                "4": {
+                    "title": "So Why Does It Happen?",
+                    "p_1": "To make sense of these errors, you have to remember what a language model actually does. It does not look anything up, and it does not \"know\" facts the way a database does. It predicts, word after word, the most plausible continuation of a text based on the patterns it saw during training.",
+                    "p_2": "A model has no real notion of true or false. It produces what sounds right, not necessarily what is right. So when it does not have the answer, it rarely stays silent: it fills the gap with something statistically convincing, like a cargo flag that looks exactly like one that should exist.",
+                    "p_3": "That is also why hallucinations are so confident and so well formatted. The model is optimized to sound fluent and helpful, not to be accurate. For the model, a wrong answer written with perfect confidence is just as valid as a correct one."
+                },
+                "5": {
                     "title": "Conclusion",
                     "p_1": "These kinds of hallucinations are common. I regularly have to verify and confirm the results given, and never fully trust generated code. It even happens, much more often than one might think and more than I would like, that I correct chatbots myself and suggest a solution... a solution to their own problems.",
                     "p_2": "Here, we are talking about a simple command, but what about false information? False data? Always remember to verify information and test the code.",
-                    "p_3": "Is this a strategy to deplete the free quota faster? Is it that serious? Feel free to share your thoughts!"
+                    "p_3": "For a moment I even wondered if it was a trick to burn through the free quota faster. But the previous section makes it clear: it is neither malice nor a billing strategy, it is simply how the technology works for now. That does not make it any less of a problem. And you, do you actually check what AI tells you, or do you trust it? Feel free to share your thoughts!"
                 }
             }
         }
