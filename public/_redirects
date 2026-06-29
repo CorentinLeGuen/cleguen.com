@@ -1,0 +1,6 @@
+# 301s for the pre-/blog article URLs
+/ia-hallucination          /blog/ia-hallucination          301!
+/ia-progress-or-downfall   /blog/ia-progress-or-downfall   301!
+
+# SPA fallback: let vue-router handle client-side routes
+/*                         /index.html                     200
