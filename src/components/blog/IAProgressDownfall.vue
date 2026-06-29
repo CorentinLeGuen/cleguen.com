@@ -12,7 +12,7 @@ import Contact from '@/components/Contact.vue'
             <h2 class="text-2xl font-bold text-gray-700">{{ t('blog.1.content.1.title') }}</h2>
             <p class="text-gray-600">{{ t('blog.1.content.1.p_1') }}</p>
             <p class="text-gray-600">{{ t('blog.1.content.1.p_2') }}</p>
-            <img src="@/assets/images/blog/1/ai-ghibli-style-prompt.png" title="screenshot ChatGPT prompt art" class="my-4"/>
+            <img src="@/assets/images/blog/1/ai-ghibli-style-prompt.webp" alt="Screenshot of a ChatGPT prompt generating Studio Ghibli-style artwork" loading="lazy" decoding="async" class="my-4"/>
             <p v-html="t('blog.1.content.1.p_3')" class="text-gray-600"></p>
             <p class="text-gray-600">{{ t('blog.1.content.1.p_4') }}</p>
         </section>
@@ -41,7 +41,7 @@ import Contact from '@/components/Contact.vue'
             <h2 class="text-2xl text-left font-bold text-gray-700">{{ t('blog.1.content.4.title') }}</h2>
             <p class="text-gray-600">{{ t('blog.1.content.4.p_1') }}</p>
             <p v-html="t('blog.1.content.4.p_2')" class="text-gray-600"></p>
-            <img src="@/assets/images/blog/1/tay-chatbot-racist-behavior.png" title="screenshot twitter bot" class="my-4"/>
+            <img src="@/assets/images/blog/1/tay-chatbot-racist-behavior.webp" alt="Screenshot of Microsoft's Tay chatbot posting offensive tweets" loading="lazy" decoding="async" class="my-4"/>
             <p v-html="t('blog.1.content.4.p_3')" class="text-gray-600"></p>
             <p v-html="t('blog.1.content.4.p_4')" class="text-gray-600"></p>
             <p class="text-gray-600">{{ t('blog.1.content.4.p_5') }}</p>
@@ -85,7 +85,7 @@ import Contact from '@/components/Contact.vue'
                 <li class="text-gray-600">{{ t('blog.1.content.6.p_5') }}</li>
                 <li class="text-gray-600">{{ t('blog.1.content.6.p_6') }}</li>
             </ul>
-            <img src="@/assets/images/blog/1/screenshot-twitter-russian-bot.jpg" title="screenshot twitter bot" class="w-full md:w-3/4 xl:w-1/2 mx-auto my-4"/>
+            <img src="@/assets/images/blog/1/screenshot-twitter-russian-bot.webp" alt="Screenshot of a Twitter bot exposed as a Russian propaganda account" loading="lazy" decoding="async" class="w-full md:w-3/4 xl:w-1/2 mx-auto my-4"/>
             <p class="text-gray-600">{{ t('blog.1.content.6.p_7') }}</p>
             <p class="text-gray-600">{{ t('blog.1.content.6.p_8') }}</p>
         </section>

@@ -21,11 +21,11 @@ import Contact from '@/components/Contact.vue'
             <p v-html="t('blog.2.content.2.p_1')" class="text-gray-600"></p>
             <p v-html="t('blog.2.content.2.p_1_c')" class="italic text-gray-500"></p>
             <p v-html="t('blog.2.content.2.p_2')" class="text-gray-600"></p>
-            <img src="@/assets/images/blog/2/capture-chatgpt-1.png" title="chatgpt" class="my-4"/>
+            <img src="@/assets/images/blog/2/capture-chatgpt-1.webp" alt="ChatGPT suggesting a cargo check -W unused-dependencies command" loading="lazy" decoding="async" class="my-4"/>
             <p v-html="t('blog.2.content.2.p_3')" class="text-gray-600"></p>
-            <img src="@/assets/images/blog/2/capture-terminal-1.png" title="cargo check -W unused-dependencies" class="my-4"/>
+            <img src="@/assets/images/blog/2/capture-terminal-1.webp" alt="Terminal showing the cargo check -W unused-dependencies command failing because it does not exist" loading="lazy" decoding="async" class="my-4"/>
             <p v-html="t('blog.2.content.2.p_4')" class="text-gray-600"></p>
-            <img src="@/assets/images/blog/2/capture-chatgpt-2.png" title="cargo check -W unused-dependencies" class="my-4"/>
+            <img src="@/assets/images/blog/2/capture-chatgpt-2.webp" alt="ChatGPT confirming the hallucinated cargo command does not exist" loading="lazy" decoding="async" class="my-4"/>
             <p v-html="t('blog.2.content.2.p_5')" class="text-gray-600"></p>
         </section>
         <hr class="my-4 text-gray-200" />

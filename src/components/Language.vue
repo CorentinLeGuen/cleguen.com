@@ -1,50 +1,52 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { ref, watch, onMounted } from 'vue'
+import { watch, onMounted } from 'vue'
 
 const { locale } = useI18n()
 
-const languages = {
-    en: 'EN',
-    fr: 'FR',
+const languages: Record<string, { label: string; name: string }> = {
+  en: { label: 'EN', name: 'English' },
+  fr: { label: 'FR', name: 'Français' },
 }
 
-const currentLocale = ref(locale.value)
+const applyLocale = (code: string) => {
+  locale.value = code
+  document.documentElement.lang = code
+}
 
 onMounted(() => {
   const savedLocale = localStorage.getItem('locale')
-  if (savedLocale && (savedLocale === 'en' || savedLocale === 'fr')) {
-    currentLocale.value = savedLocale
-    locale.value = savedLocale
+  if (savedLocale && savedLocale in languages) {
+    applyLocale(savedLocale)
+  } else {
+    document.documentElement.lang = locale.value
   }
 })
 
 const changeLanguage = (code: string) => {
-  currentLocale.value = code
-  locale.value = code
+  applyLocale(code)
   localStorage.setItem('locale', code)
 }
 
 watch(locale, (newValue) => {
-  currentLocale.value = newValue
+  document.documentElement.lang = newValue
 })
-
 </script>
 
 <template>
   <div class="mt-1 text-gray-600">
     <ul class="flex">
-        <li
-            v-for="(label, code) in languages" 
-            :key="code" 
-            @click="changeLanguage(code)" 
-            :class="[
-                'hover:cursor-pointer',
-                currentLocale === code ? 'hidden' : ''
-            ]"
+      <li v-for="(lang, code) in languages" :key="code">
+        <button
+          v-if="locale !== code"
+          type="button"
+          :aria-label="`Switch language to ${lang.name}`"
+          @click="changeLanguage(code)"
+          class="hover:cursor-pointer hover:text-amber-600 transition-colors"
         >
-            {{ label }}
-        </li>
+          {{ lang.label }}
+        </button>
+      </li>
     </ul>
   </div>
 </template>

@@ -1,5 +1,11 @@
 {
     "welcome": "Welcome to my website!",
+    "notfound": {
+        "title": "Page not found",
+        "text": "Oops! The page you are looking for does not exist, has been moved, or never existed at all.",
+        "home": "Back to home",
+        "blog": "Browse the blog"
+    },
     "about": {
         "title": "About",
         "website_sources": "website codesource",
@@ -15,6 +21,9 @@
     "contact": {
         "title": "Send a comment or a message",
         "send": "Send",
+        "sending": "Sending…",
+        "success": "Thanks! Your message has been sent.",
+        "error": "Something went wrong. Please try again later.",
         "legal": "We’ll never share your details. Read our <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://cleguen.com/legal\">Privacy Policy</a>."
     },
     "legal": {

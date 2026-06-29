@@ -1,5 +1,11 @@
 {
     "welcome": "Bienvenue sur mon site!",
+    "notfound": {
+        "title": "Page introuvable",
+        "text": "Oups ! La page que vous cherchez n'existe pas, a été déplacée, ou n'a jamais existé.",
+        "home": "Retour à l'accueil",
+        "blog": "Voir le blog"
+    },
     "about": {
         "title": "À propos",
         "website_sources": "code source du site",
@@ -15,6 +21,9 @@
     "contact": {
         "title": "Envoyer un message ou un commentaire",
         "send": "Envoyer",
+        "sending": "Envoi…",
+        "success": "Merci ! Votre message a bien été envoyé.",
+        "error": "Une erreur est survenue. Veuillez réessayer plus tard.",
         "legal": "Nous ne partagerons jamais vos informations personnelles. <a class=\"text-amber-600 hover:underline\" target=\"_blank\" href=\"https://cleguen.com/legal\">Lisez notre Politique de Confidentialité</a>."
     },
     "legal": {
