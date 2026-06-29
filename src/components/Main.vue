@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 import Contact from '@/components/Contact.vue'
+import BlogList from '@/components/BlogList.vue'
 import { onMounted, onUnmounted } from 'vue'
 
 const { t } = useI18n()
@@ -99,37 +100,7 @@ onUnmounted(() => {
                 <div class="h-1 grow bg-gray-100 rounded-full"></div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Article 1 -->
-                <router-link to="/ia-hallucination" class="group h-full">
-                    <div class="h-full bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="text-xs font-semibold uppercase tracking-wider text-amber-600 mb-2">AI & Tech</div>
-                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-600 transition-colors mb-3">{{ t('blog.2.title') }}</h3>
-                            <p class="text-gray-600 line-clamp-3 mb-4">{{ t('blog.2.description') }}</p>
-                        </div>
-                        <div class="flex items-center justify-between text-sm text-gray-500 mt-4 border-t pt-4 border-gray-100">
-                            <span>{{ t('blog.2.date_publication') }}</span>
-                            <span class="group-hover:translate-x-1 transition-transform">{{ t('blog.link') }} &rarr;</span>
-                        </div>
-                    </div>
-                </router-link>
-                
-                <!-- Article 2 -->
-                <router-link to="/ia-progress-or-downfall" class="group h-full">
-                    <div class="h-full bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between">
-                        <div>
-                            <div class="text-xs font-semibold uppercase tracking-wider text-amber-600 mb-2">Reflections</div>
-                            <h3 class="text-xl font-bold text-gray-800 group-hover:text-amber-600 transition-colors mb-3">{{ t('blog.1.title') }}</h3>
-                            <p class="text-gray-600 line-clamp-3 mb-4">{{ t('blog.1.description') }}</p>
-                        </div>
-                        <div class="flex items-center justify-between text-sm text-gray-500 mt-4 border-t pt-4 border-gray-100">
-                            <span>{{ t('blog.1.date_publication') }}</span>
-                            <span class="group-hover:translate-x-1 transition-transform">{{ t('blog.link') }} &rarr;</span>
-                        </div>
-                    </div>
-                </router-link>
-            </div>
+            <BlogList />
         </section>
 
         <section class="max-w-3xl mx-auto pt-10 animate-on-scroll">

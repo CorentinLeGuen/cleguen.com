@@ -49,6 +49,7 @@
         }
     },
     "blog": {
+        "nav": "Blog",
         "title": "Blog Articles",
         "link": "Read the article",
         "1": {
