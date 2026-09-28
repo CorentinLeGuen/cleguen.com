@@ -4,13 +4,119 @@
 @plugin "flowbite/plugin";
 @source "../node_modules/flowbite";
 
+/* Self-hosted fonts (SIL Open Font License), latin subset */
 @font-face {
-    font-family: 'Liter';
-    src: url('@/assets/fonts/Liter.ttf') format('truetype');
-    font-weight: normal;
+    font-family: 'Chakra Petch';
+    src: url('@/assets/fonts/chakra-petch-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
     font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('@/assets/fonts/chakra-petch-latin-400-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('@/assets/fonts/chakra-petch-latin-500-normal.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chakra Petch';
+    src: url('@/assets/fonts/chakra-petch-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('@/assets/fonts/space-mono-latin-400-normal.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Space Mono';
+    src: url('@/assets/fonts/space-mono-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Syncopate';
+    src: url('@/assets/fonts/syncopate-latin-700-normal.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* The Designers Republic palette: white, black, red, yellow, industrial grey */
+@theme {
+    --color-tdr-black: #0b0b0b;
+    --color-tdr-white: #ffffff;
+    --color-tdr-paper: #efeee9;
+    --color-tdr-red: #e3001b;
+    --color-tdr-yellow: #ffe500;
+    --color-tdr-grey: #8b8e90;
+    --color-tdr-steel: #3a3c3e;
+
+    --font-display: 'Syncopate', 'Eurostile', ui-sans-serif, sans-serif;
+    --font-sans: 'Chakra Petch', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'Space Mono', ui-monospace, monospace;
 }
 
 html, body {
-    font-family: 'Liter', ui-sans-serif, system-ui, sans-serif;
+    font-family: var(--font-sans);
+    background-color: var(--color-tdr-paper);
+    color: var(--color-tdr-black);
+}
+
+::selection {
+    background-color: var(--color-tdr-yellow);
+    color: var(--color-tdr-black);
+}
+
+/* Display headings: wide, uppercase, tight — typography is the image */
+@utility tdr-display {
+    font-family: var(--font-display);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+}
+
+/* Small technical codes / labels */
+@utility tdr-label {
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+/* Hazard stripes, techno-industrial */
+@utility tdr-hazard {
+    background-image: repeating-linear-gradient(
+        -45deg,
+        var(--color-tdr-black) 0 10px,
+        var(--color-tdr-yellow) 10px 20px
+    );
+}
+
+/* Hard offset shadow instead of soft blur */
+@utility tdr-shadow {
+    box-shadow: 6px 6px 0 0 var(--color-tdr-black);
+}
+@utility tdr-shadow-red {
+    box-shadow: 6px 6px 0 0 var(--color-tdr-red);
 }

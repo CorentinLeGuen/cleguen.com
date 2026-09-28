@@ -5,10 +5,11 @@ import Footer from '@/components/Footer.vue'
 
 <template>
     <main 
-      class="min-h-screen w-full bg-repeat bg-dot-grid"
+      class="min-h-screen w-full bg-tdr-paper bg-tech-grid"
     >
+    <div class="h-2 tdr-hazard" aria-hidden="true"></div>
+    <Navbar />
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <Navbar />
       <RouterView />
     </div>
     <Footer />
@@ -16,7 +17,10 @@ import Footer from '@/components/Footer.vue'
 </template>
 
 <style scoped>
-.bg-dot-grid {
-  background-image: url('@/assets/images/dot-grid.webp');
+.bg-tech-grid {
+  background-image:
+    linear-gradient(to right, rgb(11 11 11 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgb(11 11 11 / 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
 }
 </style>

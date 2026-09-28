@@ -34,15 +34,15 @@ watch(locale, (newValue) => {
 </script>
 
 <template>
-  <div class="mt-1 text-gray-600">
-    <ul class="flex">
-      <li v-for="(lang, code) in languages" :key="code">
+  <div class="flex items-stretch">
+    <ul class="flex items-stretch">
+      <li v-for="(lang, code) in languages" :key="code" class="flex items-stretch">
         <button
           v-if="locale !== code"
           type="button"
           :aria-label="`Switch language to ${lang.name}`"
           @click="changeLanguage(code)"
-          class="hover:cursor-pointer hover:text-amber-600 transition-colors"
+          class="tdr-label text-xs! px-4 bg-tdr-red text-tdr-white hover:cursor-pointer hover:bg-tdr-yellow hover:text-tdr-black transition-colors"
         >
           {{ lang.label }}
         </button>
