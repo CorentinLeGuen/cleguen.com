@@ -61,15 +61,18 @@
     font-display: swap;
 }
 
-/* The Designers Republic palette: white, black, red, yellow, industrial grey */
+/* Halloween palette: pumpkin, slime, bone and night-purple */
 @theme {
-    --color-tdr-black: #0b0b0b;
-    --color-tdr-white: #ffffff;
-    --color-tdr-paper: #efeee9;
-    --color-tdr-red: #e3001b;
-    --color-tdr-yellow: #ffe500;
-    --color-tdr-grey: #8b8e90;
-    --color-tdr-steel: #3a3c3e;
+    --color-hw-abyss: #08060b;
+    --color-hw-night: #110b18;
+    --color-hw-crypt: #1c1427;
+    --color-hw-grave: #3e2a57;
+    --color-hw-witch: #6d33a6;
+    --color-hw-bone: #efe6d2;
+    --color-hw-fog: #c9bdd9;
+    --color-hw-mist: #8c7fa3;
+    --color-hw-pumpkin: #ff7a1a;
+    --color-hw-slime: #9be23c;
 
     --font-display: 'Syncopate', 'Eurostile', ui-sans-serif, sans-serif;
     --font-sans: 'Chakra Petch', ui-sans-serif, system-ui, sans-serif;
@@ -78,45 +81,67 @@
 
 html, body {
     font-family: var(--font-sans);
-    background-color: var(--color-tdr-paper);
-    color: var(--color-tdr-black);
+    background-color: var(--color-hw-night);
+    color: var(--color-hw-bone);
+    color-scheme: dark;
 }
 
 ::selection {
-    background-color: var(--color-tdr-yellow);
-    color: var(--color-tdr-black);
+    background-color: var(--color-hw-pumpkin);
+    color: var(--color-hw-abyss);
 }
 
-/* Display headings: wide, uppercase, tight — typography is the image */
-@utility tdr-display {
+/* Display headings: wide, uppercase, tight, with a faint candle glow */
+@utility hw-display {
     font-family: var(--font-display);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.02em;
     line-height: 0.95;
+    text-shadow: 0 0 18px rgb(255 122 26 / 0.25);
 }
 
 /* Small technical codes / labels */
-@utility tdr-label {
+@utility hw-label {
     font-family: var(--font-mono);
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
 
-/* Hazard stripes, techno-industrial */
-@utility tdr-hazard {
+/* Caution tape stripes, black and pumpkin */
+@utility hw-hazard {
     background-image: repeating-linear-gradient(
         -45deg,
-        var(--color-tdr-black) 0 10px,
-        var(--color-tdr-yellow) 10px 20px
+        var(--color-hw-abyss) 0 10px,
+        var(--color-hw-pumpkin) 10px 20px
     );
 }
 
 /* Hard offset shadow instead of soft blur */
-@utility tdr-shadow {
-    box-shadow: 6px 6px 0 0 var(--color-tdr-black);
+@utility hw-shadow {
+    box-shadow: 6px 6px 0 0 var(--color-hw-witch);
 }
-@utility tdr-shadow-red {
-    box-shadow: 6px 6px 0 0 var(--color-tdr-red);
+@utility hw-shadow-pumpkin {
+    box-shadow: 6px 6px 0 0 var(--color-hw-pumpkin), 0 0 28px 0 rgb(255 122 26 / 0.3);
+}
+
+/* Flickering candle light, for the big 404 */
+@keyframes hw-flicker {
+    0%, 100% { opacity: 1; }
+    41% { opacity: 1; }
+    42% { opacity: 0.55; }
+    43% { opacity: 1; }
+    77% { opacity: 0.85; }
+    78% { opacity: 0.4; }
+    80% { opacity: 1; }
+}
+@utility hw-flicker {
+    animation: hw-flicker 4s infinite steps(1, end);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hw-flicker {
+        animation: none;
+    }
 }
