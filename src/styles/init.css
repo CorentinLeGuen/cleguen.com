@@ -61,15 +61,18 @@
     font-display: swap;
 }
 
-/* The Designers Republic palette: white, black, red, yellow, industrial grey */
+/* Christmas palette: pine night, snow, holly berry and gold */
 @theme {
-    --color-tdr-black: #0b0b0b;
-    --color-tdr-white: #ffffff;
-    --color-tdr-paper: #efeee9;
-    --color-tdr-red: #e3001b;
-    --color-tdr-yellow: #ffe500;
-    --color-tdr-grey: #8b8e90;
-    --color-tdr-steel: #3a3c3e;
+    --color-xm-abyss: #07130e;
+    --color-xm-night: #0c1d16;
+    --color-xm-pine: #132a20;
+    --color-xm-holly: #2b5240;
+    --color-xm-fir: #1f6b45;
+    --color-xm-snow: #f4f6f2;
+    --color-xm-frost: #cfdfd6;
+    --color-xm-mist: #8ea89a;
+    --color-xm-berry: #ff4b5c;
+    --color-xm-gold: #f5c542;
 
     --font-display: 'Syncopate', 'Eurostile', ui-sans-serif, sans-serif;
     --font-sans: 'Chakra Petch', ui-sans-serif, system-ui, sans-serif;
@@ -78,45 +81,62 @@
 
 html, body {
     font-family: var(--font-sans);
-    background-color: var(--color-tdr-paper);
-    color: var(--color-tdr-black);
+    background-color: var(--color-xm-night);
+    color: var(--color-xm-snow);
+    color-scheme: dark;
 }
 
 ::selection {
-    background-color: var(--color-tdr-yellow);
-    color: var(--color-tdr-black);
+    background-color: var(--color-xm-gold);
+    color: var(--color-xm-abyss);
 }
 
-/* Display headings: wide, uppercase, tight — typography is the image */
-@utility tdr-display {
+/* Display headings: wide, uppercase, tight, with a warm fairy-light glow */
+@utility xm-display {
     font-family: var(--font-display);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.02em;
     line-height: 0.95;
+    text-shadow: 0 0 18px rgb(245 197 66 / 0.25);
 }
 
 /* Small technical codes / labels */
-@utility tdr-label {
+@utility xm-label {
     font-family: var(--font-mono);
     font-size: 0.7rem;
     text-transform: uppercase;
     letter-spacing: 0.15em;
 }
 
-/* Hazard stripes, techno-industrial */
-@utility tdr-hazard {
+/* Candy cane stripes, berry red and snow */
+@utility xm-candy {
     background-image: repeating-linear-gradient(
         -45deg,
-        var(--color-tdr-black) 0 10px,
-        var(--color-tdr-yellow) 10px 20px
+        var(--color-xm-snow) 0 10px,
+        var(--color-xm-berry) 10px 20px
     );
 }
 
 /* Hard offset shadow instead of soft blur */
-@utility tdr-shadow {
-    box-shadow: 6px 6px 0 0 var(--color-tdr-black);
+@utility xm-shadow {
+    box-shadow: 6px 6px 0 0 var(--color-xm-fir);
 }
-@utility tdr-shadow-red {
-    box-shadow: 6px 6px 0 0 var(--color-tdr-red);
+@utility xm-shadow-berry {
+    box-shadow: 6px 6px 0 0 var(--color-xm-berry), 0 0 28px 0 rgb(255 75 92 / 0.3);
+}
+
+/* Twinkling fairy light, for the big 404 */
+@keyframes xm-twinkle {
+    0%, 100% { opacity: 1; text-shadow: 0 0 24px rgb(245 197 66 / 0.6); }
+    50% { opacity: 0.75; text-shadow: 0 0 6px rgb(245 197 66 / 0.15); }
+}
+@utility xm-twinkle {
+    animation: xm-twinkle 2.4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .xm-twinkle {
+        animation: none;
+    }
 }

@@ -42,7 +42,7 @@ watch(locale, (newValue) => {
           type="button"
           :aria-label="`Switch language to ${lang.name}`"
           @click="changeLanguage(code)"
-          class="tdr-label text-xs! px-4 bg-tdr-red text-tdr-white hover:cursor-pointer hover:bg-tdr-yellow hover:text-tdr-black transition-colors"
+          class="xm-label text-xs! px-4 bg-xm-berry text-xm-abyss hover:cursor-pointer hover:bg-xm-gold hover:text-xm-abyss transition-colors"
         >
           {{ lang.label }}
         </button>

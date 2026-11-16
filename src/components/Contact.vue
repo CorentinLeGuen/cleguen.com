@@ -30,23 +30,23 @@ const onSubmit = async (event: Event) => {
 </script>
 
 <template>
-    <form @submit.prevent="onSubmit" class="flex flex-col bg-tdr-white border-2 border-tdr-black tdr-shadow my-6">
-        <div class="flex items-center justify-between bg-tdr-red text-tdr-white px-4 py-2">
-            <h1 class="tdr-display text-lg">{{ t('contact.title') }}</h1>
-            <span class="tdr-label">TX // 送信</span>
+    <form @submit.prevent="onSubmit" class="flex flex-col bg-xm-pine border-2 border-xm-holly xm-shadow my-6">
+        <div class="flex items-center justify-between bg-xm-berry text-xm-abyss px-4 py-2">
+            <h1 class="xm-display text-lg">{{ t('contact.title') }}</h1>
+            <span class="xm-label">🎄 TX // 送信</span>
         </div>
         <div class="flex flex-col gap-3 p-4">
-            <input type="email" name="email" required placeholder="contact@email.com" class="font-mono border-2 border-tdr-black rounded-none bg-tdr-paper focus:ring-0 focus:border-tdr-red"/>
-            <textarea required name="message" placeholder="..." rows="4" class="font-mono border-2 border-tdr-black rounded-none bg-tdr-paper focus:ring-0 focus:border-tdr-red"/>
+            <input type="email" name="email" required placeholder="contact@email.com" class="font-mono border-2 border-xm-holly rounded-none bg-xm-night text-xm-snow placeholder:text-xm-mist focus:ring-0 focus:border-xm-berry"/>
+            <textarea required name="message" placeholder="..." rows="4" class="font-mono border-2 border-xm-holly rounded-none bg-xm-night text-xm-snow placeholder:text-xm-mist focus:ring-0 focus:border-xm-berry"/>
             <button
                 type="submit"
                 :disabled="status === 'sending'"
-                class="tdr-display text-sm py-3 bg-tdr-black text-tdr-yellow transition-colors hover:bg-tdr-yellow hover:text-tdr-black hover:cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                class="xm-display text-sm py-3 bg-xm-abyss text-xm-gold transition-colors hover:bg-xm-gold hover:text-xm-abyss hover:cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
             >
                 {{ status === 'sending' ? t('contact.sending') : t('contact.send') }}
             </button>
-            <p v-if="status === 'success'" role="status" class="tdr-label text-xs! bg-tdr-yellow px-3 py-2">{{ t('contact.success') }}</p>
-            <p v-if="status === 'error'" role="alert" class="tdr-label text-xs! bg-tdr-red text-tdr-white px-3 py-2">{{ t('contact.error') }}</p>
+            <p v-if="status === 'success'" role="status" class="xm-label text-xs! bg-xm-gold text-xm-abyss px-3 py-2">{{ t('contact.success') }}</p>
+            <p v-if="status === 'error'" role="alert" class="xm-label text-xs! bg-xm-berry text-xm-abyss px-3 py-2">{{ t('contact.error') }}</p>
         </div>
     </form>
 </template>
